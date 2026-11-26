@@ -1,19 +1,31 @@
 {
   "format": "single standalone bilingual HTML with embedded MP4, image and data",
   "public_site_path": "/g1-sonic-motion/",
-  "html_bytes": 7256773,
-  "html_sha256": "889cf7d3df8fcf2e46bf76b899185b02d238f2a75358ecb6ff50d563101cdf2c",
+  "html_bytes": 7665724,
+  "html_sha256": "2792f00943f807e5c2295f51eadbf93ffdcd0b4f7fc7f4937708ebb6a5ceea5c",
+  "mobile_sources": {
+    "latest_confirmations": "b42fa6831acd0cc4dbc1e3f042896ee9d6a7a4a3",
+    "previous_confirmations": "62279a89db9bd4ab6d8da88b01ade40a255b7515",
+    "coding_models": [
+      "62279a89db9bd4ab6d8da88b01ade40a255b7515",
+      "62279a89db9bd4ab6d8da88b01ade40a255b7515"
+    ],
+    "matched_phase_study": "62279a89db9bd4ab6d8da88b01ade40a255b7515"
+  },
   "data_sha256": {
     "walk_data.json": "affd602acf755e78c9e635178f13eacfa092575fe02c933ef881d54e2c104d8a",
     "mobile_data.json": "3b302abd3209f4e511a3debf5ff088144e1a7d4af730c826648d998cadd8d24b",
     "composed_data.json": "c7365600e9e056b7ab1e6cce8866bdd76acfe2131a2cb0550a1be00ac21d5910",
     "delayed_data.json": "08b5a4d6a571c2ed0de12a7ac449d19e0cd7633df87ab550ce84aa5c6737e8e7",
-    "official.json": "51154012fbd129539658a04fecd0751ae03af774b33a5b7d5f246f4f45a0a17d",
+    "official.json": "1c45a3c31535f3f8a79e55c8aa2cbf95f2b59246a58f07fe737c6514ff40be68",
     "agent_runs.json": "5c41bd4d337c8ba5fa30213ea72d4b02cd3099cb77040b0b0c8023477d1a1f58",
     "five_metre.json": "118b4626a47677268637859c64589f21f4c5a200f8461b3f3e23adb0f6162675",
     "five-metre-matched.json": "10154af8890d373f792cc1cc88bd35fd0375011588eb7c9860d97445c621a21d",
     "response-check.json": "8788a17475569ad105de654111530fa024e9909e52267b4d6b262f648efc6e6a",
     "locomotion-repair.json": "b77ce08cf6e9f8ca324116898f5168dd2e167e5c99e30a3b14790638cfa4c087",
+    "mobile-phase-cap.json": "e049d1e547df0f211a631c14e9a819a06e237af931a378fa371537a987412d9a",
+    "mobile-phase-reproduction.zip": "005da6ab223930836a9b730077382a39e30ccee2aed4193e1bdbbd1dd21f0810",
+    "public-cameras-seed19.zip": "98b562ef8db8c49a125ded8bbec6daa68c4177aaa7a96f242399acd8501cab42",
     "long-placement-failures.json": "f3fc434de325fd862a4e7cdd1208f72c0cf4a180a2ba8c967a4eba033175739c",
     "native-reproduction.json": "6ca4d28c51ccdfd24c1ee5526db3ace6c76bb4bedaa9d80cd327e5f6fd2458fa",
     "tabletop-native-reproduction.json": "3d2ac6044586fb91269292281d401557b5cf5ee35434c1fc35fb1a93315835ca",
@@ -73,7 +85,9 @@
     "all three standalone review MP4 downloads byte-identical",
     "English and Chinese timed captions on new footage",
     "three route-specific Pareto sets and near-equal times",
-    "seven CSV/JSON downloads byte-identical to verified sources",
+    "eight CSV/JSON downloads byte-identical to verified sources",
+    "three 480×360 original reset PNGs decoded and camera ZIP bytes verified in saved standalone HTML",
+    "source-separated mobile confirmation checks, phase panel and byte-verified small kit",
     "offline HTML download"
   ]
 }
