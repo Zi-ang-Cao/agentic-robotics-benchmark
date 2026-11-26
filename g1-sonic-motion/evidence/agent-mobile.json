@@ -1,0 +1,113 @@
+{
+  "task": "grounded-intelligence-initiative/g1_sonic_mobile_pick_place",
+  "episode_id": "grounded-intelligence-initiative.g1_sonic_mobile_pick_place-7c90d414",
+  "preregistration_sha256": "f313f68b491bfc75b2e020c22146a13d00bed79eef4a36171aabef458b849b74",
+  "config_sha256": "1a071dfefec9f723187af1338367591635024d22b1353c2d452503facb24f4c1",
+  "status": "completed",
+  "started_utc": "2026-11-26T14:06:10.248777Z",
+  "finished_utc": "2026-11-26T14:06:59.148935Z",
+  "actual_model_calls": 11,
+  "by_disposition": {
+    "forwarded": 11
+  },
+  "usage_reported_by_gateway": {
+    "input_tokens": 186828,
+    "output_tokens": 4039,
+    "cache_read_tokens": 169613,
+    "cache_write_tokens": 0
+  },
+  "submission_trajectory_steps": {
+    "user": 1,
+    "agent": 6
+  },
+  "trajectory_tool_calls": {
+    "read_file": 1,
+    "write_file": 2,
+    "run_shell_command": 1,
+    "glob": 1
+  },
+  "verification_reward": 0.0,
+  "phases": [
+    {
+      "duration_ms": 2348,
+      "finished_at": "2026-11-26T14:06:12.597535Z",
+      "outcome": "succeeded",
+      "phase": "provision",
+      "started_at": "2026-11-26T14:06:10.248833Z"
+    },
+    {
+      "duration_ms": 98,
+      "finished_at": "2026-11-26T14:06:12.697281Z",
+      "outcome": "succeeded",
+      "phase": "setup",
+      "started_at": "2026-11-26T14:06:12.598499Z"
+    },
+    {
+      "duration_ms": 33525,
+      "finished_at": "2026-11-26T14:06:49.450914Z",
+      "outcome": "succeeded",
+      "phase": "agent",
+      "started_at": "2026-11-26T14:06:15.925501Z"
+    },
+    {
+      "duration_ms": 9622,
+      "finished_at": "2026-11-26T14:06:59.142406Z",
+      "outcome": "succeeded",
+      "phase": "verify",
+      "started_at": "2026-11-26T14:06:49.519934Z"
+    },
+    {
+      "duration_ms": 1,
+      "finished_at": "2026-11-26T14:06:59.145176Z",
+      "outcome": "succeeded",
+      "phase": "teardown",
+      "started_at": "2026-11-26T14:06:59.143481Z"
+    },
+    {
+      "duration_ms": 2,
+      "finished_at": "2026-11-26T14:06:59.148935Z",
+      "outcome": "succeeded",
+      "phase": "finalize",
+      "started_at": "2026-11-26T14:06:59.146150Z"
+    }
+  ],
+  "evidence": {
+    "lock.json": "2ab0239f69d70aecb85f47fadc9571b11ee4714271acdabecf53836370ba12ae",
+    "result.json": "c40ca91f92ff42628d95a12689da4e4627307eb9475f02115425b4d73817a4c9",
+    "trace.execution.jsonl": "88af2f9788e073f6e9e6dc7eed5a900314e1e4b1f6a29c2479849b85acc70c1d",
+    "trace.transport.jsonl": "e3f8f4246ec9c5b5369cac54572a4c5933a558ec223fe294d9a37f308cf0eed5",
+    "trajectory.json": "56614dacfefe33ec65a4a0a7b3b016d22b9bf70d3841c0a068c34736f0236ce4",
+    "verification.json": "a7d7f51949d5a89961b4c1d008617cba721276204872c8a3d31984141c6a62e1"
+  },
+  "independent_attempts": 1,
+  "task_commit": "62279a89db9bd4ab6d8da88b01ade40a255b7515",
+  "common_setup": {
+    "engine_commit": "bfb75050aca2c54b45c5ab23bae6028a834a468a",
+    "harness": "@qwen-code/qwen-code@0.26.1, official ALE Qwen Code adapter",
+    "harness_npm_integrity": "sha512-4kpIzrlrgmawivim0yCZjr1AP5cfHTanyL7eL1g2R8WYU6QDBq7j9fiAye7REXL4EEXkRIq45D7+ngTw5n3GqQ==",
+    "model_repo": "ggml-org/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+    "model_revision": "ef85c7f175f00be8af4e1de0c14e59ce7e5d0db3",
+    "model_file_sha256": "f6050b4da22869aa3fb9d94bb3314e9fc5a027d4741c1f97761c387d6b2b2335",
+    "model_alias": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+    "main_agent_max_turns": 24,
+    "gateway_max_model_calls": 32,
+    "context_window_tokens": 32768,
+    "cumulative_reported_input_token_limit": 524288,
+    "cumulative_reported_output_token_limit": 24576,
+    "cumulative_reported_total_token_limit": 548864
+  },
+  "source_evidence_sha256": "780f991aee76ba413171f1a2773bf63d6e748c7a2d6562fb38ae65f102baa55b",
+  "verification_metrics": {
+    "ratio": 0.0,
+    "anchor_recorded": 1.0,
+    "episodes": 16.0,
+    "episodes_aborted": 16.0,
+    "strict_mobile_placement_fraction": 0.0,
+    "strict_mobile_placements": 0.0,
+    "joint_acceleration_samples": 0.0,
+    "joint_accel_square_sum": 0.0,
+    "joint_accel_rms_rad_s2": 0.0,
+    "reward_exact": 0.0
+  },
+  "recorded_error": false
+}

@@ -1,0 +1,421 @@
+{
+  "schema": "g1-bullet-transfer-public/1",
+  "registration": "Prospectively fixed 500 consecutive seed IDs, both shapes per seed, both policies per start. No filtering on success.",
+  "recipient": "PyBullet bullet-port-v2, native free-base Unitree G1 body and two Dex3 hands, single orange tabletop box or cylinder and one green pad. Object and pad XY, object yaw, material mass and friction vary.",
+  "corrections": "The earlier PyBullet port had incorrect reconstruction of tangential contact forces for swapped body pairs and per-link friction writes that were redirected to the pelvis when combined with base damping and collision margin updates. V2 corrects both. Both comparison arms use the same fixed corrected port.",
+  "relation_to_pr206": "This standalone physical transfer study uses corrected PyBullet, an independent 1,000-start fixed roster and a standalone scorer. PR #206 runs 16 fresh native MuJoCo starts (eight per shape) and applies a same-tick observation-response reward gate. These results do not supply an ALE normalized score.",
+  "control": {
+    "body_integer_coordinates": 64,
+    "levels_per_coordinate": 32,
+    "hands": [
+      "left closure",
+      "right closure"
+    ],
+    "physics_control_hz": 50,
+    "action_rows_per_chunk": 5,
+    "horizon_rows": 750,
+    "low_level": "Both recipients run the released original SONIC decoder on their own live 930-value proprioceptive/action history each control tick. Native motors, contact dynamics and termination run in corrected Bullet.",
+    "direct_V4": "The frozen V4 actor reads three current native Bullet-state RGB views at 128x96 (rendered through the common MuJoCo renderer), current robot proprioception and previous applied hands. It predicts five integer body-code and two-hand rows every five ticks. No agent-local rollout.",
+    "optical_clock": "An external actor estimates object XY, pad XY and square yaw from three calibrated 320x240 recipient reset views; prior nominal mass, friction and standard standing pose initialize its local approximate MuJoCo. The same V4 actor uses live local RGB/proprioception to generate a full 750-tick native body/hand plan, including rows beyond any local success. The recipient takes time-matched five-row blocks until its own first terminal; the final block uses rows 745\u2013749 when the horizon is reached. After reset no new recipient observation changes the planned body or finger commands. No donor seed, privileged pose or prerecorded other-start tape is supplied.",
+    "camera_names": [
+      "overview",
+      "hand",
+      "side"
+    ]
+  },
+  "scoring": {
+    "lift": "At least 4 cm above initial height for 40 ms, with opposing contacts, hands carrying at least half the weight, other support at most 5%, upright robot.",
+    "placement": "After a qualifying lift, fully contained on pad, vertical-axis magnitude at least 0.95, height error below 9 mm, speed below 0.08 m/s and angular speed below 1.2 rad/s for 250 ms. The pad carries at least half the weight, other support at most 5%, hands clear and robot upright.",
+    "ALE_feedback": "A submitted controller must change its first 64 body codes in response to altered observations at the same tick with duplicate-query changes controlled. The clock actor emits the same indexed planned body and finger row for any current post-reset observation. The low-level proprioceptive decoder feedback remains live. This physical panel did not run official ALE probes and earns no claimed ALE reward.",
+    "uncertainty": "Per-arm 95% Wilson intervals use starts. Paired 95% percentile intervals use 10,000 bootstrap resamples of seed IDs, retaining both shapes."
+  },
+  "seeds": [
+    738000,
+    738499
+  ],
+  "starts_per_shape": 500,
+  "paired_starts": 1000,
+  "recipient_episodes": 2000,
+  "outcomes": {
+    "pooled": {
+      "direct_V4": {
+        "placement": {
+          "count": 255,
+          "n": 1000,
+          "rate": 0.255,
+          "wilson_ci95": [
+            0.2289585370509225,
+            0.2829165746069995
+          ]
+        },
+        "lift": {
+          "count": 424,
+          "n": 1000,
+          "rate": 0.424,
+          "wilson_ci95": [
+            0.3937184466169774,
+            0.4548632206728269
+          ]
+        },
+        "fall": {
+          "count": 0,
+          "n": 1000,
+          "rate": 0.0,
+          "wilson_ci95": [
+            0.0,
+            0.0038267584855551234
+          ]
+        }
+      },
+      "optical_clock": {
+        "placement": {
+          "count": 556,
+          "n": 1000,
+          "rate": 0.556,
+          "wilson_ci95": [
+            0.5250491625099077,
+            0.5865222405397102
+          ]
+        },
+        "lift": {
+          "count": 895,
+          "n": 1000,
+          "rate": 0.895,
+          "wilson_ci95": [
+            0.8744646434108284,
+            0.9125122173855832
+          ]
+        },
+        "fall": {
+          "count": 0,
+          "n": 1000,
+          "rate": 0.0,
+          "wilson_ci95": [
+            0.0,
+            0.0038267584855551234
+          ]
+        }
+      },
+      "paired": {
+        "placement": {
+          "contingency": {
+            "both_false": 349,
+            "both_true": 160,
+            "first_false_second_true": 396,
+            "first_true_second_false": 95
+          },
+          "gains": 396,
+          "losses": 95,
+          "rate_delta": 0.301,
+          "paired_bootstrap_ci95": [
+            0.262,
+            0.34
+          ]
+        },
+        "lift": {
+          "contingency": {
+            "both_false": 53,
+            "both_true": 372,
+            "first_false_second_true": 523,
+            "first_true_second_false": 52
+          },
+          "gains": 523,
+          "losses": 52,
+          "rate_delta": 0.471,
+          "paired_bootstrap_ci95": [
+            0.435,
+            0.506
+          ]
+        },
+        "fall": {
+          "contingency": {
+            "both_false": 1000,
+            "both_true": 0,
+            "first_false_second_true": 0,
+            "first_true_second_false": 0
+          },
+          "gains": 0,
+          "losses": 0,
+          "rate_delta": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "local_plan_placements": 928,
+      "recipient_only_placements": 25,
+      "local_only_placements": 397,
+      "mean_episode_wall_s": {
+        "original": 12.792321738293394,
+        "clock": 18.10048824201338
+      },
+      "mean_agent_local_plan_s": 5.393102624297142
+    },
+    "box": {
+      "direct_V4": {
+        "placement": {
+          "count": 42,
+          "n": 500,
+          "rate": 0.084,
+          "wilson_ci95": [
+            0.06274413680383038,
+            0.1115993144601811
+          ]
+        },
+        "lift": {
+          "count": 99,
+          "n": 500,
+          "rate": 0.198,
+          "wilson_ci95": [
+            0.1654311225691935,
+            0.2351739790695841
+          ]
+        },
+        "fall": {
+          "count": 0,
+          "n": 500,
+          "rate": 0.0,
+          "wilson_ci95": [
+            0.0,
+            0.007624340461552241
+          ]
+        }
+      },
+      "optical_clock": {
+        "placement": {
+          "count": 211,
+          "n": 500,
+          "rate": 0.422,
+          "wilson_ci95": [
+            0.37946637498097113,
+            0.4657230221310311
+          ]
+        },
+        "lift": {
+          "count": 445,
+          "n": 500,
+          "rate": 0.89,
+          "wilson_ci95": [
+            0.8595444295965924,
+            0.9145085848433969
+          ]
+        },
+        "fall": {
+          "count": 0,
+          "n": 500,
+          "rate": 0.0,
+          "wilson_ci95": [
+            0.0,
+            0.007624340461552241
+          ]
+        }
+      },
+      "paired": {
+        "placement": {
+          "contingency": {
+            "both_false": 265,
+            "both_true": 18,
+            "first_false_second_true": 193,
+            "first_true_second_false": 24
+          },
+          "gains": 193,
+          "losses": 24,
+          "rate_delta": 0.338,
+          "paired_bootstrap_ci95": [
+            0.288,
+            0.386
+          ]
+        },
+        "lift": {
+          "contingency": {
+            "both_false": 40,
+            "both_true": 84,
+            "first_false_second_true": 361,
+            "first_true_second_false": 15
+          },
+          "gains": 361,
+          "losses": 15,
+          "rate_delta": 0.692,
+          "paired_bootstrap_ci95": [
+            0.646,
+            0.736
+          ]
+        },
+        "fall": {
+          "contingency": {
+            "both_false": 500,
+            "both_true": 0,
+            "first_false_second_true": 0,
+            "first_true_second_false": 0
+          },
+          "gains": 0,
+          "losses": 0,
+          "rate_delta": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "local_plan_placements": 461,
+      "recipient_only_placements": 9,
+      "local_only_placements": 259,
+      "mean_episode_wall_s": {
+        "original": 13.545642714992166,
+        "clock": 18.763053936861457
+      },
+      "mean_agent_local_plan_s": 5.461867470428348
+    },
+    "cylinder": {
+      "direct_V4": {
+        "placement": {
+          "count": 213,
+          "n": 500,
+          "rate": 0.426,
+          "wilson_ci95": [
+            0.38338257836675194,
+            0.46974582402155785
+          ]
+        },
+        "lift": {
+          "count": 325,
+          "n": 500,
+          "rate": 0.65,
+          "wilson_ci95": [
+            0.6071928710061952,
+            0.6905198268553391
+          ]
+        },
+        "fall": {
+          "count": 0,
+          "n": 500,
+          "rate": 0.0,
+          "wilson_ci95": [
+            0.0,
+            0.007624340461552241
+          ]
+        }
+      },
+      "optical_clock": {
+        "placement": {
+          "count": 345,
+          "n": 500,
+          "rate": 0.69,
+          "wilson_ci95": [
+            0.6481416618981787,
+            0.7289610887264314
+          ]
+        },
+        "lift": {
+          "count": 450,
+          "n": 500,
+          "rate": 0.9,
+          "wilson_ci95": [
+            0.8705780903680599,
+            0.9233224372626984
+          ]
+        },
+        "fall": {
+          "count": 0,
+          "n": 500,
+          "rate": 0.0,
+          "wilson_ci95": [
+            0.0,
+            0.007624340461552241
+          ]
+        }
+      },
+      "paired": {
+        "placement": {
+          "contingency": {
+            "both_false": 84,
+            "both_true": 142,
+            "first_false_second_true": 203,
+            "first_true_second_false": 71
+          },
+          "gains": 203,
+          "losses": 71,
+          "rate_delta": 0.264,
+          "paired_bootstrap_ci95": [
+            0.204,
+            0.324
+          ]
+        },
+        "lift": {
+          "contingency": {
+            "both_false": 13,
+            "both_true": 288,
+            "first_false_second_true": 162,
+            "first_true_second_false": 37
+          },
+          "gains": 162,
+          "losses": 37,
+          "rate_delta": 0.25,
+          "paired_bootstrap_ci95": [
+            0.198,
+            0.302
+          ]
+        },
+        "fall": {
+          "contingency": {
+            "both_false": 500,
+            "both_true": 0,
+            "first_false_second_true": 0,
+            "first_true_second_false": 0
+          },
+          "gains": 0,
+          "losses": 0,
+          "rate_delta": 0.0,
+          "paired_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "local_plan_placements": 467,
+      "recipient_only_placements": 16,
+      "local_only_placements": 138,
+      "mean_episode_wall_s": {
+        "original": 12.039000761594624,
+        "clock": 17.437922547165304
+      },
+      "mean_agent_local_plan_s": 5.324337778165937
+    }
+  },
+  "audit": {
+    "exact_recipient_episodes": 2000,
+    "matched_resets": 1000,
+    "exact_recipient_states_including_reset": 1353620,
+    "exact_decoded_target_rows": 1351620,
+    "exact_consumed_clock_rows": 653082,
+    "attempted_local_plans": 1000,
+    "exact_regenerated_local_plans": 999,
+    "original_complete_shards": 9,
+    "full_optical_certificate": false,
+    "uniform_additional_fresh_interpreter_check": [
+      99,
+      100
+    ],
+    "sole_exception": {
+      "shape": "cylinder",
+      "seed": 738409,
+      "first_differing_row_zero_based": {
+        "hand": 440,
+        "object_and_wrist": 441,
+        "body_codes": 487
+      },
+      "full_local_first_terminal_record_identical": false,
+      "cause": "Unresolved. Both independent regeneration passes diverged here. The original recipient replay remains exact."
+    }
+  },
+  "source": {
+    "protocol_sha256": "447c19f75c4e794446545968193141a45c73b9ca3c2ea02362459406e817371a",
+    "source_revision": "5e035820b7ba00c1084cc7bc009dbdde2574a6f8",
+    "frozen_V4_actor_sha256": "2f4ada4c14f540ee1f99b0e875aa63ade0adbb87d63d710d5b15e4e8300d1c55",
+    "original_SONIC_decoder_sha256": "c7241a123eaa36b5d64bad19540efde93cac1ad443bd4572fd12ca99898118ed",
+    "result_revision": "137fc88f747966353b3821a88b09d28c1f2e2526",
+    "qualified_results_sha256": "8abd7c7b64a04b8df1ce6bdd015705772934083c5648b5a5f09c36c085719cd4",
+    "optical_cases_sha256": "426a0407d50879a0585928cc4150567e2eefc5726f8cae3ad34470dd4fa9c7a7"
+  }
+}

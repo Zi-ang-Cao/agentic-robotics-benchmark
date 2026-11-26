@@ -1,0 +1,28 @@
+{
+  "scope": "Disposable local integration of all four task branches with upstream main",
+  "upstream_main": "abb2c8e8cb129ee00d507abc680d2cfd1b05e12c",
+  "task_heads": {
+    "g1_sonic_locomotion": "e48e2384089c8a46d4414bbfd45f7c905ba20616",
+    "g1_sonic_command_sequence": "cf25b2eea60a023c6ef4b8eb39a8e6f7b655cb39",
+    "g1_sonic_token_space_control": "7e4d005aee30a97aba26433fe067f7a88c20d3f5",
+    "g1_sonic_mobile_pick_place": "62279a89db9bd4ab6d8da88b01ade40a255b7515"
+  },
+  "integration_commit": "2fe9044d405e790831cec12184be74b03fab126e",
+  "integration_tree": "37a4bbfd4d98009d20d1b520d5df7ca58a4d8041",
+  "public_task_count": 72,
+  "existing_active_registry_identities_unchanged": 67,
+  "registry_export_sha256": "efad6fdb3b0ec4d6988a21a4f094e4374190f1600cab67fd91c5f140fa2cbfc9",
+  "checks": {
+    "display_cards": "task cards: 0 error(s), 0 warning(s); 72 card(s) for 72 task(s)",
+    "task_assets": "task assets: 68 asset list(s) checked against task-assets.toml; 0 problem(s)",
+    "domain_lint": "ok",
+    "pytest": {
+      "last_line": "1045 passed, 40 skipped, 242 subtests passed in 183.04s (0:03:03)",
+      "log_sha256": "fdcdb143ad58be6d5adc4a45f4fffb60bc7ec95b04bc7c33769f12c049e9d9d2"
+    },
+    "grader_selftest": {
+      "last_line": "all checks passed",
+      "log_sha256": "a4db565936d83de967bb7ee3fb772ac7b9f7c3223cc178eb9ccb272a57409291"
+    }
+  }
+}

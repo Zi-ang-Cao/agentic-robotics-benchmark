@@ -1,0 +1,30 @@
+{
+  "study": "One preregistered local Qwen Code attempt on the frozen mobile task",
+  "task_source": "62279a89db9bd4ab6d8da88b01ade40a255b7515",
+  "official_episode_id": "7c90d414",
+  "verification_sha256": "a7d7f51949d5a89961b4c1d008617cba721276204872c8a3d31984141c6a62e1",
+  "trajectory_sha256": "56614dacfefe33ec65a4a0a7b3b016d22b9bf70d3841c0a068c34736f0236ce4",
+  "verifier_diagnostic": "scoring 0: solver closed its stdout",
+  "aborted_allocations": 16,
+  "official_applied_native_rows": null,
+  "joint_acceleration_samples": 0,
+  "written_files": {
+    "controller.py": {
+      "bytes": 9842,
+      "sha256": "70bc840efcf7d72952bbfe953e54a5f8714ba6911a2dc52440dbd8b4fe0c2aaf"
+    },
+    "run.sh": {
+      "bytes": 53,
+      "sha256": "49dfc7cb56aafa7feca61a40af3a465f9f1a2439b955bf59ef6a97da634f3929"
+    }
+  },
+  "only_later_shell_action": "chmod +x run.sh",
+  "offline_parse": {
+    "type": "SyntaxError",
+    "line": 89,
+    "column": 51,
+    "message": "invalid syntax. Perhaps you forgot a comma?",
+    "submitted_line": "adjusted_codes[i*6 + 4] = min(31, max(0 adjusted_codes[i*6 + 4] + 2))  # Right knee"
+  },
+  "interpretation": "The recorded Python entry point fails parsing before its READY output. Physical motion and terminal events are unavailable."
+}
