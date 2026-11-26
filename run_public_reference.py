@@ -1,6 +1,7 @@
 """Run a SONIC public practice controller in an offline Docker container."""
 import argparse
 from pathlib import Path
+import shutil
 import subprocess
 import sys
 
@@ -55,6 +56,8 @@ def main():
         parser.error(f"Missing {task_dir}. Use a checkout containing {slug}.")
     if args.submission and not (args.submission / "run.sh").is_file():
         parser.error("--submission must contain run.sh")
+    if not shutil.which("docker"):
+        parser.error("Install Docker on the Linux host or use the native reproduction guide.")
 
     image = args.image or "sonic-review-" + slug.replace("_", "-")
     if args.image is None:
@@ -92,4 +95,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except subprocess.CalledProcessError as exc:
+        sys.exit(exc.returncode)
+    except ValueError as exc:
+        sys.exit(str(exc))

@@ -1,0 +1,140 @@
+{
+  "task": "grounded-intelligence-initiative/g1_sonic_token_space_control",
+  "episode_id": "grounded-intelligence-initiative.g1_sonic_token_space_control-db3398b2",
+  "preregistration_sha256": "f313f68b491bfc75b2e020c22146a13d00bed79eef4a36171aabef458b849b74",
+  "config_sha256": "1a071dfefec9f723187af1338367591635024d22b1353c2d452503facb24f4c1",
+  "status": "agent_error",
+  "started_utc": "2026-11-26T11:50:44.217444Z",
+  "finished_utc": "2026-11-26T12:45:47.047395Z",
+  "actual_model_calls": 10,
+  "by_disposition": {
+    "forwarded": 10
+  },
+  "usage_reported_by_gateway": {
+    "input_tokens": 205522,
+    "output_tokens": 8990,
+    "cache_read_tokens": 167487,
+    "cache_write_tokens": 0
+  },
+  "submission_trajectory_steps": {
+    "user": 1,
+    "agent": 8,
+    "system": 2
+  },
+  "trajectory_tool_calls": {
+    "read_file": 2,
+    "run_shell_command": 3,
+    "write_file": 2,
+    "edit": 1
+  },
+  "verification_reward": 0.0,
+  "phases": [
+    {
+      "duration_ms": 3397,
+      "finished_at": "2026-11-26T11:50:47.615336Z",
+      "outcome": "succeeded",
+      "phase": "provision",
+      "started_at": "2026-11-26T11:50:44.217482Z"
+    },
+    {
+      "duration_ms": 83,
+      "finished_at": "2026-11-26T11:50:47.700125Z",
+      "outcome": "succeeded",
+      "phase": "setup",
+      "started_at": "2026-11-26T11:50:47.616380Z"
+    },
+    {
+      "duration_ms": 107672,
+      "finished_at": "2026-11-26T11:52:38.605902Z",
+      "outcome": "failed",
+      "phase": "agent",
+      "started_at": "2026-11-26T11:50:50.933140Z"
+    },
+    {
+      "duration_ms": 3188363,
+      "finished_at": "2026-11-26T12:45:47.039789Z",
+      "outcome": "succeeded",
+      "phase": "verify",
+      "started_at": "2026-11-26T11:52:38.676289Z"
+    },
+    {
+      "duration_ms": 1,
+      "finished_at": "2026-11-26T12:45:47.042651Z",
+      "outcome": "succeeded",
+      "phase": "teardown",
+      "started_at": "2026-11-26T12:45:47.040941Z"
+    },
+    {
+      "duration_ms": 2,
+      "finished_at": "2026-11-26T12:45:47.047395Z",
+      "outcome": "succeeded",
+      "phase": "finalize",
+      "started_at": "2026-11-26T12:45:47.044469Z"
+    }
+  ],
+  "evidence": {
+    "lock.json": "2aadf47ac9d7a60feff3433a26fc19879ab9e2e84d2f05319f8515c858ca1217",
+    "result.json": "cfd6b90696903624a13eb798502d16d4f1853947d0de2a846e777f3318e35610",
+    "trace.execution.jsonl": "3068d53ddbc50246147b7809591223bdba51c4b1e33961a154946cdd99a0688f",
+    "trace.transport.jsonl": "d789c713fd03b328156b6268cae998fde3228e723003244bd35fb1c3425b9cb6",
+    "trajectory.json": "1dea712c80d4e5c5f41b5ceafdba602660bfcc3554faacbdfe93d279a59f71d6",
+    "verification.json": "750d0f4e75bf9c69195ac4a0d92a31267c901519040be3bc0ba6f43c82f88e90"
+  },
+  "independent_attempts": 1,
+  "task_commit": "e0d4b307726bbdf3397790ce4728f921fdf5dda0",
+  "common_setup": {
+    "engine_commit": "bfb75050aca2c54b45c5ab23bae6028a834a468a",
+    "harness": "@qwen-code/qwen-code@0.26.1, official ALE Qwen Code adapter",
+    "harness_npm_integrity": "sha512-4kpIzrlrgmawivim0yCZjr1AP5cfHTanyL7eL1g2R8WYU6QDBq7j9fiAye7REXL4EEXkRIq45D7+ngTw5n3GqQ==",
+    "model_repo": "ggml-org/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+    "model_revision": "ef85c7f175f00be8af4e1de0c14e59ce7e5d0db3",
+    "model_file_sha256": "f6050b4da22869aa3fb9d94bb3314e9fc5a027d4741c1f97761c387d6b2b2335",
+    "model_alias": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+    "main_agent_max_turns": 24,
+    "gateway_max_model_calls": 32,
+    "context_window_tokens": 32768,
+    "cumulative_reported_input_token_limit": 524288,
+    "cumulative_reported_output_token_limit": 24576,
+    "cumulative_reported_total_token_limit": 548864
+  },
+  "source_evidence_sha256": "e2c2f59c2db96189bc2b4008edcb1fd95c90f49c32f55a26a9e440c53401231b",
+  "verification_metrics": {
+    "ratio": 0.0,
+    "anchor_recorded": 1.0,
+    "strict_placement_fraction": 0.0,
+    "episodes": 16.0,
+    "placed": 0.0,
+    "lifted": 0.0,
+    "falls": 0.0,
+    "episodes_aborted": 0.0,
+    "time_limits": 16.0,
+    "applied_native_rows": 12000.0,
+    "probes_total": 128.0,
+    "probes_passed": 0.0,
+    "duplicate_probes": 16.0,
+    "duplicate_changes": 0.0,
+    "missed_reached_probe_opportunities": 0.0,
+    "probe_change_fraction": 0.0,
+    "duplicate_change_fraction": 0.0,
+    "match_lock_ok": 0.0,
+    "simulated_seconds": 240.0,
+    "executed_fsq_scalars": 768000.0,
+    "body_code_comparisons": 766976.0,
+    "body_code_changes": 528.0,
+    "joint_acceleration_samples": 11936.0,
+    "body_code_churn_fraction": 0.0006884178905206943,
+    "joint_acceleration_rms_rad_s2": 4.647834459551692,
+    "mean_max_lift_m": 0.0,
+    "mean_goal_error_xy_m": 0.1735467216491575,
+    "mean_release_hold_s": 0.0,
+    "box_episodes": 8.0,
+    "box_placed": 0.0,
+    "cylinder_episodes": 8.0,
+    "cylinder_placed": 0.0,
+    "numerics_ok": 1.0,
+    "offline_launcher_ok": 1.0,
+    "agent_account_cleared": 1.0,
+    "reward_exact": 0.0
+  },
+  "recorded_error": true
+}

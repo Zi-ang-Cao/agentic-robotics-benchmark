@@ -1,0 +1,94 @@
+{
+  "study": "One repair attempt per model, each starting from its own original two-file submission.",
+  "original_public_task_commit": "7ba48b1d212355185ce2076f28a97b30390657d2",
+  "repair_public_task_base": "e48e2384089c8a46d4414bbfd45f7c905ba20616",
+  "protocol_sha256": "920c40d74800286209709f9a8253f23075689d69c3411ed209dd755de69da86f",
+  "source_summary_sha256": "c17b12781301f5f9b4680a575539f45f4105856c0079cb6e14879f2d328e1992",
+  "runs": [
+    {
+      "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+      "weights_sha256": "f6050b4da22869aa3fb9d94bb3314e9fc5a027d4741c1f97761c387d6b2b2335",
+      "variant_tree_sha256": "62a47d9e2d711549f343cb40a05ef9a901f19f77e850cf81c50cb44250dec6fe",
+      "original_controller_trajectory_sha256": "d9532108cdc466577b0f7e40ab5b48bee6a8ebd1e7687ea4f1a40afbccc496b4",
+      "submission_files": {
+        "controller.py": {
+          "before_sha256": "b60c215e2f95c8607ce04658e746577d7f91723249e3d89d3d6ab17749fe8378",
+          "after_sha256": "6fe72280eda0322d67b3990f9339730ee6c658d061e34bf5588d563ca0fa2ee6"
+        },
+        "run.sh": {
+          "before_sha256": "49dfc7cb56aafa7feca61a40af3a465f9f1a2439b955bf59ef6a97da634f3929",
+          "after_sha256": "49dfc7cb56aafa7feca61a40af3a465f9f1a2439b955bf59ef6a97da634f3929"
+        }
+      },
+      "changed_files": [
+        "controller.py"
+      ],
+      "coding_phase": "agent_error",
+      "repair_practice_invocations": 0,
+      "gateway_calls": 11,
+      "gateway_uncharged_replays": 4,
+      "gateway_usage": {
+        "input_tokens": 226221,
+        "output_tokens": 10102,
+        "cache_read_tokens": 186811,
+        "cache_write_tokens": 0
+      },
+      "reward": 0.0,
+      "physical": {
+        "episodes": 16,
+        "successes": 0,
+        "episodes_aborted": 0,
+        "falls": 0,
+        "time_limits": 16,
+        "applied_native_rows": 20000,
+        "fsq_scalar_codes": 1280000
+      },
+      "straight_stops": 0,
+      "pivot_stops": 0,
+      "native_verification_sha256": "fde7220fb0bea1949ec39ea59840f21b0805aec121d373cdbc2ca3ef830dba3e",
+      "captured_submission_manifest_sha256": "b960b88e064ef94eba96cf96e756dd1b155a9e5aa7f523e54ee32d56275b5b5b"
+    },
+    {
+      "model": "gpt-oss-20b-MXFP4",
+      "weights_sha256": "27cd6c432c7672cb812a92f611cf3ba7bbc35928262bb1e1253ff4ee6ae35901",
+      "variant_tree_sha256": "44d6b85cd13658bf57553b7e34c4b987a7fcb8a2dc17bd7ec808857d94b39ee6",
+      "original_controller_trajectory_sha256": "c6fc81d1e258e4433d4e53a54b620af329bb84f2c0ee4d358bca39ea69bb9602",
+      "submission_files": {
+        "controller.py": {
+          "before_sha256": "f12712433d7200044f7b687fd1bf9314af638d25cbd0b3599cba8212b43fc5e1",
+          "after_sha256": "f12712433d7200044f7b687fd1bf9314af638d25cbd0b3599cba8212b43fc5e1"
+        },
+        "run.sh": {
+          "before_sha256": "9eb1f9533cda001f5f991f34ec217e1913e69caf41db6e901e71280ef241c2b1",
+          "after_sha256": "9eb1f9533cda001f5f991f34ec217e1913e69caf41db6e901e71280ef241c2b1"
+        }
+      },
+      "changed_files": [],
+      "coding_phase": "completed",
+      "repair_practice_invocations": 0,
+      "gateway_calls": 3,
+      "gateway_uncharged_replays": 0,
+      "gateway_usage": {
+        "input_tokens": 40186,
+        "output_tokens": 2913,
+        "cache_read_tokens": 31508,
+        "cache_write_tokens": 0
+      },
+      "reward": 0.0,
+      "physical": {
+        "episodes": 16,
+        "successes": 0,
+        "episodes_aborted": 16,
+        "falls": 0,
+        "time_limits": 0,
+        "applied_native_rows": 0,
+        "fsq_scalar_codes": 0
+      },
+      "straight_stops": 0,
+      "pivot_stops": 0,
+      "native_verification_sha256": "9ae0184ed18dd286ff6c7b5580f10f0b2b42aeef77991be29da00f0bf8db0a63",
+      "captured_submission_manifest_sha256": "ee83f820f443e4ce722c476bf6c434aaf9f8fff01d83f63030ac174d866b71be"
+    }
+  ],
+  "scope": "Each program faced a fresh independent 8-straight/8-pivot panel. Both repair episodes made zero public practice calls. These runs leave the effect of using practice unmeasured."
+}
