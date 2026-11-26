@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>G1 in SONIC token space · Benchmark reviews</title>
+<style>
+:root{color-scheme:light;--paper:#f7f5ee;--ink:#1c2926;--muted:#526159;--forest:#174a3b;--line:#c8cec3;--mint:#dce8d6;--sans:"Instrument Sans","Noto Sans CJK SC",system-ui,sans-serif;--serif:"STIX Two Text",Georgia,"Noto Serif CJK SC",serif}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.55 var(--sans)}main,header,footer{max-width:78rem;margin:auto;padding-inline:clamp(1.15rem,4vw,4.5rem)}
+header{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:1.15rem;border-bottom:1px solid var(--line)}header strong{color:var(--forest);font-size:.92rem;letter-spacing:.035em}button{cursor:pointer;background:transparent;border:1px solid var(--line);color:var(--ink);font:inherit;padding:.33rem .6rem}button[aria-pressed=true]{background:var(--forest);color:white;border-color:var(--forest)}a:focus-visible,button:focus-visible{outline:3px solid #a94714;outline-offset:4px}
+.intro{padding:3.8rem 0 2rem;max-width:54rem}h1,h2,p{margin:0}h1{font:clamp(2.7rem,6.8vw,5rem)/1.05 var(--serif);letter-spacing:-.035em}.intro p{margin-top:1.2rem;max-width:44rem;color:var(--muted);font-size:1.13rem}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.card{display:flex;flex-direction:column;gap:1rem;border:1px solid var(--line);background:#fffdf7;padding:1rem;color:var(--ink);text-decoration:none}.card:hover{border-color:var(--forest)}.card figure{margin:0;background:var(--mint);height:10.8rem;display:grid;place-items:center;overflow:hidden}.card img{display:block;width:100%;height:100%;object-fit:cover}.card.walk img{object-fit:contain;background:#f0f1ea}.card h2{font:1.75rem/1.15 var(--serif)}.card p{color:var(--muted);font-size:.96rem}.read{margin-top:auto;color:var(--forest);font-weight:650;text-decoration:underline;text-underline-offset:.2em}
+.measure{padding:2.6rem 0;max-width:62rem}.measure h2{font:1.8rem var(--serif);margin-bottom:.5rem}.measure p{color:var(--muted)}footer{padding-block:1.25rem;border-top:1px solid var(--line);color:var(--muted)}footer a{color:var(--forest)}html[lang=en] [lang=zh-CN],html[lang=zh-CN] [lang=en]{display:none}
+@media(max-width:780px){.cards{grid-template-columns:1fr}.card{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);gap:.6rem 1rem}.card figure{grid-row:span 3;height:100%;min-height:9rem}.card h2{font-size:1.55rem}.intro{padding-top:2.4rem}}@media(max-width:420px){.card{display:flex}.card figure{height:9rem}}
+</style>
+</head>
+<body>
+<header><strong>G1 / SONIC V1</strong><div role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">English</button><button type="button" data-lang="zh-CN" aria-pressed="false">中文</button></div></header>
+<main>
+<div class="intro"><h1><span lang="en">G1 in SONIC token space</span><span lang="zh-CN">用 SONIC 运动码控制 G1</span></h1>
+<p lang="en">What can an agent make a humanoid do with 64 integers every 20 milliseconds? These ALE tasks evaluate the controller a coding agent leaves behind. Explore the simulated motion, inspect how each outcome is scored, and replay the public references.</p>
+<p lang="zh-CN">每 20 毫秒输出 64 个整数，能让人形机器人完成哪些动作？这些 ALE 任务评测编程智能体提交的控制器。你可以查看仿真轨迹、了解评分方式，并重放公开参考策略。</p></div>
+<div class="cards">
+<a class="card" href="g1-sonic-token-control/"><figure><img src="review-images/tabletop.webp" alt=""></figure><h2><span lang="en">Tabletop pick and place</span><span lang="zh-CN">桌前抓取与放置</span></h2><p lang="en">Find a box or cylinder in three camera views, establish a load-bearing grasp, and release it stably on the pad. Compare a visual planner with direct token prediction.</p><p lang="zh-CN">从三个相机视角定位箱子或圆柱，建立承重抓握，并把物体稳定放在目标垫上。比较视觉规划和直接预测运动码两种控制方法。</p><span class="read"><span lang="en">Open the manipulation analysis</span><span lang="zh-CN">查看抓放分析</span> ↗</span></a>
+<a class="card walk" href="g1-sonic-motion/"><figure><img src="review-images/walk.webp" alt=""></figure><h2><span lang="en">Walk, turn and stop</span><span lang="zh-CN">行走、转向与停稳</span></h2><p lang="en">Walk five meters along a line or pivot right about the starting point. Inspect displacement, signed heading, braking and foot loading at the measured stop.</p><p lang="zh-CN">沿直线行走五米，或围绕起点向右转。观察停稳时的位移、有符号航向、制动效果与脚底受力变化。</p><span class="read"><span lang="en">Explore the motion traces</span><span lang="zh-CN">查看运动轨迹</span> ↗</span></a>
+<a class="card" href="g1-sonic-motion/#mobile"><figure><img src="review-images/mobile.webp" alt=""></figure><h2><span lang="en">Walk to the table and place</span><span lang="zh-CN">走到桌前再抓放</span></h2><p lang="en">Start about one meter from the table. Walk up, dock, lift and release in a single continuous simulation. Follow the contact sequence in a native replay.</p><p lang="zh-CN">从距桌子约一米处出发，在同一段仿真中走到桌前、停稳、抓起物体并松手。通过原生重放查看各阶段的接触事件。</p><span class="read"><span lang="en">Watch the mobile rollout</span><span lang="zh-CN">观看移动抓放回放</span> ↗</span></a>
+<a class="card walk" href="g1-sonic-motion/#delayed"><figure><img src="review-images/sequence.webp" alt=""></figure><h2><span lang="en">Follow the next command</span><span lang="zh-CN">停稳后接收下一条指令</span></h2><p lang="en">At the same physical stop, the controller can receive a left or right turn. The next walking distance appears only after the pivot. Compare two branches that start with identical motion.</p><p lang="zh-CN">在同一位置停稳后，控制器才会收到左转或右转指令。完成转向并停稳后，它才会获知下一段的行走距离。对比起步动作完全相同、随后分叉的两条轨迹。</p><span class="read"><span lang="en">Compare the revealed commands</span><span lang="zh-CN">比较指令揭示后的两条轨迹</span> ↗</span></a>
+</div>
+<section class="measure"><h2><span lang="en">Reading the scores</span><span lang="zh-CN">如何读懂评分</span></h2><p lang="en">Read the raw successes out of all starts alongside the normalized ALE reward. The verifier checks whether actions respond to changed observations. Simulated seconds, applied SONIC coordinates, code changes and measured motion smoothness describe how the controller moved. Model token usage comes from the coding agent’s ALE transport trace.</p><p lang="zh-CN">同时查看全部开局中的原始成功数和 ALE 归一化奖励。评分器会改变观测，检查控制器的动作是否随之调整。仿真秒数、实际执行的 SONIC 码数量、编码变化与运动平滑度反映控制器如何完成动作。编程智能体的模型 token 用量来自 ALE 的调用记录。</p></section>
+</main>
+<footer><a href="https://github.com/Grounded-Intelligence-Initiative/agentic-robotics-benchmark"><span lang="en">Agentic Robotics Benchmark repository</span><span lang="zh-CN">Agentic Robotics Benchmark 代码库</span></a></footer>
+<script>
+const buttons=[...document.querySelectorAll('[data-lang]')];
+function setLanguage(lang){document.documentElement.lang=lang;for(const button of buttons)button.setAttribute('aria-pressed',String(button.dataset.lang===lang));document.title=lang==='en'?'G1 in SONIC token space · Benchmark reviews':'用 SONIC 运动码控制 G1 · 基准评测';}
+for(const button of buttons)button.addEventListener('click',()=>setLanguage(button.dataset.lang));
+</script>
+</body></html>
