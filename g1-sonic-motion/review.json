@@ -1,0 +1,68 @@
+{
+  "format": "single standalone bilingual HTML with embedded MP4, image and data",
+  "public_site_path": "/g1-sonic-motion/",
+  "html_bytes": 7014694,
+  "html_sha256": "5b7c54a0ff0ece5227883c5bf99ad077f910eea5beeca5d3ca1d8850696f77bf",
+  "data_sha256": {
+    "walk_data.json": "affd602acf755e78c9e635178f13eacfa092575fe02c933ef881d54e2c104d8a",
+    "mobile_data.json": "3b302abd3209f4e511a3debf5ff088144e1a7d4af730c826648d998cadd8d24b",
+    "composed_data.json": "c7365600e9e056b7ab1e6cce8866bdd76acfe2131a2cb0550a1be00ac21d5910",
+    "delayed_data.json": "08b5a4d6a571c2ed0de12a7ac449d19e0cd7633df87ab550ce84aa5c6737e8e7",
+    "official.json": "217d370b3fd8f985a66b4b9bfa6f4399b3d1d79939eaff08847df56a9554c737",
+    "agent_runs.json": "ec3f71b736ea971512625cb96f488e6bc02916a5af92d69f40e23ddba1c0889c",
+    "five_metre.json": "0faaa0d4dbb593c9068a656fd841bf0317b735dd104570961bd4a012978fad77",
+    "delayed_video.json": "10a69dcb3ed347bf9dc770678d62cfb70662010b6a328022434e160c16f6c79f",
+    "pivot_video.json": "fae77a4ec5869b11c0e98465fdf71957a64913765297b62527605f5d7e88bea9",
+    "token-study-methods.csv": "a3caf3116b4fdf22e8b9af8f5ec43e3f58a5510aaf641abd75c1e45bb5bc4f79",
+    "token-study-summary.json": "084bb976fbf93e900df41613f824daa1c09ba3db452a650a620b62f354d72fa1"
+  },
+  "browser_viewports": [
+    [
+      1360,
+      940
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "checked_languages": [
+    "en",
+    "zh-CN"
+  ],
+  "videos": {
+    "mobile": [
+      1248,
+      640,
+      15.2
+    ],
+    "delayed": [
+      1200,
+      688,
+      25.5
+    ],
+    "pivot": [
+      880,
+      480,
+      3.88
+    ],
+    "five_metre": [
+      1232,
+      640,
+      26.8
+    ]
+  },
+  "completed_checks": [
+    "route and contact plots",
+    "paired delayed-command figure",
+    "present validation rows",
+    "time slider",
+    "play and pause",
+    "English and Chinese toggle",
+    "no horizontal viewport overflow",
+    "all four inline H264 streams",
+    "English and Chinese timed captions on new footage",
+    "CSV/JSON downloads byte-identical to native study",
+    "offline HTML download"
+  ]
+}

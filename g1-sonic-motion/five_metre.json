@@ -1,0 +1,110 @@
+{
+  "manifest_sha256": "0dae82f48232c05664f57dcc90f2e6793e79277f4fb18e3a10669dcff44e93b5",
+  "summary_sha256": "c7eaf7d8a84a098d0f4d400c821d96efcb5d8489b3d63215122c0b2a00452711",
+  "case_sha256": [
+    "602eec336be631efada74a48737e58a9967afb7843ab2cc2641f787e484652a7",
+    "afe9dd4f3b3f717ea8e5782a05cfe7fb4e91c081c9a020ab323edf4a72562d11",
+    "789b145bb74a2958288196dddf2c47f23963406defb468fb62fa3ea4546ebd85",
+    "a9f8725753b4ceb938f4378163ce994c5e6395ebbac7429d09065214befaada2",
+    "d32143fdc81463fb62917f84f5ea166eec441c0b5ea0c69cefa0ac42bae8e0e1",
+    "eebd7c9c5ebaf8b0a67c89b844a06b89c6c988e4520e5ba8dcf13f2f91c6e4b8",
+    "526b628abd253fae700b6849a97785b40af6165097f5d3f49202230841738064",
+    "01f1753827b2cd63eca32d51fe34fd020a005764897fc89292f2f4639ed281c2",
+    "a68f37451a8a6a953751ea4adb1b5003d8c3339c4f587668b086a6b905cfb7be",
+    "077f56c53f98241f869d080b8ed1f37c8947312979536f662131c5a3d3ae5d36",
+    "566bd36d7f0141a753c5ffb2dade1dedabf6a7337487bd4f073319b08988233d",
+    "089dd516929efe5485cb958978bbfacc9eb4631e2ee4eb71a7e0cd4d4df8e728",
+    "186af835e4b0c3f60bda92a8374e76ec976a40a96033bdd68286b621cd1ab968",
+    "934fffaa5cd2a8c770ba5f613a34ed638d9095ea2a33f144f4c2ca05b383f5a5",
+    "556d495b7cc637577a339b38c52d9dc53cdeb5219291d1c92a08b8442fa295fa",
+    "ea951efd1b0bb0816359b48bf7744f5532b5fdace1f655e9de8539be3c56dba9"
+  ],
+  "scouting": {
+    "overall": {
+      "episodes": 16,
+      "five_metre_docked": 8,
+      "contacted": 7,
+      "qualified_lift": 5,
+      "strict_placements": 3,
+      "reasons": {
+        "time_limit": 5,
+        "approach_violation": 8,
+        "success": 3
+      },
+      "minimum_peak_forward_m": 4.9412278826348235,
+      "native_rows": 18393,
+      "native_scalars": 1177152,
+      "physical_s": 367.86,
+      "fsq_churn": 0.08709426184905045,
+      "joint_acceleration_rms_rad_s2": 5.799482579179791
+    },
+    "box": {
+      "episodes": 8,
+      "five_metre_docked": 4,
+      "contacted": 3,
+      "qualified_lift": 2,
+      "strict_placements": 1,
+      "reasons": {
+        "time_limit": 3,
+        "approach_violation": 4,
+        "success": 1
+      },
+      "minimum_peak_forward_m": 4.999540853790175,
+      "native_rows": 9502,
+      "native_scalars": 608128,
+      "physical_s": 190.04,
+      "fsq_churn": 0.08482166368232567,
+      "joint_acceleration_rms_rad_s2": 5.72512435379281
+    },
+    "cylinder": {
+      "episodes": 8,
+      "five_metre_docked": 4,
+      "contacted": 4,
+      "qualified_lift": 3,
+      "strict_placements": 2,
+      "reasons": {
+        "time_limit": 2,
+        "approach_violation": 4,
+        "success": 2
+      },
+      "minimum_peak_forward_m": 4.9412278826348235,
+      "native_rows": 8891,
+      "native_scalars": 569024,
+      "physical_s": 177.82,
+      "fsq_churn": 0.08952317629179331,
+      "joint_acceleration_rms_rad_s2": 5.877929124675406
+    }
+  },
+  "replay": {
+    "seed": 19,
+    "shape": "box",
+    "terminal": "success",
+    "rows": 1334,
+    "native_substeps": 13340,
+    "physics_seconds": 26.67999999999609,
+    "action_sha256": "e868b8fea2a12a249c954318d74b3ada59012f6c2fed9f7440267c46bc7d4c3f",
+    "full_qpos_qvel_sha256": "c996fa542b174c6b9ad4c6ab1507ea7ceb71510b50353a24826ef69656bcc4fa",
+    "maximum_trace_error": 0.0,
+    "exact_independent_metrics": true,
+    "review_floor_extent_only": true,
+    "original_plane_sizes_restored_before_every_step": true,
+    "zero_applied_external_forces": true,
+    "equality_constraints": 0,
+    "physics_resets_after_tick_zero": 0,
+    "first_contact_s": 18.418,
+    "dock_s": 14.17,
+    "supported_lift_s": 20.21,
+    "supported_release_s": 26.676000000000002
+  },
+  "movie_sha256": "8d25dcb7fd00ef81dfb7b098265cdacf6f1f8979a25f54a810046abee8173cb9",
+  "movie_bytes": 2291959,
+  "codec": {
+    "codec_name": "h264",
+    "width": 1232,
+    "height": 640,
+    "pix_fmt": "yuv420p",
+    "r_frame_rate": "10/1",
+    "nb_read_frames": "268"
+  },
+  "duration_s": 26.8
+}

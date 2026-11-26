@@ -1,0 +1,210 @@
+{
+  "attempts": [
+    {
+      "task": "g1_sonic_locomotion",
+      "commit": "7ba48b1d212355185ce2076f28a97b30390657d2",
+      "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+      "harness": "@qwen-code/qwen-code@0.26.1, official ALE Qwen Code adapter",
+      "preregistration_sha256": "74c6e2cc96eb325af4c32c4f5ac6063f04305d2f25829f3c1179e2a9ee8f009e",
+      "evidence_sha256": "09e4368e8b432a0c8c2e59e705d46db6b0784b98457192c4707b3212a85d6a63",
+      "raw_verdict_sha256": "d52119d93ae3dba98ca1e9c36aa08e9377ad420e699eb052915cd7761f437e23",
+      "gateway_sha256": "9c3557a524a67c366b94d731177829273b7ded1269118c901e43e2ec1304fbe7",
+      "calls": 21,
+      "tool_calls": 11,
+      "usage": {
+        "input_tokens": 388060,
+        "output_tokens": 9962,
+        "cache_read_tokens": 318482,
+        "cache_write_tokens": 0
+      },
+      "wall_seconds": 234.5125608164817,
+      "agent_seconds": 96.845,
+      "reward": 0.0,
+      "physical": {
+        "episodes": 16.0,
+        "successes": 0.0,
+        "falls": 0.0,
+        "time_limits": 16.0,
+        "episodes_aborted": 0.0,
+        "applied_native_rows": 20000.0,
+        "fsq_scalar_codes": 1280000.0,
+        "straight_stop_successes": 0.0,
+        "straight_stop_episodes": 8.0,
+        "right_turn_stop_successes": 0.0,
+        "right_turn_stop_episodes": 8.0,
+        "state_feedback_ok": 1.0,
+        "same_family_goal_feedback_ok": 0.0,
+        "state_pairs": 128.0,
+        "state_changes": 16.0,
+        "duplicate_pairs": 16.0,
+        "duplicate_changes": 0.0,
+        "joint_accel_rms_rad_s2": 4.384978924459958,
+        "coordinate_change_fraction": 0.0016810323258606885,
+        "straight_stop_mean_final_xy_error_m": 4.995918174831453,
+        "right_turn_stop_mean_absolute_final_yaw_error_rad": 1.4691408880977077,
+        "mean_actual_elapsed_sim_s": 24.999999999997023,
+        "left_unloads": 0.0,
+        "right_unloads": 0.0
+      },
+      "url": "https://zi-ang-cao.github.io/agentic-robotics-benchmark/g1-sonic-motion/evidence/agent-locomotion.json"
+    },
+    {
+      "task": "g1_sonic_command_sequence",
+      "commit": "515202ada6801018571a1f1d6ba988080a58a855",
+      "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+      "harness": "@qwen-code/qwen-code@0.26.1, official ALE Qwen Code adapter",
+      "preregistration_sha256": "f313f68b491bfc75b2e020c22146a13d00bed79eef4a36171aabef458b849b74",
+      "evidence_sha256": "22cdda01ec023359eef50f9b2711cd128033f6c40ca62f28edf87b326b9cbcc9",
+      "raw_verdict_sha256": "0798c62f9da025a86952b0e54182894bfece4a3e69019626861c9ff9474659f9",
+      "gateway_sha256": "ddea8ca51ec2f4bd0503bd397968dbb2935a9256c42a04f827da17580dc57df5",
+      "calls": 7,
+      "tool_calls": 5,
+      "usage": {
+        "input_tokens": 141473,
+        "output_tokens": 5574,
+        "cache_read_tokens": 119614,
+        "cache_write_tokens": 0
+      },
+      "wall_seconds": 110.41542080044746,
+      "agent_seconds": 49.931,
+      "reward": 0.0,
+      "physical": {
+        "episodes": 16.0,
+        "successes": 0.0,
+        "episodes_aborted": 0.0,
+        "applied_native_rows": 6096.0,
+        "fsq_scalar_codes": 390144.0,
+        "left_episodes": 8.0,
+        "right_episodes": 8.0,
+        "left_successes": 0.0,
+        "right_successes": 0.0,
+        "terminal_path_violation": 16.0,
+        "approach_revealed": 16.0,
+        "pivot_revealed": 0.0,
+        "departure_revealed": 0.0,
+        "state_feedback_ok": 0.0,
+        "state_pairs": 40.0,
+        "state_changes": 3.0,
+        "state_duplicates": 16.0,
+        "state_noise": 0.0,
+        "branch_pairs": 0.0,
+        "branch_feedback_ok": 0.0,
+        "coordinate_change_fraction": 0.0002467105263157895,
+        "joint_accel_rms_rad_s2": 10.062815726033248,
+        "actual_elapsed_sim_s": 121.91999999999013
+      },
+      "url": "https://zi-ang-cao.github.io/agentic-robotics-benchmark/g1-sonic-motion/evidence/agent-sequence.json"
+    },
+    {
+      "task": "g1_sonic_locomotion",
+      "commit": "7ba48b1d212355185ce2076f28a97b30390657d2",
+      "model": "gpt-oss-20b-MXFP4",
+      "harness": "@qwen-code/qwen-code@0.26.1, official ALE Qwen Code adapter",
+      "preregistration_sha256": "5d1bbed4183bbef59d64cc921b75b21372bfbb1b22e3619cac90dfedfa90265f",
+      "evidence_sha256": "40c5b77a8cd6e63f372239a15871dc29eeaf7377b8f64d2d309612e1837f4b58",
+      "raw_verdict_sha256": "aa5c42f78b261043d59306a8f78f3006c6f67fe350274902abd4969f919d1993",
+      "gateway_sha256": "7ae433db68133f83b6d03d8987755c6a23110c89f1268f98c3d67256994fbd87",
+      "calls": 9,
+      "tool_calls": 3,
+      "usage": {
+        "input_tokens": 124113,
+        "output_tokens": 6153,
+        "cache_read_tokens": 94414,
+        "cache_write_tokens": 0
+      },
+      "wall_seconds": 55.81968567147851,
+      "agent_seconds": 36.701,
+      "reward": 0.0,
+      "physical": {
+        "episodes": 16.0,
+        "successes": 0.0,
+        "episodes_aborted": 16.0,
+        "applied_native_rows": 0.0,
+        "fsq_scalar_codes": 0.0
+      },
+      "url": "https://zi-ang-cao.github.io/agentic-robotics-benchmark/g1-sonic-motion/evidence/gpt-oss-locomotion.json"
+    },
+    {
+      "task": "g1_sonic_command_sequence",
+      "commit": "515202ada6801018571a1f1d6ba988080a58a855",
+      "model": "gpt-oss-20b-MXFP4",
+      "harness": "@qwen-code/qwen-code@0.26.1, official ALE Qwen Code adapter",
+      "preregistration_sha256": "5d1bbed4183bbef59d64cc921b75b21372bfbb1b22e3619cac90dfedfa90265f",
+      "evidence_sha256": "090263ce0f9825875d7171bc15565e2acd627f9877e5ef635e6e673b7e30a23b",
+      "raw_verdict_sha256": "b598f4f7b9f466c0d0882b3a8b93babc3eef82711242e5fe6ca6c6bc6148aa27",
+      "gateway_sha256": "5717ddb700ab3467c294f835dcebe03d594ea22f62fd5e73accef0170874c0f7",
+      "calls": 19,
+      "tool_calls": 13,
+      "usage": {
+        "input_tokens": 350897,
+        "output_tokens": 9493,
+        "cache_read_tokens": 327167,
+        "cache_write_tokens": 0
+      },
+      "wall_seconds": 75.91101200133562,
+      "agent_seconds": 56.491,
+      "reward": 0.0,
+      "physical": {
+        "episodes": 16.0,
+        "successes": 0.0,
+        "episodes_aborted": 16.0,
+        "applied_native_rows": 0.0,
+        "fsq_scalar_codes": 0.0
+      },
+      "url": "https://zi-ang-cao.github.io/agentic-robotics-benchmark/g1-sonic-motion/evidence/gpt-oss-sequence.json"
+    }
+  ],
+  "clock_transfer": {
+    "evidence_sha256": "5306ca1a67f6d4ceb8aeedf1a5a66a1d7cf01be28e1b1e47c820793c1ad28970",
+    "protocol_sha256": "9dcd232031ac36bed2bb8afde2e04f357201dee2d02f6dee73ec2057740173a5",
+    "known_success": 2,
+    "feedback_effect": 0,
+    "transfer": {
+      "straight_stop": {
+        "success": 2,
+        "starts": 16,
+        "reasons": {
+          "time_limit": 14,
+          "success": 2
+        },
+        "actual_seconds": 380.46199999996185,
+        "scalar_codes": 1217536,
+        "applied_rows": 19024,
+        "accel_rms_rad_s2": 5.866508941647597,
+        "hamming_fraction": 0.072449757996633,
+        "left_unloads": 307,
+        "right_unloads": 291
+      },
+      "right_turn_stop": {
+        "success": 11,
+        "starts": 16,
+        "reasons": {
+          "success": 11,
+          "time_limit": 5
+        },
+        "actual_seconds": 158.76999999998384,
+        "scalar_codes": 508416,
+        "applied_rows": 7944,
+        "accel_rms_rad_s2": 2.9467638217484904,
+        "hamming_fraction": 0.021285317860746722,
+        "left_unloads": 16,
+        "right_unloads": 16
+      },
+      "pooled": {
+        "success": 13,
+        "starts": 32,
+        "reasons": {
+          "time_limit": 19,
+          "success": 13
+        },
+        "actual_seconds": 539.2319999999456,
+        "scalar_codes": 1725952,
+        "applied_rows": 26968,
+        "accel_rms_rad_s2": 5.1827673054189205,
+        "hamming_fraction": 0.057390666765666766,
+        "left_unloads": 323,
+        "right_unloads": 307
+      }
+    }
+  }
+}
