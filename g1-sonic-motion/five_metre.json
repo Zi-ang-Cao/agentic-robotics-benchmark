@@ -209,11 +209,14 @@
       }
     },
     "public_cpu": {
-      "sha256": "99e2cc69dcf35f77ced49b8a285702031969be80747f31a632a3b028b324fdef",
+      "sha256": "83e3dbece057c144e26c37310068e07b3b7b23146e32556333502773d9e932ca",
       "task": "cylinder_to_pad",
       "seed": 19,
       "rows": 1286,
       "seconds": 25.72,
+      "applied_codes": 82304,
+      "change_fraction": 0.07879377431906615,
+      "joint_accel_rms": 5.46447446378821,
       "forward_m": 5.013074240201123,
       "left_ankle_m": 4.993486009146829,
       "right_ankle_m": 5.0234534253392455

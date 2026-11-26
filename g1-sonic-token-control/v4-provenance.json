@@ -1,0 +1,51 @@
+{
+  "artifact": "Contributor-trained V4 recurrent visual reference for the high-level SONIC controller",
+  "available_artifacts": {
+    "public_onnx": "https://github.com/Zi-ang-Cao/agentic-robotics-benchmark/blob/7e4d005aee30a97aba26433fe067f7a88c20d3f5/tasks/humanoid/g1_sonic_token_space_control/solution/v4_actor.onnx",
+    "bytes": 3338738,
+    "graph_shared_by_standing_and_mobile": true
+  },
+  "training_manifest_fields": {
+    "frozen_utc": "2026-11-26T01:33:30.351007+00:00",
+    "learner": "rich1",
+    "epoch": 38,
+    "trainable_parameters": 825756,
+    "native_onnx_sha256": "2f4ada4c14f540ee1f99b0e875aa63ade0adbb87d63d710d5b15e4e8300d1c55",
+    "checkpoint_sha256": "d9df4905599acb3cf058eea4145e98679a99ca2e0a5dbc6deab2f722791e4af4",
+    "float_export_sha256": "9d0c33ac4346d926f49fcb4bae6235d31c22428e17246592578662be1b7a0b8e",
+    "root_decoder_revision": "6733128a3d8a523b1418b06bca3cdf61c8b0987f",
+    "training": {
+      "considered": 1070,
+      "train_trials": 878,
+      "valid_trials": 96,
+      "failed_pure_archived": 96,
+      "train_control_ticks": 495343,
+      "valid_control_ticks": 54962,
+      "whole_seed_split_sha256": "2e2562bbcbdc2290c6adc6874579c6925785b723781830c84751545602d32a6b"
+    }
+  },
+  "original_manifest": {
+    "source_path": "pixel_policy_v4/weights/freeze.json",
+    "git_blob": "60e06bc03d6521f78cb4e7c344372bb9a4ebd876",
+    "sha256": "39c198bef9c096d4209c393acc726eed94467567f0c8b4eea81580caea99d27c"
+  },
+  "historical_source_records": {
+    "demonstration_collection": {
+      "project_source_id": "899880dcb8564376e90ae33f5b4e2b0d8f81c69e",
+      "recorded_author": "Zi-ang Cao"
+    },
+    "model_training": {
+      "project_source_id": "2a50e7c163dbf31ae3b3f96355c779a5b1e5d9cc",
+      "recorded_author": "Zi-ang Cao"
+    },
+    "integer_export": {
+      "project_source_id": "5404dbfa7fe6bfcaa2d8b03016733d9598a8cd85",
+      "recorded_author": "Zi-ang Cao"
+    },
+    "freeze": {
+      "project_source_id": "8d5200e2b01ae87d05447332e700012842fda21b",
+      "recorded_author": "Zi-ang Cao"
+    }
+  },
+  "scope": "The four Git identifiers refer to records in the contributor’s research checkout. The linked graph and this selected training manifest are public. The training corpus and research checkout are separate from the released benchmark. The original freeze record contains no separate model-license file for V4. NVIDIA supplies the separately fetched low-level body decoder."
+}

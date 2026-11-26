@@ -1,0 +1,201 @@
+{
+  "measurement": "Participant-only public practice, independent Linux machine, native CPU execution in a clean rootless namespace.",
+  "runner": {
+    "file": "reproduce-native.sh",
+    "sha256": "808f4f813305d12a3bcdab7f95748ec0dcdbb32ab8157d50971809c50a34a037",
+    "isolation": "bubblewrap 0.9.0; empty participant home, two logical CPUs, no runtime network, no host home, GPU or grader checkout"
+  },
+  "second_host": {
+    "cpu": "AMD Ryzen 9 9950X3D",
+    "os": "Ubuntu 24.04",
+    "python": "3.12.3",
+    "mesa": "llvmpipe (LLVM 20.1.2, 256 bits)",
+    "openblas_kernel": "Haswell",
+    "numpy_runtime_avx512": false
+  },
+  "first_host": {
+    "cpu": "AMD Ryzen Threadripper PRO 7965WX 24-Cores",
+    "python": "3.12.14",
+    "mesa": "llvmpipe (LLVM 15.0.7, 256 bits)"
+  },
+  "packages": {
+    "PyOpenGL": {
+      "version": "3.1.10",
+      "public_wheel_sha256": "794a943daced39300879e4e47bd94525280685f42dbb5a998d336cfff151d74f"
+    },
+    "absl-py": {
+      "version": "2.5.1",
+      "public_wheel_sha256": "721200f2f0e9960f2ca9dc3a2a706b201f5f75d812c158f059cbbe29eeafbdb8"
+    },
+    "coloredlogs": {
+      "version": "15.0.1",
+      "public_wheel_sha256": "612ee75c546f53e92e70049c9dbfcc18c935a2b9a53b66085ce9ef6a6e5c0934"
+    },
+    "etils": {
+      "version": "1.15.0",
+      "public_wheel_sha256": "b9e7f3d7ab980c564245cd54e2b928e6abcb0521d6042ad3fdb13eea725309f0"
+    },
+    "flatbuffers": {
+      "version": "25.12.19",
+      "public_wheel_sha256": "7634f50c427838bb021c2d66a3d1168e9d199b0607e6329399f04846d42e20b4"
+    },
+    "fsspec": {
+      "version": "2026.9.0",
+      "public_wheel_sha256": "8dd6e646e99ea382bd85f97a45e6b526a442d79423a7dc673f1e2756d05fcb5f"
+    },
+    "glfw": {
+      "version": "2.11.0",
+      "public_wheel_sha256": "76484fae4a4ef0f778a05e02422ecbe6960ae23039087fe2e0ad9742ab8c7bbe"
+    },
+    "humanfriendly": {
+      "version": "10.0",
+      "public_wheel_sha256": "1697e1a8a8f550fd43c2865cd84542fc175a61dcb779b6fee18cf6b6ccba1477"
+    },
+    "mpmath": {
+      "version": "1.3.0",
+      "public_wheel_sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c"
+    },
+    "mujoco": {
+      "version": "3.3.4",
+      "public_wheel_sha256": "8db2aee101dc59b5350d782c512292a1d82be160b50a44d1d2473d073fde6b76"
+    },
+    "numpy": {
+      "version": "1.26.4",
+      "public_wheel_sha256": "675d61ffbfa78604709862923189bad94014bef562cc35cf61d3a07bba02a7ed"
+    },
+    "onnxruntime": {
+      "version": "1.22.1",
+      "public_wheel_sha256": "2d39a530aff1ec8d02e365f35e503193991417788641b184f5b1e8c9a6d5ce8d"
+    },
+    "packaging": {
+      "version": "26.4",
+      "public_wheel_sha256": "81383611a09c1bc0b08b76e0fd5829d7c6824c65b27a6aee339da133f4233ea2"
+    },
+    "pillow": {
+      "version": "11.2.1",
+      "public_wheel_sha256": "b2dbea1012ccb784a65349f57bbc93730b96e85b42e9bf7b01ef40443db720b4"
+    },
+    "pip": {
+      "version": "25.0.1",
+      "public_wheel_sha256": "c46efd13b6aa8279f33f2864459c8ce587ea6a1a59ee20de055868d8f7688f7f"
+    },
+    "protobuf": {
+      "version": "7.36.2",
+      "public_wheel_sha256": "89f23aa53c24553a2416fd4fd1ec06f74fa42b14b546d8883128813f775bbfd2"
+    },
+    "scipy": {
+      "version": "1.15.3",
+      "public_wheel_sha256": "271e3713e645149ea5ea3e97b57fdab61ce61333f97cfae392c28ba786f9bb49"
+    },
+    "sympy": {
+      "version": "1.14.0",
+      "public_wheel_sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5"
+    },
+    "typing_extensions": {
+      "version": "4.16.0",
+      "public_wheel_sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+    },
+    "zipp": {
+      "version": "4.1.2",
+      "public_wheel_sha256": "b30cb6cd253122169c47de245ca24a86bac2a5d3802ba15bf7ba6414eb9e144d"
+    }
+  },
+  "scope": "These are public practice inputs. Official ALE reference/untouched reward confirmation is reported separately.",
+  "task": "g1_sonic_mobile_pick_place",
+  "course": "five-metre",
+  "seed": 19,
+  "shape": "cylinder",
+  "source_commit": "860b71c4f1b0ff15e639123955bc540cba1fbbe0",
+  "first_host_measured_source_commit": "860b71c4f1b0ff15e639123955bc540cba1fbbe0",
+  "source_url": "https://github.com/Zi-ang-Cao/agentic-robotics-benchmark/tree/860b71c4f1b0ff15e639123955bc540cba1fbbe0/tasks/humanoid/g1_sonic_mobile_pick_place",
+  "v4_actor_sha256": "2f4ada4c14f540ee1f99b0e875aa63ade0adbb87d63d710d5b15e4e8300d1c55",
+  "public_assets_checked": 56,
+  "asset_manifest_sha256": "3c5b97dc792b88f96f54dfc07ad8d2d245fad44328ebefbfbffdfbf4b248f99c",
+  "strict_placement_on_both": true,
+  "exact_dock_comparison": {
+    "dock_tick": 685,
+    "dock_forward_m": 5.013074240201123,
+    "dock_left_ankle_forward_m": 4.993486009146829,
+    "dock_right_ankle_forward_m": 5.0234534253392455,
+    "foot_rise_m": [
+      0.05267809730958806,
+      0.04922895006964917
+    ],
+    "single_support_changes": 27,
+    "single_support_phases": 28,
+    "settle_ticks": 25
+  },
+  "first_host_run": {
+    "steps": 1286,
+    "reason": "success",
+    "physical": {
+      "first_contact_tick": 1028,
+      "lift_tick": 1078,
+      "max_lift_m": 0.14780969951546907,
+      "goal_error_xy_m": 0.03857490236955148,
+      "release_hold_s": 0.25000000000000017,
+      "object_speed_m_s": 0.013431104818724001,
+      "support_load_z_n": 1.4857638250819023,
+      "pad_load_z_n": 1.4857638250819023
+    },
+    "motion": {
+      "applied_rows": 1286,
+      "applied_codes": 82304,
+      "simulated_s": 25.72,
+      "unique_code_rows": 847,
+      "changed_coordinates": 6480,
+      "code_transition_slots": 82240,
+      "absolute_bin_jump": 6482,
+      "coordinate_change_fraction": 0.07879377431906615,
+      "target_step_rms_rad": 0.032603078172515426,
+      "joint_acceleration_samples": 37178,
+      "joint_accel_square_sum": 1110152.9687669973,
+      "joint_accel_rms_rad_s2": 5.46447446378821
+    },
+    "repeats": {
+      "alternate_queries": 4,
+      "alternate_first_codes_differed": 2,
+      "identical_queries": 1,
+      "identical_first_codes_differed": 0
+    }
+  },
+  "second_host_run": {
+    "steps": 1283,
+    "reason": "success",
+    "physical": {
+      "first_contact_tick": 974,
+      "lift_tick": 1081,
+      "max_lift_m": 0.12534614923990595,
+      "goal_error_xy_m": 0.037438912438586845,
+      "release_hold_s": 0.25000000000000017,
+      "object_speed_m_s": 0.007103839147577287,
+      "support_load_z_n": 1.4045215330919198,
+      "pad_load_z_n": 1.4045215330919198
+    },
+    "motion": {
+      "applied_rows": 1283,
+      "applied_codes": 82112,
+      "simulated_s": 25.66,
+      "unique_code_rows": 869,
+      "changed_coordinates": 6612,
+      "code_transition_slots": 82048,
+      "absolute_bin_jump": 6614,
+      "coordinate_change_fraction": 0.08058697347893916,
+      "target_step_rms_rad": 0.03274924759622066,
+      "joint_acceleration_samples": 37091,
+      "joint_accel_square_sum": 1113957.494796469,
+      "joint_accel_rms_rad_s2": 5.48024581030274
+    },
+    "repeats": {
+      "alternate_queries": 4,
+      "alternate_first_codes_differed": 2,
+      "identical_queries": 1,
+      "identical_first_codes_differed": 0
+    }
+  },
+  "first_host_receipt_sha256": "83e3dbece057c144e26c37310068e07b3b7b23146e32556333502773d9e932ca",
+  "second_host_receipt_sha256": "17a04296a390947c14f960ef4fd6da1bdd79590c989ccfc4861113b4be9b6c02",
+  "first_host_additional_matching_receipt_sha256": "83e3dbece057c144e26c37310068e07b3b7b23146e32556333502773d9e932ca",
+  "interpretation": "The eight listed dock and gait measurements agree by exact parsed JSON comparison. Camera-guided grasp and release followed different trajectories. Both met the native 250 ms stable-release condition. This experiment does not isolate a cause.",
+  "scratch_bytes_after_all_four_runs": 617508864
+}

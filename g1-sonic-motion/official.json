@@ -74,7 +74,7 @@
       "key": "g1_sonic_command_sequence",
       "name_en": "Delayed commands",
       "name_zh": "分段指令",
-      "commit": "0dfcdcc42c06b88dcb41413264f5d17913b0f559",
+      "commit": "cf25b2eea60a023c6ef4b8eb39a8e6f7b655cb39",
       "calibration": "15/16 · 16/16 · 15/16 · 13/16",
       "threshold": "12 / 16",
       "panels": [
@@ -86,8 +86,8 @@
       "checks": [
         {
           "id": "G0",
-          "run": "validate-1790c6e7",
-          "validation_sha256": "6ff112f9cb4736b11212a37bbaf2eec8dad8435928c59b830a618b4b5c9fe297",
+          "run": "validate-4196585d",
+          "validation_sha256": "8316cad45ea97a28d376898ba56d9900cdae1f52e17e6b48512f1d72dc763456",
           "untouched": {
             "reward": 0.0,
             "verification_sha256": "e892ce36b079c617469be2c54f6fd2784f578e965727eae40c697f37716b43b8",
@@ -95,17 +95,17 @@
           },
           "oracle": {
             "reward": 1.0,
-            "verification_sha256": "1c6b4b7224b8eee2ff21a7bac0dc9a6b5a2d8c4881610c28221744fb2c081da8",
+            "verification_sha256": "c7ce9dcc3273bcd2d9cea4e37d7bc6026e7c9892c41ac642c1d73d99c1444785",
             "gateway_trace_bytes": 0,
             "successes": 16,
             "trials": 16,
-            "rows": 17731,
-            "codes": 1134784,
-            "acceleration": 6.303156428389514,
+            "rows": 17751,
+            "codes": 1136064,
+            "acceleration": 6.27899035987111,
             "counts": {
               "left": 8,
               "right": 8,
-              "state_changes": 95,
+              "state_changes": 89,
               "state_pairs": 112,
               "state_duplicates": 16,
               "state_noise": 0,
@@ -114,6 +114,7 @@
               "branch_duplicates": 16,
               "branch_noise": 0,
               "terminal_lost_standing_hold": 0,
+              "terminal_time_limit": 0,
               "approach_revealed": 16,
               "approach_stops": 16,
               "pivot_revealed": 16,
@@ -122,12 +123,12 @@
               "departure_stops": 16
             }
           },
-          "receipt_sha256": "42c67641aa60bcf30a0cdb81b5d9e342f89bbfb56a15c010a25517d2b12a9f32"
+          "receipt_sha256": "22f048635c2b7d39ce91da2af0d6eef08c3587a99e2e5b2183122f09b2d04cc6"
         },
         {
           "id": "G1",
-          "run": "validate-8f0fdaaf",
-          "validation_sha256": "0bf71cc4b90b23637060653eaca2f031b54c5aeaf64908b49b629bc8000c57b3",
+          "run": "validate-cd85eaea",
+          "validation_sha256": "fc2b399b56a4a1aa36f923a8d4ec958eba7ad7d57dabf0aaa07f24efc80a67e5",
           "untouched": {
             "reward": 0.0,
             "verification_sha256": "e892ce36b079c617469be2c54f6fd2784f578e965727eae40c697f37716b43b8",
@@ -135,39 +136,40 @@
           },
           "oracle": {
             "reward": 1.0,
-            "verification_sha256": "9f52148a5ed79fd4bbdfc7940d6e44207a7edd66a6dada632aa5e1cd065668da",
+            "verification_sha256": "3ab5e7597ffaf88dd7d53177383a4a72b1d5f910bf6b6c16bf8251aa7899f17a",
             "gateway_trace_bytes": 0,
-            "successes": 15,
+            "successes": 14,
             "trials": 16,
-            "rows": 17539,
-            "codes": 1122496,
-            "acceleration": 6.29933850958141,
+            "rows": 17440,
+            "codes": 1116160,
+            "acceleration": 6.224967932773032,
             "counts": {
               "left": 8,
-              "right": 7,
-              "state_changes": 80,
-              "state_pairs": 108,
+              "right": 6,
+              "state_changes": 86,
+              "state_pairs": 104,
               "state_duplicates": 16,
               "state_noise": 0,
-              "branch_changes": 15,
-              "branch_pairs": 15,
-              "branch_duplicates": 15,
+              "branch_changes": 14,
+              "branch_pairs": 14,
+              "branch_duplicates": 14,
               "branch_noise": 0,
               "terminal_lost_standing_hold": 1,
+              "terminal_time_limit": 1,
               "approach_revealed": 16,
-              "approach_stops": 15,
-              "pivot_revealed": 15,
-              "pivot_stops": 15,
-              "departure_revealed": 15,
-              "departure_stops": 15
+              "approach_stops": 14,
+              "pivot_revealed": 14,
+              "pivot_stops": 14,
+              "departure_revealed": 14,
+              "departure_stops": 14
             }
           },
-          "receipt_sha256": "634f6f9daff2079e9e74403b71bd85a50cddf78f8e00ae9de0cb931338e2fcda"
+          "receipt_sha256": "6b6e5af3547859f7917d53aec2d376b596b8d204dbb349fc97763c2c7a3d5342"
         }
       ],
       "anchor_sha256": "2a1f105f74c1e73736d2b8311e31a427315399431eea68e0c9d4b7cc7607e5fd",
-      "detail_en": "16/16 courses (8/8 left, 8/8 right) then 15/16 courses (8/8 left, 7/8 right). 31/31 alternate turn probes changed the action, as did 175/220 state probes. 0/63 duplicate probes changed. Recorded strict stops on reached stages were 31/31 turns and 31/31 departures. 1 course ended during the first extended standing hold.",
-      "detail_zh": "16/16 条完整路线（左 8/8、右 8/8）；15/16 条完整路线（左 8/8、右 7/8）。 改发转向指令时 31/31 次动作发生变化；状态探针有 175/220 次，重复探针有 0/63 次。已进入的转向和末段行走分别有 31/31、31/31 次满足严格停车。1 条路线在首段延长站稳期间终止。",
+      "detail_en": "16/16 courses (8/8 left, 8/8 right) then 14/16 courses (8/8 left, 6/8 right). 30/30 alternate turn probes changed the action, as did 175/216 state probes. 0/62 duplicate probes changed. Recorded strict stops on reached stages were 30/30 turns and 30/30 departures. Terminal failures included 1 lost standing hold and 1 time limit.",
+      "detail_zh": "16/16 条完整路线（左 8/8、右 8/8）；14/16 条完整路线（左 8/8、右 6/8）。 改发转向指令时 30/30 次动作发生变化；状态探针有 175/216 次，重复探针有 0/62 次。已进入的转向和末段行走分别有 30/30、30/30 次满足严格停车。终止原因含 1 次未维持站稳和 1 次超时。",
       "pr_url": "https://github.com/Grounded-Intelligence-Initiative/agentic-robotics-benchmark/pull/205"
     }
   ],

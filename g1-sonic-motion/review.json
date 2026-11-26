@@ -1,17 +1,22 @@
 {
   "format": "single standalone bilingual HTML with embedded MP4, image and data",
   "public_site_path": "/g1-sonic-motion/",
-  "html_bytes": 7209307,
-  "html_sha256": "29859e5c500d3ea0baf1b3194580279c3182cd0291a1b67603f2dc8613325498",
+  "html_bytes": 7238740,
+  "html_sha256": "c8c621baaef9049f398ca9e0aa96687cdaaea6aea36888383414d0484c7ccbf3",
   "data_sha256": {
     "walk_data.json": "affd602acf755e78c9e635178f13eacfa092575fe02c933ef881d54e2c104d8a",
     "mobile_data.json": "3b302abd3209f4e511a3debf5ff088144e1a7d4af730c826648d998cadd8d24b",
     "composed_data.json": "c7365600e9e056b7ab1e6cce8866bdd76acfe2131a2cb0550a1be00ac21d5910",
     "delayed_data.json": "08b5a4d6a571c2ed0de12a7ac449d19e0cd7633df87ab550ce84aa5c6737e8e7",
-    "official.json": "eae76dd1334d8bad9642081302af698093166ff7897d9174a2b66e64e3077efb",
+    "official.json": "e48f476f93c615ef092463e952390b87d16deb09a926e0a67e419659ecedfeda",
     "agent_runs.json": "ec3f71b736ea971512625cb96f488e6bc02916a5af92d69f40e23ddba1c0889c",
-    "five_metre.json": "7fb6fa9618db8ef9475fbf43c1da2e057cb3607e73ca2e8d1afda950a1d9f320",
+    "five_metre.json": "118b4626a47677268637859c64589f21f4c5a200f8461b3f3e23adb0f6162675",
     "five-metre-matched.json": "10154af8890d373f792cc1cc88bd35fd0375011588eb7c9860d97445c621a21d",
+    "response-check.json": "8788a17475569ad105de654111530fa024e9909e52267b4d6b262f648efc6e6a",
+    "long-placement-failures.json": "f3fc434de325fd862a4e7cdd1208f72c0cf4a180a2ba8c967a4eba033175739c",
+    "native-reproduction.json": "6ca4d28c51ccdfd24c1ee5526db3ace6c76bb4bedaa9d80cd327e5f6fd2458fa",
+    "tabletop-native-reproduction.json": "3d2ac6044586fb91269292281d401557b5cf5ee35434c1fc35fb1a93315835ca",
+    "mobile-native-reproduction.json": "6214dffe307be9f6195a88c0b31852cd0049078ef8d213c09f85e93c2c2a14a2",
     "delayed_video.json": "10a69dcb3ed347bf9dc770678d62cfb70662010b6a328022434e160c16f6c79f",
     "pivot_video.json": "fae77a4ec5869b11c0e98465fdf71957a64913765297b62527605f5d7e88bea9",
     "token-study-methods.csv": "a3caf3116b4fdf22e8b9af8f5ec43e3f58a5510aaf641abd75c1e45bb5bc4f79",
@@ -67,7 +72,7 @@
     "all three standalone review MP4 downloads byte-identical",
     "English and Chinese timed captions on new footage",
     "three route-specific Pareto sets and near-equal times",
-    "five CSV/JSON downloads byte-identical to verified sources",
+    "six CSV/JSON downloads byte-identical to verified sources",
     "offline HTML download"
   ]
 }
