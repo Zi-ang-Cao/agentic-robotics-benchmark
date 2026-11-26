@@ -30,6 +30,7 @@ header{display:flex;align-items:center;justify-content:space-between;gap:1rem;pa
 </div>
 <section class="measure"><h2><span lang="en">Reading the scores</span><span lang="zh-CN">如何读懂评分</span></h2><p lang="en">Read successful trials out of all starts alongside the normalized ALE reward. The verifier also checks whether actions respond reproducibly to changed observations. Each applied row issues 64 SONIC scalars for 20 ms of control. The fraction of coordinates that changed and the measured acceleration RMS across 29 joints describe different properties of the motion. The coding agent’s input and output tokens come from its separate ALE gateway trace.</p><p lang="zh-CN">同时查看全部开局中的原始成功数和 ALE 归一化奖励。评分器会改变观测，检查控制器能否稳定地随输入调整动作。每执行一行，就会发送 64 个 SONIC 标量码，控制时长为 20 毫秒。码坐标的变化比例与 29 个关节的实测加速度均方根反映运动的不同特性。编程智能体的输入、输出 token 用量另由 ALE 网关记录。</p></section>
 
+
 <!-- practice-guide -->
 <section class="measure guide" id="practice" aria-labelledby="practice-title">
   <h2 id="practice-title"><span lang="en">Run a public practice episode</span><span lang="zh-CN">在本地运行公开练习</span></h2>
@@ -53,8 +54,16 @@ header{display:flex;align-items:center;justify-content:space-between;gap:1rem;pa
   <p class="native-guide"><span lang="en">Using an unprivileged Linux account without Docker? The rootless practice recipe reproduced both locomotion stops and both manipulation examples on a second computer.</span><span lang="zh-CN">普通 Linux 账户没有 Docker 权限时，可以使用无特权练习方案。第二台机器用这套方案完成了两条停步任务和两个抓放示例。</span>
   <a href="https://github.com/Zi-ang-Cao/agentic-robotics-benchmark/blob/gh-pages/g1-sonic-motion/native-practice.md"><span lang="en">Native setup notes</span><span lang="zh-CN">原生环境说明</span></a> ·
   <a href="g1-sonic-motion/reproduce-native.sh" download="reproduce-native.sh"><span lang="en">Shell script</span><span lang="zh-CN">Shell 脚本</span></a></p>
+  <details class="model-guide"><summary><span lang="en">Evaluate a coding agent with ALE</span><span lang="zh-CN">用 ALE 评测编程智能体</span></summary>
+  <p lang="en">Start with the selected checkout and an authenticated ALE Claude Code configuration. Set <code>ALE_REVIEW_MODEL</code> to the model ID authorized for that configuration. The command gives one agent episode 24 turns, up to 32 model calls and 24,576 cumulative output tokens. The separate physical verifier scores its submitted controller on 16 fresh starts.</p>
+  <p lang="zh-CN">先取得上方选中的任务代码，并配置已认证的 ALE Claude Code 环境。将 <code>ALE_REVIEW_MODEL</code> 设为该配置可用的模型 ID。每次编程尝试最多 24 轮、32 次模型请求，累计输出上限为 24,576 个 token。独立的物理评分器随后在 16 个新开局上验证所提交的控制器。</p>
+  <pre tabindex="0" dir="ltr"><code id="agent-command"></code></pre>
+  <p lang="en">Record the task commit, model, configuration, coding status and elapsed time. In the episode directory, <code>verification.json</code> contains physical success, <code>metrics.ratio</code> and normalized <code>reward</code>. The gateway trace records model-token usage. The archived session shows which files and tools the agent actually used.</p>
+  <p lang="zh-CN">记录任务提交版本、模型、配置、编程阶段状态与耗时。回合目录中的 <code>verification.json</code> 包含物理成功数、<code>metrics.ratio</code> 和归一化 <code>reward</code>。网关记录模型 token 用量；归档的会话可用于检查智能体实际使用的文件和工具。</p>
+  <a href="https://github.com/Grounded-Intelligence-Initiative/agentic-robotics-benchmark/blob/main/docs/contributing-a-task.md"><span lang="en">ALE benchmark contribution guide</span><span lang="zh-CN">ALE 基准贡献指南</span></a>
+  </details>
   <style>
-    .guide{padding-top:0}.guide label{display:block;margin:1rem 0 .35rem;font-weight:650}.guide select{color:var(--ink);font:inherit;width:min(100%,28rem);border:1px solid var(--line);background:#fffdf7;padding:.4rem}.guide pre{overflow:auto;max-width:100%;background:#ecede4;padding:.85rem 1rem;border-left:3px solid var(--forest);font-size:.89rem}.guide .read{display:inline-block;margin-top:.8rem}.native-guide{margin-top:1rem}.native-guide a{color:var(--forest)}
+    .guide{padding-top:0}.guide label{display:block;margin:1rem 0 .35rem;font-weight:650}.guide select{color:var(--ink);font:inherit;width:min(100%,28rem);border:1px solid var(--line);background:#fffdf7;padding:.4rem}.guide pre{overflow:auto;max-width:100%;background:#ecede4;padding:.85rem 1rem;border-left:3px solid var(--forest);font-size:.89rem}.guide .read{display:inline-block;margin-top:.8rem}.native-guide,.model-guide{margin-top:1rem}.native-guide a,.model-guide a{color:var(--forest)}.model-guide summary{font-weight:650;cursor:pointer}
   </style>
   <script>
   (()=>{
@@ -79,6 +88,20 @@ header{display:flex;align-items:center;justify-content:space-between;gap:1rem;pa
         '  https://github.com/Zi-ang-Cao/agentic-robotics-benchmark.git '+slug,
         'git -C '+slug+' sparse-checkout set tasks/humanoid/'+slug,
         'python3 run_public_reference.py '+flags+' --checkout '+slug
+      ].join('\n');
+      document.querySelector('#agent-command').textContent=[
+        'git -C '+slug+' sparse-checkout add vendor/ale',
+        'git -C '+slug+' submodule update --init vendor/ale',
+        '(',
+        '  cd '+slug+'/vendor/ale || exit 1',
+        '  uv sync --frozen --all-groups && images/build.sh ale-qemu-runner &&',
+        '  uv run ale run ../../tasks/humanoid/'+slug+' \\',
+        '    --agent claude-code --model "${ALE_REVIEW_MODEL:?Set ALE_REVIEW_MODEL first}" \\',
+        '    --episodes 1 --episode-retries 0 --set agent.settings.max_turns=24 \\',
+        '    --set gateway.limits.max_model_calls=32 --set gateway.limits.max_input_tokens=524288 \\',
+        '    --set gateway.limits.max_output_tokens=24576 --set gateway.limits.max_total_tokens=548864 \\',
+        '    --set artifacts.collect=host --runs-dir "../../../'+slug+'-agent-runs"',
+        ')'
       ].join('\n');
     }
     picker.addEventListener('change',render);
