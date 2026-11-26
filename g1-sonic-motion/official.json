@@ -171,6 +171,185 @@
       "detail_en": "16/16 courses (8/8 left, 8/8 right) then 14/16 courses (8/8 left, 6/8 right). 30/30 alternate turn probes changed the action, as did 175/216 state probes. 0/62 duplicate probes changed. Recorded strict stops on reached stages were 30/30 turns and 30/30 departures. Terminal failures included 1 lost standing hold and 1 time limit.",
       "detail_zh": "16/16 条完整路线（左 8/8、右 8/8）；14/16 条完整路线（左 8/8、右 6/8）。 改发转向指令时 30/30 次动作发生变化；状态探针有 175/216 次，重复探针有 0/62 次。已进入的转向和末段行走分别有 30/30、30/30 次满足严格停车。终止原因含 1 次未维持站稳和 1 次超时。",
       "pr_url": "https://github.com/Grounded-Intelligence-Initiative/agentic-robotics-benchmark/pull/205"
+    },
+    {
+      "key": "g1_sonic_mobile_pick_place",
+      "name_en": "Mobile pick-and-place",
+      "name_zh": "步行抓放",
+      "commit": "62279a89db9bd4ab6d8da88b01ade40a255b7515",
+      "calibration": "10/16 · 10/16 · 13/16 · 13/16",
+      "threshold": "9 / 16",
+      "panels": [
+        10,
+        10,
+        13,
+        13
+      ],
+      "checks": [
+        {
+          "id": "G0",
+          "run": "validate-9e600414",
+          "validation_sha256": "c60beabbdaf394b2155f61c8d8193606a716d0160225aaa9568e725088039ded",
+          "untouched": {
+            "reward": 0.0,
+            "verification_sha256": "c95cebae356a70151b209616fbe100fa30e0a784527139726379d06815b23a83",
+            "gateway_trace_bytes": 0
+          },
+          "oracle": {
+            "reward": 1.0,
+            "verification_sha256": "1b29715cc8857373856f5ad09b90fca441b8784c89e54be7cd6d5bfc9d696975",
+            "gateway_trace_bytes": 0,
+            "successes": 11,
+            "trials": 16,
+            "rows": 14350,
+            "codes": 918400,
+            "acceleration": 3.151350839812861,
+            "counts": {
+              "box": 6,
+              "cylinder": 5,
+              "walked": 16,
+              "docked": 16,
+              "contacted": 16,
+              "lifted": 16,
+              "placed": 11,
+              "disqualified": 0,
+              "fell": 0,
+              "time_limits": 5,
+              "episodes_aborted": 0,
+              "joint_acceleration_samples": 414294,
+              "probes_total": 128,
+              "probes_passed": 118,
+              "duplicate_probes": 16,
+              "duplicate_changes": 0,
+              "match_lock_ok": 1
+            }
+          },
+          "receipt_sha256": "19068582ccfc0355843a8f2af6f8ea84e565f1535ab744b93b9b910ba5d3d0a4",
+          "validation_passed": true
+        },
+        {
+          "id": "G1",
+          "run": "validate-3336e164",
+          "validation_sha256": "24a1dbb008fb92b9bf1a8afd44165d480a70eca05848b9b1a9d783448afbb4cb",
+          "untouched": {
+            "reward": 0.0,
+            "verification_sha256": "c95cebae356a70151b209616fbe100fa30e0a784527139726379d06815b23a83",
+            "gateway_trace_bytes": 0
+          },
+          "oracle": {
+            "reward": 1.0,
+            "verification_sha256": "3f1ebbb9b06235a2f646bf95f9322cdea5b81bd1767d6e12d767ef0f64f679fd",
+            "gateway_trace_bytes": 0,
+            "successes": 12,
+            "trials": 16,
+            "rows": 14096,
+            "codes": 902144,
+            "acceleration": 3.193553963617124,
+            "counts": {
+              "box": 6,
+              "cylinder": 6,
+              "walked": 16,
+              "docked": 16,
+              "contacted": 16,
+              "lifted": 16,
+              "placed": 12,
+              "disqualified": 0,
+              "fell": 0,
+              "time_limits": 4,
+              "episodes_aborted": 0,
+              "joint_acceleration_samples": 406928,
+              "probes_total": 128,
+              "probes_passed": 118,
+              "duplicate_probes": 16,
+              "duplicate_changes": 0,
+              "match_lock_ok": 1
+            }
+          },
+          "receipt_sha256": "a41d1a3fbba1cfe56c2a3ecbe1cbd603469d2fdc856eb75074df77ad6b498688",
+          "validation_passed": true
+        }
+      ],
+      "calibration_audit": {
+        "panels": [
+          {
+            "panel": "N0",
+            "verification_sha256": "30be433db81ea4aa4c6fb30401f6a6eaf64a0cc35aa0089d2017f3dfb80fdf67",
+            "strict_placements": 10,
+            "box": 5,
+            "cylinder": 5,
+            "walked": 16,
+            "docked": 16,
+            "lifted": 16,
+            "sensitive": 114,
+            "paired": 120,
+            "duplicate_changes": 0,
+            "duplicates": 15,
+            "falls": 0,
+            "aborts": 0
+          },
+          {
+            "panel": "N1",
+            "verification_sha256": "c4b47da80915d7012b21a9d162bb8341abcf82c0bf61524dec005a7bc8a3005d",
+            "strict_placements": 10,
+            "box": 3,
+            "cylinder": 7,
+            "walked": 16,
+            "docked": 16,
+            "lifted": 16,
+            "sensitive": 125,
+            "paired": 128,
+            "duplicate_changes": 0,
+            "duplicates": 16,
+            "falls": 0,
+            "aborts": 0
+          },
+          {
+            "panel": "N2",
+            "verification_sha256": "7d70ffae0e925343151e623c75012d5cdc1be0589e15f278214885fa6c947cc8",
+            "strict_placements": 13,
+            "box": 7,
+            "cylinder": 6,
+            "walked": 16,
+            "docked": 15,
+            "lifted": 15,
+            "sensitive": 111,
+            "paired": 120,
+            "duplicate_changes": 0,
+            "duplicates": 15,
+            "falls": 0,
+            "aborts": 0
+          },
+          {
+            "panel": "N3",
+            "verification_sha256": "f9e6ef1281e1afd06e65babb223e4e1c1f01c931f5c65ad8408858c75256dffd",
+            "strict_placements": 13,
+            "box": 8,
+            "cylinder": 5,
+            "walked": 16,
+            "docked": 16,
+            "lifted": 15,
+            "sensitive": 124,
+            "paired": 128,
+            "duplicate_changes": 0,
+            "duplicates": 16,
+            "falls": 0,
+            "aborts": 0
+          }
+        ],
+        "trials": 64,
+        "reference_commit": "e6ffc25f1e2b063703fe571658b219875e222360",
+        "engine_commit": "bfb75050aca2c54b45c5ab23bae6028a834a468a",
+        "nominal": 0.625,
+        "full_at": 0.9,
+        "threshold": 9,
+        "measurement_sha256": "efec31bc7bc0179046c21250a0fd40f6618ff9b32ab4b7c9a3a321b11e2338c3"
+      },
+      "anchor_sha256": "efec31bc7bc0179046c21250a0fd40f6618ff9b32ab4b7c9a3a321b11e2338c3",
+      "detail_en": "Calibration produced 46/64 placements, with 63 docks and 62 qualified lifts. N0 anchored the task at 0.625. Full credit requires 9/16 strict placements (90% of the anchor) and a passing observation-response check. Fresh panels achieved 11/16 placements (6/8 boxes, 5/8 cylinders) then 12/16 placements (6/8 boxes, 6/8 cylinders).",
+      "detail_zh": "校准组共 46/64 次严格放置，63 次稳定停靠，62 次承重抬起。N0 基准为 0.625。满分需达到 9/16 次严格放置（基准的 90%）并通过观测响应检查。新分配两组分别为11/16 个严格放置（箱子 6/8、圆柱 5/8）；12/16 个严格放置（箱子 6/8、圆柱 6/8）。",
+      "stages_en": "Across 32 confirmation starts, 32 qualified the walk, 32 docked, 32 qualified a lift and 23 placed the object. There were 9 time limits, 0 approach disqualifications, 0 falls and 0 program aborts. Alternative observations changed 236/256 responses, identical repeats 0/32.",
+      "stages_zh": "32 个确认起点中，32 个行走达标、32 个停靠、32 个承重抬起、23 个稳定放置。共 9 个超时、0 个接近违规、0 个跌倒、0 个程序中止。替代观测有 236/256 次响应变化，相同输入重复为 0/32。",
+      "pr_url": "https://github.com/Grounded-Intelligence-Initiative/agentic-robotics-benchmark/pull/207"
     }
   ],
   "links": [
@@ -188,8 +367,18 @@
       "url": "https://github.com/Grounded-Intelligence-Initiative/agentic-robotics-benchmark/pull/205",
       "en": "Delayed commands · GitHub PR #205",
       "zh": "分段指令 · GitHub PR #205"
+    },
+    {
+      "url": "https://zi-ang-cao.github.io/agentic-robotics-benchmark/g1-sonic-motion/evidence/mobile.json",
+      "en": "Mobile pick-and-place · final validation JSON",
+      "zh": "步行抓放 · 最终验证 JSON"
+    },
+    {
+      "url": "https://github.com/Grounded-Intelligence-Initiative/agentic-robotics-benchmark/pull/207",
+      "en": "Mobile pick-and-place · GitHub PR #207",
+      "zh": "步行抓放 · GitHub PR #207"
     }
   ],
-  "usage_en": "All 8 completed reference/untouched gateway traces represented here were empty (0 observed model calls). The motor rows above record physical control. The coding-agent table separately reports its own gateway measurements.",
-  "usage_zh": "此处各组共有 8 份已完成的参考策略/初始环境网关记录，均为空（观测到 0 次模型调用）。上方电机控制行记录物理控制。编程智能体尝试的实际网关用量另列表给出。"
+  "usage_en": "All 12 completed reference/untouched gateway traces represented here were empty (0 observed model calls). The motor rows above record physical control. The coding-agent table separately reports its own gateway measurements.",
+  "usage_zh": "此处各组共有 12 份已完成的参考策略/初始环境网关记录，均为空（观测到 0 次模型调用）。上方电机控制行记录物理控制。编程智能体尝试的实际网关用量另列表给出。"
 }

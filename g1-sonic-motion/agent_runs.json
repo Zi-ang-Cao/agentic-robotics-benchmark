@@ -96,6 +96,42 @@
       "url": "https://zi-ang-cao.github.io/agentic-robotics-benchmark/g1-sonic-motion/evidence/agent-sequence.json"
     },
     {
+      "task": "g1_sonic_mobile_pick_place",
+      "commit": "62279a89db9bd4ab6d8da88b01ade40a255b7515",
+      "model": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M",
+      "harness": "@qwen-code/qwen-code@0.26.1, official ALE Qwen Code adapter",
+      "startup": {
+        "diagnosis_sha256": "b7f7e5e4d73cd3cae5d3d88d0dee5be4bf939b3b77119325eb2d9fc724477400",
+        "controller_sha256": "70bc840efcf7d72952bbfe953e54a5f8714ba6911a2dc52440dbd8b4fe0c2aaf",
+        "syntax_error_line": 89,
+        "evidence_url": "https://zi-ang-cao.github.io/agentic-robotics-benchmark/g1-sonic-motion/evidence/mobile-startup.json"
+      },
+      "preregistration_sha256": "f313f68b491bfc75b2e020c22146a13d00bed79eef4a36171aabef458b849b74",
+      "evidence_sha256": "780f991aee76ba413171f1a2773bf63d6e748c7a2d6562fb38ae65f102baa55b",
+      "raw_verdict_sha256": "a7d7f51949d5a89961b4c1d008617cba721276204872c8a3d31984141c6a62e1",
+      "gateway_sha256": "e3f8f4246ec9c5b5369cac54572a4c5933a558ec223fe294d9a37f308cf0eed5",
+      "calls": 11,
+      "tool_calls": 5,
+      "usage": {
+        "input_tokens": 186828,
+        "output_tokens": 4039,
+        "cache_read_tokens": 169613,
+        "cache_write_tokens": 0
+      },
+      "wall_seconds": 51.98365415632725,
+      "agent_seconds": 33.525,
+      "reward": 0.0,
+      "physical": {
+        "episodes": 16.0,
+        "successes": 0.0,
+        "episodes_aborted": 16.0,
+        "applied_native_rows": null,
+        "fsq_scalar_codes": null,
+        "joint_acceleration_samples": 0.0
+      },
+      "url": "https://zi-ang-cao.github.io/agentic-robotics-benchmark/g1-sonic-motion/evidence/agent-mobile.json"
+    },
+    {
       "task": "g1_sonic_locomotion",
       "commit": "7ba48b1d212355185ce2076f28a97b30390657d2",
       "model": "gpt-oss-20b-MXFP4",
@@ -152,6 +188,61 @@
         "fsq_scalar_codes": 0.0
       },
       "url": "https://zi-ang-cao.github.io/agentic-robotics-benchmark/g1-sonic-motion/evidence/gpt-oss-sequence.json"
+    },
+    {
+      "task": "g1_sonic_mobile_pick_place",
+      "commit": "62279a89db9bd4ab6d8da88b01ade40a255b7515",
+      "model": "gpt-oss-20b-MXFP4",
+      "harness": "@qwen-code/qwen-code@0.26.1, official ALE Qwen Code adapter",
+      "inferred_pre_dock_support": {
+        "episodes": 16,
+        "nonsole_force_n": 15,
+        "continuous_s": 0.02,
+        "scorer_sha256": "1ab9d076cdef2d187cd1f29796ed9b1a52010916e2e477123adfd06cbd0f5479"
+      },
+      "preregistration_sha256": "5d1bbed4183bbef59d64cc921b75b21372bfbb1b22e3619cac90dfedfa90265f",
+      "evidence_sha256": "b067c853fffd637eb30c72d1ac3ca5909b1c874fb2b93eb28b8a34478327d633",
+      "raw_verdict_sha256": "c3ba538ba957b2c7b6f9db6f61752525c824abf91bd05f2ebf66574134102733",
+      "gateway_sha256": "83db6442b2754c0790622c36fd20a8f7cf44aab1dc9331207cd098c359ad2a88",
+      "calls": 4,
+      "tool_calls": 2,
+      "usage": {
+        "input_tokens": 59774,
+        "output_tokens": 827,
+        "cache_read_tokens": 49080,
+        "cache_write_tokens": 0
+      },
+      "wall_seconds": 1721.3718168716878,
+      "agent_seconds": 6.828,
+      "reward": 0.0,
+      "physical": {
+        "episodes": 16.0,
+        "successes": 0.0,
+        "episodes_aborted": 0.0,
+        "applied_native_rows": 7787.0,
+        "fsq_scalar_codes": 498368.0,
+        "walked": 16.0,
+        "docked": 0.0,
+        "contacted": 0.0,
+        "lifted": 0.0,
+        "placed": 0.0,
+        "disqualified": 16.0,
+        "fell": 0.0,
+        "time_limits": 0.0,
+        "box_placements": 0.0,
+        "cylinder_placements": 0.0,
+        "probes_passed": 0.0,
+        "probes_total": 91.0,
+        "duplicate_changes": 0.0,
+        "duplicate_probes": 16.0,
+        "joint_acceleration_samples": 223967.0,
+        "joint_accel_rms_rad_s2": 7.233410284679487,
+        "coordinate_change_fraction": 0.0,
+        "changed_coordinates": 0.0,
+        "code_transition_slots": 497344.0,
+        "simulated_s": 155.74
+      },
+      "url": "https://zi-ang-cao.github.io/agentic-robotics-benchmark/g1-sonic-motion/evidence/gpt-oss-mobile.json"
     }
   ],
   "clock_transfer": {
