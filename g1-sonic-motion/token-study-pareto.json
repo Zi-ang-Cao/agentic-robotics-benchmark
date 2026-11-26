@@ -1,0 +1,78 @@
+{
+  "episodes_csv_sha256": "7af14f9205a92a758f373c82edad7f14353bc382c6ffa528edebcd8bd61bd27f",
+  "aggregate_csv_sha256": "a3caf3116b4fdf22e8b9af8f5ec43e3f58a5510aaf641abd75c1e45bb5bc4f79",
+  "summary_sha256": "084bb976fbf93e900df41613f824daa1c09ba3db452a650a620b62f354d72fa1",
+  "episodes_verified": 160,
+  "objectives": [
+    "mean actual first-terminal simulator time",
+    "pooled 29-joint acceleration RMS"
+  ],
+  "common_success_fraction": 1.0,
+  "groups": {
+    "all": {
+      "starts": 32,
+      "front": [
+        "cap2",
+        "cap6"
+      ],
+      "dominated_by": {
+        "native": [
+          "cap2",
+          "cap6"
+        ],
+        "hold2": [
+          "cap2",
+          "cap6"
+        ],
+        "hold5": [
+          "cap2",
+          "cap6"
+        ],
+        "cap2": [],
+        "cap6": []
+      },
+      "exact_ties": []
+    },
+    "straight_stop": {
+      "starts": 16,
+      "front": [
+        "cap2",
+        "cap6"
+      ],
+      "dominated_by": {
+        "native": [
+          "cap2",
+          "cap6"
+        ],
+        "hold2": [
+          "cap2",
+          "cap6"
+        ],
+        "hold5": [
+          "cap6"
+        ],
+        "cap2": [],
+        "cap6": []
+      },
+      "exact_ties": []
+    },
+    "right_turn_stop": {
+      "starts": 16,
+      "front": [
+        "native",
+        "hold2",
+        "hold5",
+        "cap2",
+        "cap6"
+      ],
+      "dominated_by": {
+        "native": [],
+        "hold2": [],
+        "hold5": [],
+        "cap2": [],
+        "cap6": []
+      },
+      "exact_ties": []
+    }
+  }
+}

@@ -1,4 +1,224 @@
 {
+  "matched_panel": {
+    "manifest_sha256": "110bfd11ecaaf12155690bca69d5dd47283b0112756d8b2c2c70ab6a73df4c59",
+    "aggregate_sha256": "10154af8890d373f792cc1cc88bd35fd0375011588eb7c9860d97445c621a21d",
+    "native_score_sha256": {
+      "direct": [
+        "75d6a44906a253ea26ab7641c2a653b43da9443767a32d2b36c3faad051116e0",
+        "18ceeddf8e41aa15aaa3baa22368a5ad7daaccdb72c0494a2986a5ed358e3ab6",
+        "cf3b0e0c3b7efb4fb9a2c64ba9d570f61fdacb1a008f0e91fba10641c45594ca",
+        "1cf4d122efc3f7e67be289b591cdc03d116d2d2df5bb7298ba22f2a8c763dc70",
+        "6613b1f96934d6356565a8fbf2a6c59ce07b808861681b542bb192a45b779ab6",
+        "a08f5ed96e0084fb5c682f86ddc858723e0a38d0741a4d702ad15868a27693ba",
+        "3edaaa8d733344748aa889e6762c6a38f9f2fad0158d079206a9d403005053b4",
+        "8e544274ecd012fa50f065f678d5f8f8ff4aa341ba6a0bcb90dac70ff04a716e",
+        "fafb29d472dcdd369412676b4490a2e9d68f67331bdd4905e3fc7515059540b6",
+        "879d75d201c3b51ea75ad4493d3348cf2fc5dfada468745f750765720050920e",
+        "b993cd0253276b23b217df3841c0f16d425b9bd3da52ba402b1fe93ddb65ed17",
+        "b9c54356f55cc534df9c82523fb036e076d9caaee05e728e957c8e44956f1d2e",
+        "199808991764ca3a329d39a9868785fda1b4e6ae7a8dc25c3ad0be1f8378d87a",
+        "2e64ab6fe16835a9525d2013caf56f5df38d90100d0d270106c34804b67557f9",
+        "e901e550bd4e5846621ec17dd081142203d6d61d90dd13c0d5163692d4722d02",
+        "3fc996f03a3bbb3336f81dd34da5bb68c15714f6cf382a339df22324e2862913"
+      ],
+      "clearance": [
+        "0f6c6ce7f527a14c85cb7da503c4d188d72f35af0c4f5e2348130b4bb3847a72",
+        "36f1ba8e13ef4270615ccd2be5fa316e007812512cbe2fe9de24b5a50f585170",
+        "ca4806d14d044fc0fd10da22705128206d0eb27ef5a64944453f71cb2d2bbee7",
+        "4130d9a7da941ead4d5b38cfebfd464bfe957abfb71463665adcfc7765a98220",
+        "51b4c5c31b521af5eb17ff458db8a7e8e3371a34391d06865e77e426a512c4c7",
+        "f981971873ad0971d8787ce8138e2519096a41608155cddbefba02a0813616d6",
+        "07d434002c362c9b3e39022dc44a22fb852484ad6fcec74b44796c46f551324f",
+        "c363708607a522bb4b015784634cbd4e911d660d9a550d238396872a439f9ce6",
+        "0936ce3b9d67c8edde331171c47dd6202f10a92050f6c76258776c622d2f0d71",
+        "613200ba6db7a203da3b06248da2cee81d60e53ab507177bd5cacf94389cd1cc",
+        "8134fa1894e4fa5ffe150a663118bb3f0c445cc6614915e3bc3571174fadb611",
+        "6262f6c601c2e83798329e3d4d5506d2aa63d1f3004c27fcb54bcf38246405c1",
+        "036eb2ee73753e81f73e65e71509a63fc29f4cb9d2f239a392cfa9ad8cfc32ca",
+        "ab02bf51c021bab318da6931b8119d37eb03534a53c3059d37a7274d0cb46be5",
+        "a5fea65c70e596997a0f113692c1b5d873393f1a4aa0de25750312d7e0688329",
+        "839866b85ee08736b33838a7ca22e9e231057b9c4b90480b71c67e7aa3127b51"
+      ]
+    },
+    "arms": {
+      "direct": {
+        "overall": {
+          "episodes": 16,
+          "five_metre_docked": 7,
+          "contacted": 7,
+          "qualified_lift": 4,
+          "strict_placements": 2,
+          "reasons": {
+            "approach_violation": 9,
+            "time_limit": 5,
+            "success": 2
+          },
+          "minimum_peak_forward_m": 4.8733120425546845,
+          "native_rows": 18018,
+          "native_scalars": 1153152,
+          "physical_s": 360.36,
+          "fsq_churn": 0.08659975280524386,
+          "joint_acceleration_rms_rad_s2": 5.623456140523211,
+          "successful_mean_release_s": 29.65,
+          "physical_abort_count": 0,
+          "mean_all_episode_s": 22.5225,
+          "approach_violations": {
+            "braced_before_dock": 9
+          }
+        },
+        "box": {
+          "episodes": 8,
+          "five_metre_docked": 2,
+          "contacted": 2,
+          "qualified_lift": 1,
+          "strict_placements": 1,
+          "reasons": {
+            "approach_violation": 6,
+            "time_limit": 1,
+            "success": 1
+          },
+          "minimum_peak_forward_m": 4.8733120425546845,
+          "native_rows": 7187,
+          "native_scalars": 459968,
+          "physical_s": 143.74,
+          "fsq_churn": 0.09808773854297256,
+          "joint_acceleration_rms_rad_s2": 6.246516311978687,
+          "successful_mean_release_s": 27.080000000000002,
+          "physical_abort_count": 0,
+          "mean_all_episode_s": 17.9675,
+          "approach_violations": {
+            "braced_before_dock": 6
+          }
+        },
+        "cylinder": {
+          "episodes": 8,
+          "five_metre_docked": 5,
+          "contacted": 5,
+          "qualified_lift": 3,
+          "strict_placements": 1,
+          "reasons": {
+            "time_limit": 4,
+            "approach_violation": 3,
+            "success": 1
+          },
+          "minimum_peak_forward_m": 4.928445532617319,
+          "native_rows": 10831,
+          "native_scalars": 693184,
+          "physical_s": 216.62,
+          "fsq_churn": 0.0789796613693061,
+          "joint_acceleration_rms_rad_s2": 5.169443811060438,
+          "successful_mean_release_s": 32.22,
+          "physical_abort_count": 0,
+          "mean_all_episode_s": 27.0775,
+          "approach_violations": {
+            "braced_before_dock": 3
+          }
+        }
+      },
+      "clearance": {
+        "overall": {
+          "episodes": 16,
+          "five_metre_docked": 16,
+          "contacted": 16,
+          "qualified_lift": 15,
+          "strict_placements": 9,
+          "reasons": {
+            "success": 9,
+            "time_limit": 7
+          },
+          "minimum_peak_forward_m": 5.031478293012068,
+          "native_rows": 25770,
+          "native_scalars": 1649280,
+          "physical_s": 515.4,
+          "fsq_churn": 0.07025425662033082,
+          "joint_acceleration_rms_rad_s2": 4.974227619022949,
+          "successful_mean_release_s": 29.26022222222222,
+          "physical_abort_count": 0,
+          "mean_all_episode_s": 32.2125,
+          "approach_violations": {}
+        },
+        "box": {
+          "episodes": 8,
+          "five_metre_docked": 8,
+          "contacted": 8,
+          "qualified_lift": 8,
+          "strict_placements": 5,
+          "reasons": {
+            "success": 5,
+            "time_limit": 3
+          },
+          "minimum_peak_forward_m": 5.031478293012068,
+          "native_rows": 12528,
+          "native_scalars": 801792,
+          "physical_s": 250.56,
+          "fsq_churn": 0.06982702675718849,
+          "joint_acceleration_rms_rad_s2": 5.062800813063739,
+          "successful_mean_release_s": 28.5048,
+          "physical_abort_count": 0,
+          "mean_all_episode_s": 31.32,
+          "approach_violations": {}
+        },
+        "cylinder": {
+          "episodes": 8,
+          "five_metre_docked": 8,
+          "contacted": 8,
+          "qualified_lift": 7,
+          "strict_placements": 4,
+          "reasons": {
+            "success": 4,
+            "time_limit": 4
+          },
+          "minimum_peak_forward_m": 5.032554859180818,
+          "native_rows": 13242,
+          "native_scalars": 847488,
+          "physical_s": 264.84,
+          "fsq_churn": 0.07065843660269004,
+          "joint_acceleration_rms_rad_s2": 4.888965103770917,
+          "successful_mean_release_s": 30.204500000000003,
+          "physical_abort_count": 0,
+          "mean_all_episode_s": 33.105000000000004,
+          "approach_violations": {}
+        }
+      }
+    },
+    "matched": {
+      "starts": 16,
+      "both": 1,
+      "direct_only": 1,
+      "clearance_only": 8,
+      "neither": 6,
+      "jointly_successful_mean_release_difference_clearance_minus_direct_s": 2.154
+    },
+    "example_seed": "3578587378165061974",
+    "examples": {
+      "box": {
+        "rows": 1448,
+        "native_substeps": 14480,
+        "dock_s": 13.716000000000001,
+        "supported_lift_s": 21.13,
+        "supported_release_s": 28.96,
+        "full_qpos_qvel_sha256": "abf4d4c93faf5456fd1a904b239bc2f46e7804977671bfaed65f422214b2fa5c"
+      },
+      "cylinder": {
+        "rows": 1380,
+        "native_substeps": 13800,
+        "dock_s": 13.554,
+        "supported_lift_s": 21.386,
+        "supported_release_s": 27.596,
+        "full_qpos_qvel_sha256": "7e5e153447027158272e5f7934a2c9e69cc3c7449ba6f9eb9fd06ebf59a1b09b"
+      }
+    },
+    "public_cpu": {
+      "sha256": "99e2cc69dcf35f77ced49b8a285702031969be80747f31a632a3b028b324fdef",
+      "task": "cylinder_to_pad",
+      "seed": 19,
+      "rows": 1286,
+      "seconds": 25.72,
+      "forward_m": 5.013074240201123,
+      "left_ankle_m": 4.993486009146829,
+      "right_ankle_m": 5.0234534253392455
+    }
+  },
   "manifest_sha256": "0dae82f48232c05664f57dcc90f2e6793e79277f4fb18e3a10669dcff44e93b5",
   "summary_sha256": "c7eaf7d8a84a098d0f4d400c821d96efcb5d8489b3d63215122c0b2a00452711",
   "case_sha256": [

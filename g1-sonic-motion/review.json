@@ -1,8 +1,8 @@
 {
   "format": "single standalone bilingual HTML with embedded MP4, image and data",
   "public_site_path": "/g1-sonic-motion/",
-  "html_bytes": 7015809,
-  "html_sha256": "1acf23fb551ff92e36b81d9a55dfc6be208216f72396f13ae5890bc88fcf726d",
+  "html_bytes": 7209307,
+  "html_sha256": "29859e5c500d3ea0baf1b3194580279c3182cd0291a1b67603f2dc8613325498",
   "data_sha256": {
     "walk_data.json": "affd602acf755e78c9e635178f13eacfa092575fe02c933ef881d54e2c104d8a",
     "mobile_data.json": "3b302abd3209f4e511a3debf5ff088144e1a7d4af730c826648d998cadd8d24b",
@@ -10,11 +10,14 @@
     "delayed_data.json": "08b5a4d6a571c2ed0de12a7ac449d19e0cd7633df87ab550ce84aa5c6737e8e7",
     "official.json": "eae76dd1334d8bad9642081302af698093166ff7897d9174a2b66e64e3077efb",
     "agent_runs.json": "ec3f71b736ea971512625cb96f488e6bc02916a5af92d69f40e23ddba1c0889c",
-    "five_metre.json": "0faaa0d4dbb593c9068a656fd841bf0317b735dd104570961bd4a012978fad77",
+    "five_metre.json": "7fb6fa9618db8ef9475fbf43c1da2e057cb3607e73ca2e8d1afda950a1d9f320",
+    "five-metre-matched.json": "10154af8890d373f792cc1cc88bd35fd0375011588eb7c9860d97445c621a21d",
     "delayed_video.json": "10a69dcb3ed347bf9dc770678d62cfb70662010b6a328022434e160c16f6c79f",
     "pivot_video.json": "fae77a4ec5869b11c0e98465fdf71957a64913765297b62527605f5d7e88bea9",
     "token-study-methods.csv": "a3caf3116b4fdf22e8b9af8f5ec43e3f58a5510aaf641abd75c1e45bb5bc4f79",
-    "token-study-summary.json": "084bb976fbf93e900df41613f824daa1c09ba3db452a650a620b62f354d72fa1"
+    "token-study-summary.json": "084bb976fbf93e900df41613f824daa1c09ba3db452a650a620b62f354d72fa1",
+    "token-study-episodes.csv": "7af14f9205a92a758f373c82edad7f14353bc382c6ffa528edebcd8bd61bd27f",
+    "token-study-pareto.json": "dd707d459bf1614296c5ae33e467c5457b36efbe163a953e24c8bfdcd07b5f26"
   },
   "browser_viewports": [
     [
@@ -61,8 +64,10 @@
     "English and Chinese toggle",
     "no horizontal viewport overflow",
     "all four inline H264 streams",
+    "all three standalone review MP4 downloads byte-identical",
     "English and Chinese timed captions on new footage",
-    "CSV/JSON downloads byte-identical to native study",
+    "three route-specific Pareto sets and near-equal times",
+    "five CSV/JSON downloads byte-identical to verified sources",
     "offline HTML download"
   ]
 }
