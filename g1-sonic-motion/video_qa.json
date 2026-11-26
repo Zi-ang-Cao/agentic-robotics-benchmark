@@ -1,0 +1,54 @@
+{
+  "delayed_route.mp4": {
+    "codec_name": "h264",
+    "width": 1200,
+    "height": 688,
+    "pix_fmt": "yuv420p",
+    "avg_frame_rate": "50/1",
+    "duration": "25.500000",
+    "nb_read_frames": "1275",
+    "sha256": "ab61449b00830d5a4cd57f6f372ab20e50b3a89d36d4d28ff6817a7cd0db4dbd",
+    "all_frames_decoded_without_errors": true,
+    "mean_abs_RGB_difference_between_render_panels_by_time": [
+      [
+        0.0,
+        1.4019
+      ],
+      [
+        10.0,
+        1.2117
+      ],
+      [
+        17.1,
+        1.5722
+      ],
+      [
+        18.6,
+        12.3226
+      ],
+      [
+        21.0,
+        14.0744
+      ],
+      [
+        24.6,
+        11.424
+      ],
+      [
+        25.2,
+        10.9247
+      ]
+    ]
+  },
+  "right_turn_stop.mp4": {
+    "codec_name": "h264",
+    "width": 880,
+    "height": 480,
+    "pix_fmt": "yuv420p",
+    "avg_frame_rate": "50/1",
+    "duration": "3.880000",
+    "nb_read_frames": "194",
+    "sha256": "c2ec99c6eb1a776176c020b3b6b93bdf50085c5b56684340600a7b98ca5460c2",
+    "all_frames_decoded_without_errors": true
+  }
+}

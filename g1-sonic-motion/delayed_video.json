@@ -1,0 +1,54 @@
+{
+  "artifact": "delayed_route.mp4",
+  "bytes": 1210251,
+  "sha256": "ab61449b00830d5a4cd57f6f372ab20e50b3a89d36d4d28ff6817a7cd0db4dbd",
+  "width": 1200,
+  "height": 688,
+  "output_fps": 50,
+  "physical_end_s": 24.7,
+  "frames": 1275,
+  "video_duration_s": 25.5,
+  "terminal_still_s": 0.8,
+  "first_turn_reveal_s": 17.14,
+  "shared_prefix_native_rows": 857,
+  "shared_prefix_codes_sha256": "a4e47749ebf37be1f6e38b03b4d6ca70a5d4533b5011a3129e9202de4a6ca6bb",
+  "renderer_mode": "Mesa software (CPU), no GPU context or time acceleration",
+  "branches": {
+    "left": {
+      "input_codes_sha256": "3717b934882a58cbbb52b6c2f510ae4df367845a798aa9e7a7ee5fc110a2c348",
+      "native_qpos_qvel_ctrl_sha256": "d9497c7b97d7cab52d1bf6ee26ab26ee6d66750c196c53b4b0bcba7d9b564784",
+      "all_native_substep_measurements_sha256": "1100493d8764b3e2d702d07589582897e6008619ecba3c9963f6881b4cbc13a8",
+      "native_rows": 1222,
+      "native_2ms_samples": 12220,
+      "terminal_time_s": 24.44,
+      "rendered_native_instants": 250,
+      "min_full_body_margin_px": 45,
+      "renderer": "llvmpipe (LLVM 15.0.7, 256 bits)",
+      "success": true,
+      "fall": false,
+      "stage_reveal_ticks": [
+        0,
+        857,
+        997
+      ]
+    },
+    "right": {
+      "input_codes_sha256": "9a5061215ffbb304fc64d761da9cd2b64e686f5dbc030dfeb181a22fc828032c",
+      "native_qpos_qvel_ctrl_sha256": "b1d346c76ce88b78ef452e7606d8481f956a3b0ef2bf9bfb8e57ead9e5639b9b",
+      "all_native_substep_measurements_sha256": "f74e372ee321ec049b1b0c2ca66794201d59ace6668f014d4d240ba271c04275",
+      "native_rows": 1235,
+      "native_2ms_samples": 12350,
+      "terminal_time_s": 24.7,
+      "rendered_native_instants": 253,
+      "min_full_body_margin_px": 38,
+      "renderer": "llvmpipe (LLVM 15.0.7, 256 bits)",
+      "success": true,
+      "fall": false,
+      "stage_reveal_ticks": [
+        0,
+        857,
+        1007
+      ]
+    }
+  }
+}

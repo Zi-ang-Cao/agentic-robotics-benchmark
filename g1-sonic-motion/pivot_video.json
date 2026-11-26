@@ -1,0 +1,19 @@
+{
+  "artifact": "right_turn_stop.mp4",
+  "bytes": 127467,
+  "sha256": "c2ec99c6eb1a776176c020b3b6b93bdf50085c5b56684340600a7b98ca5460c2",
+  "width": 880,
+  "height": 480,
+  "output_fps": 50,
+  "native_rows": 154,
+  "native_2ms_samples": 1540,
+  "native_2ms_substeps_sha256": "67ca20218921ddc0d5d33a66187700fd84313fef05eb31abd49ab3be9fff258f",
+  "input_codes_sha256": "a4eaf9d2b532c37591ee02b09f9b00f935e3a1d79c4a3e4709f96dbb3f140315",
+  "strict_gate_s": 3.0699999999998835,
+  "physical_end_s": 3.08,
+  "video_duration_s": 3.88,
+  "frames": 194,
+  "terminal_still_s": 0.8,
+  "renderer": "llvmpipe (LLVM 15.0.7, 256 bits)",
+  "min_full_body_margin_px": 48
+}
