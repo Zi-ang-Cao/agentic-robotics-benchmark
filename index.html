@@ -29,6 +29,61 @@ header{display:flex;align-items:center;justify-content:space-between;gap:1rem;pa
 <a class="card walk" href="g1-sonic-motion/#delayed"><figure><img src="review-images/sequence.webp" alt=""></figure><h2><span lang="en">Follow the next command</span><span lang="zh-CN">停稳后接收下一条指令</span></h2><p lang="en">At the same physical stop, the controller can receive a left or right turn. The next walking distance appears only after the pivot. Compare two branches that start with identical motion.</p><p lang="zh-CN">在同一位置停稳后，控制器才会收到左转或右转指令。完成转向并停稳后，它才会获知下一段的行走距离。对比起步动作完全相同、随后分叉的两条轨迹。</p><span class="read"><span lang="en">Compare the revealed commands</span><span lang="zh-CN">比较指令揭示后的两条轨迹</span> ↗</span></a>
 </div>
 <section class="measure"><h2><span lang="en">Reading the scores</span><span lang="zh-CN">如何读懂评分</span></h2><p lang="en">Read the raw successes out of all starts alongside the normalized ALE reward. The verifier checks whether actions respond to changed observations. Simulated seconds, applied SONIC coordinates, code changes and measured motion smoothness describe how the controller moved. Model token usage comes from the coding agent’s ALE transport trace.</p><p lang="zh-CN">同时查看全部开局中的原始成功数和 ALE 归一化奖励。评分器会改变观测，检查控制器的动作是否随之调整。仿真秒数、实际执行的 SONIC 码数量、编码变化与运动平滑度反映控制器如何完成动作。编程智能体的模型 token 用量来自 ALE 的调用记录。</p></section>
+<!-- practice-guide -->
+<section class="measure guide" id="practice" aria-labelledby="practice-title">
+  <h2 id="practice-title"><span lang="en">Run a public practice episode</span><span lang="zh-CN">在本地运行公开练习</span></h2>
+  <p lang="en">Choose a task to see the commands for a fresh checkout. The first build downloads the public SONIC weights and G1 assets. Each episode runs offline with four CPU cores and 8 GiB on an x86-64 Linux Docker host with AVX2 and FMA.</p>
+  <p lang="zh-CN">选择任务即可查看从全新代码仓库运行的命令。首次构建会下载公开的 SONIC 权重和 G1 模型。每次仿真离线运行，需要支持 AVX2 和 FMA 的 x86-64 Linux 主机、Docker、四个 CPU 核和 8 GiB 内存。</p>
+  <label for="practice-task"><span lang="en">Practice episode</span><span lang="zh-CN">练习任务</span></label>
+  <select id="practice-task">
+    <option value="walk" data-zh="直行五米并停稳">Walk five metres and stop</option>
+    <option value="right" data-zh="右转九十度并停稳">Turn right 90° and stop</option>
+    <option value="leftseq" data-zh="延迟指令：停稳后左转">Delayed commands with a left turn</option>
+    <option value="rightseq" data-zh="延迟指令：停稳后右转">Delayed commands with a right turn</option>
+    <option value="direct" data-zh="桌前抓放：直接预测运动码">Tabletop with direct token prediction</option>
+    <option value="planner" data-zh="桌前抓放：视觉规划">Tabletop with the visual planner</option>
+    <option value="mobile" data-zh="走到桌前抓取并放下">Walk to the table and place</option>
+    <option value="longmobile" data-zh="五米桌前接近与抓放（扩展练习）">Five-metre walk to the table (extended practice)</option>
+  </select>
+  <pre tabindex="0" dir="ltr"><code id="practice-command"></code></pre>
+  <p lang="en">Save the launcher next to your checkout. Add <code>--steps 10</code> for a quick interface check. To try your own controller, supply <code>--submission ./my-controller</code> with its <code>run.sh</code> and omit <code>--policy</code>. Each command prints the raw result for the selected practice seed. The linked pull requests include the separate 16-trial ALE verification commands.</p>
+  <p lang="zh-CN">把启动脚本保存在代码仓库旁边。加上 <code>--steps 10</code> 可快速检查接口。测试自己的控制器时，使用 <code>--submission ./my-controller</code> 指向包含 <code>run.sh</code> 的目录，并省去 <code>--policy</code>。命令输出该种子的原始物理结果。各项任务的 PR 中另有 16 次试验的正式 ALE 验证命令。</p>
+  <a class="read" href="run_public_reference.py" download="run_public_reference.py"><span lang="en">Download the Python launcher</span><span lang="zh-CN">下载 Python 启动脚本</span> ↓</a>
+  <style>
+    .guide{padding-top:0}.guide label{display:block;margin:1rem 0 .35rem;font-weight:650}.guide select{color:var(--ink);font:inherit;width:min(100%,28rem);border:1px solid var(--line);background:#fffdf7;padding:.4rem}.guide pre{overflow:auto;max-width:100%;background:#ecede4;padding:.85rem 1rem;border-left:3px solid var(--forest);font-size:.89rem}.guide a{display:inline-block;margin-top:.8rem}
+  </style>
+  <script>
+  (()=>{
+    const choices={
+      walk:['g1_sonic_locomotion','walk --seed 7'],
+      right:['g1_sonic_locomotion','right-turn --seed 7'],
+      leftseq:['g1_sonic_command_sequence','sequence-left --seed 7'],
+      rightseq:['g1_sonic_command_sequence','sequence-right --seed 7'],
+      direct:['g1_sonic_token_space_control','tabletop --policy v4 --shape box --seed 7'],
+      planner:['g1_sonic_token_space_control','tabletop --policy p1 --shape cylinder --seed 7'],
+      mobile:['g1_sonic_mobile_pick_place','mobile --shape cylinder --seed 19'],
+      longmobile:['g1_sonic_mobile_pick_place','mobile --course five-metre --shape box --seed 3578587378165061974']
+    };
+    const picker=document.querySelector('#practice-task');
+    for(const choice of picker.options)choice.dataset.en=choice.textContent;
+    function render(){
+      const chinese=document.documentElement.lang==='zh-CN';
+      for(const choice of picker.options)choice.textContent=choice.dataset[chinese?'zh':'en'];
+      const [slug,flags]=choices[picker.value];
+      document.querySelector('#practice-command').textContent=[
+        'git clone --filter=blob:none --sparse --depth 1 --single-branch --branch ziangc/'+slug+' \\',
+        '  https://github.com/Zi-ang-Cao/agentic-robotics-benchmark.git '+slug,
+        'git -C '+slug+' sparse-checkout set tasks/humanoid/'+slug,
+        'python3 run_public_reference.py '+flags+' --checkout '+slug
+      ].join('\n');
+    }
+    picker.addEventListener('change',render);
+    new MutationObserver(render).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+    render();
+  })();
+  </script>
+</section>
+<!-- /practice-guide -->
 </main>
 <footer><a href="https://github.com/Grounded-Intelligence-Initiative/agentic-robotics-benchmark"><span lang="en">Agentic Robotics Benchmark repository</span><span lang="zh-CN">Agentic Robotics Benchmark 代码库</span></a></footer>
 <script>

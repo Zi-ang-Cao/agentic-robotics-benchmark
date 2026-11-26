@@ -1,0 +1,140 @@
+{
+  "confirmations": [
+    {
+      "run_id": "validate-ad3bc330",
+      "validation_sha256": "e6f94effb41a4403cad84feedd1de682462012d33a505fe6b70b91e231ec2481",
+      "task_commit": "e0d4b307726bbdf3397790ce4728f921fdf5dda0",
+      "engine_commit": "bfb75050aca2c54b45c5ab23bae6028a834a468a",
+      "wall_seconds": 2772.5605878848583,
+      "started_utc": "2026-11-26T11:39:31.852655+00:00",
+      "ended_utc": "2026-11-26T12:25:44.422261+00:00",
+      "arms": {
+        "oracle": {
+          "episode_id": "grounded-intelligence-initiative.g1_sonic_token_space_control-oracle-c535e451",
+          "verification_sha256": "13d381c5eb9b2b3402474633ab55c26b749f4d4d36449738d19427d84bc01a0d",
+          "reward": 1.0,
+          "metrics": {
+            "ratio": 0.9333333333333333,
+            "anchor_recorded": 1.0,
+            "strict_placement_fraction": 0.875,
+            "episodes": 16.0,
+            "placed": 14.0,
+            "lifted": 16.0,
+            "falls": 0.0,
+            "episodes_aborted": 0.0,
+            "time_limits": 2.0,
+            "applied_native_rows": 9375.0,
+            "probes_total": 128.0,
+            "probes_passed": 89.0,
+            "duplicate_probes": 16.0,
+            "duplicate_changes": 0.0,
+            "missed_reached_probe_opportunities": 0.0,
+            "probe_change_fraction": 0.6953125,
+            "duplicate_change_fraction": 0.0,
+            "match_lock_ok": 1.0,
+            "simulated_seconds": 187.5,
+            "executed_fsq_scalars": 600000.0,
+            "body_code_comparisons": 598976.0,
+            "body_code_changes": 12547.0,
+            "joint_acceleration_samples": 9311.0,
+            "body_code_churn_fraction": 0.020947416924885137,
+            "joint_acceleration_rms_rad_s2": 2.355061085056729,
+            "mean_max_lift_m": 0.15668937228437405,
+            "mean_goal_error_xy_m": 0.021550065304565366,
+            "mean_release_hold_s": 0.21875000000000014,
+            "box_episodes": 8.0,
+            "box_placed": 7.0,
+            "cylinder_episodes": 8.0,
+            "cylinder_placed": 7.0,
+            "numerics_ok": 1.0,
+            "offline_launcher_ok": 1.0,
+            "agent_account_cleared": 1.0,
+            "reward_exact": 1.0
+          },
+          "empty_model_transport_trace": true
+        },
+        "untouched": {
+          "episode_id": "grounded-intelligence-initiative.g1_sonic_token_space_control-untouched-2ecd19c8",
+          "verification_sha256": "f2c99c3dd2b15c3fe22b233a84494b23ec28ba32bd3d9cc68f20b97735b5e97b",
+          "reward": 0.0,
+          "metrics": {
+            "ratio": 0.0,
+            "anchor_recorded": 1.0,
+            "episodes": 16.0,
+            "episodes_aborted": 16.0,
+            "reward_exact": 0.0
+          },
+          "empty_model_transport_trace": true
+        }
+      }
+    },
+    {
+      "run_id": "validate-8dd5f87e",
+      "validation_sha256": "3b2f1f82dc70c568b6ff5dc8b5dfb57f29d2f58ddc3ec13b50f657c0cabe12c5",
+      "task_commit": "e0d4b307726bbdf3397790ce4728f921fdf5dda0",
+      "engine_commit": "bfb75050aca2c54b45c5ab23bae6028a834a468a",
+      "wall_seconds": 2698.727262530476,
+      "started_utc": "2026-11-26T11:39:31.852061+00:00",
+      "ended_utc": "2026-11-26T12:24:30.588930+00:00",
+      "arms": {
+        "oracle": {
+          "episode_id": "grounded-intelligence-initiative.g1_sonic_token_space_control-oracle-8f019bef",
+          "verification_sha256": "5fc5133c416ad5be4330587871c44fc7d3d7403e6118ecc297b4bc0cf665cf80",
+          "reward": 1.0,
+          "metrics": {
+            "ratio": 1.0,
+            "anchor_recorded": 1.0,
+            "strict_placement_fraction": 0.9375,
+            "episodes": 16.0,
+            "placed": 15.0,
+            "lifted": 16.0,
+            "falls": 0.0,
+            "episodes_aborted": 0.0,
+            "time_limits": 1.0,
+            "applied_native_rows": 9050.0,
+            "probes_total": 128.0,
+            "probes_passed": 95.0,
+            "duplicate_probes": 16.0,
+            "duplicate_changes": 0.0,
+            "missed_reached_probe_opportunities": 0.0,
+            "probe_change_fraction": 0.7421875,
+            "duplicate_change_fraction": 0.0,
+            "match_lock_ok": 1.0,
+            "simulated_seconds": 181.0,
+            "executed_fsq_scalars": 579200.0,
+            "body_code_comparisons": 578176.0,
+            "body_code_changes": 12152.0,
+            "joint_acceleration_samples": 8986.0,
+            "body_code_churn_fraction": 0.021017821562984283,
+            "joint_acceleration_rms_rad_s2": 2.4010748431599516,
+            "mean_max_lift_m": 0.1599136464703716,
+            "mean_goal_error_xy_m": 0.021017474612997262,
+            "mean_release_hold_s": 0.23437500000000017,
+            "box_episodes": 8.0,
+            "box_placed": 7.0,
+            "cylinder_episodes": 8.0,
+            "cylinder_placed": 8.0,
+            "numerics_ok": 1.0,
+            "offline_launcher_ok": 1.0,
+            "agent_account_cleared": 1.0,
+            "reward_exact": 1.0
+          },
+          "empty_model_transport_trace": true
+        },
+        "untouched": {
+          "episode_id": "grounded-intelligence-initiative.g1_sonic_token_space_control-untouched-5eb8f48b",
+          "verification_sha256": "f2c99c3dd2b15c3fe22b233a84494b23ec28ba32bd3d9cc68f20b97735b5e97b",
+          "reward": 0.0,
+          "metrics": {
+            "ratio": 0.0,
+            "anchor_recorded": 1.0,
+            "episodes": 16.0,
+            "episodes_aborted": 16.0,
+            "reward_exact": 0.0
+          },
+          "empty_model_transport_trace": true
+        }
+      }
+    }
+  ]
+}
