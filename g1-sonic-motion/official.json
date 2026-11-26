@@ -1,0 +1,193 @@
+{
+  "tasks": [
+    {
+      "key": "g1_sonic_locomotion",
+      "name_en": "Locomotion",
+      "name_zh": "直行与转身",
+      "commit": "e48e2384089c8a46d4414bbfd45f7c905ba20616",
+      "calibration": "16/16 · 15/16 · 16/16 · 16/16",
+      "threshold": "14 / 16",
+      "detail_en": "Two fresh panels, 16/16 strict stops each (8/8 walking and 8/8 turning).",
+      "detail_zh": "两组独立确认均严格停车 16/16（直行 8/8、转身 8/8）。",
+      "panels": [
+        16,
+        15,
+        16,
+        16
+      ],
+      "checks": [
+        {
+          "id": "G0",
+          "run": "validate-d6cb3621",
+          "validation_sha256": "dd8ebf5085f6396ba4e4e47057edeeea17c0d9be97a95daf7ed0c65c65b81000",
+          "untouched": {
+            "reward": 0.0,
+            "verification_sha256": "f2c99c3dd2b15c3fe22b233a84494b23ec28ba32bd3d9cc68f20b97735b5e97b",
+            "gateway_trace_bytes": 0
+          },
+          "oracle": {
+            "reward": 1.0,
+            "verification_sha256": "00cd086f49171f8a947af88969e16aab6d2f3a39adf05c45e49584fa8e572325",
+            "gateway_trace_bytes": 0,
+            "successes": 16,
+            "trials": 16,
+            "rows": 6535,
+            "codes": 418240,
+            "acceleration": 6.794830170068505,
+            "counts": {
+              "straight": 8,
+              "pivot": 8
+            }
+          },
+          "receipt_sha256": "8b236ea4dcb819709a75176f35acf8955350f3b43d957a25d56ae7fd229e1a9c"
+        },
+        {
+          "id": "G1",
+          "run": "validate-8332f7f3",
+          "validation_sha256": "e19734c4c7d1a7446d60bbfcae38ef1ecd5a9451c166da1ea723c1c562375057",
+          "untouched": {
+            "reward": 0.0,
+            "verification_sha256": "f2c99c3dd2b15c3fe22b233a84494b23ec28ba32bd3d9cc68f20b97735b5e97b",
+            "gateway_trace_bytes": 0
+          },
+          "oracle": {
+            "reward": 1.0,
+            "verification_sha256": "0c2fe1c42e3d621f12ebf6d92608e41c3139af0c247bd77920ea0340951fb495",
+            "gateway_trace_bytes": 0,
+            "successes": 16,
+            "trials": 16,
+            "rows": 6543,
+            "codes": 418752,
+            "acceleration": 6.8077572163027735,
+            "counts": {
+              "straight": 8,
+              "pivot": 8
+            }
+          },
+          "receipt_sha256": "29e62093765da1c98c5420f13202e32bb02fdf912e444c63869e011dbcf61f91"
+        }
+      ],
+      "anchor_sha256": "630199f539229489a6a80a4c0e135b88fa81ab029b638ae7f2bd9fd721295735",
+      "pr_url": "https://github.com/Grounded-Intelligence-Initiative/agentic-robotics-benchmark/pull/204"
+    },
+    {
+      "key": "g1_sonic_command_sequence",
+      "name_en": "Delayed commands",
+      "name_zh": "分段指令",
+      "commit": "0dfcdcc42c06b88dcb41413264f5d17913b0f559",
+      "calibration": "15/16 · 16/16 · 15/16 · 13/16",
+      "threshold": "12 / 16",
+      "panels": [
+        15,
+        16,
+        15,
+        13
+      ],
+      "checks": [
+        {
+          "id": "G0",
+          "run": "validate-1790c6e7",
+          "validation_sha256": "6ff112f9cb4736b11212a37bbaf2eec8dad8435928c59b830a618b4b5c9fe297",
+          "untouched": {
+            "reward": 0.0,
+            "verification_sha256": "e892ce36b079c617469be2c54f6fd2784f578e965727eae40c697f37716b43b8",
+            "gateway_trace_bytes": 0
+          },
+          "oracle": {
+            "reward": 1.0,
+            "verification_sha256": "1c6b4b7224b8eee2ff21a7bac0dc9a6b5a2d8c4881610c28221744fb2c081da8",
+            "gateway_trace_bytes": 0,
+            "successes": 16,
+            "trials": 16,
+            "rows": 17731,
+            "codes": 1134784,
+            "acceleration": 6.303156428389514,
+            "counts": {
+              "left": 8,
+              "right": 8,
+              "state_changes": 95,
+              "state_pairs": 112,
+              "state_duplicates": 16,
+              "state_noise": 0,
+              "branch_changes": 16,
+              "branch_pairs": 16,
+              "branch_duplicates": 16,
+              "branch_noise": 0,
+              "terminal_lost_standing_hold": 0,
+              "approach_revealed": 16,
+              "approach_stops": 16,
+              "pivot_revealed": 16,
+              "pivot_stops": 16,
+              "departure_revealed": 16,
+              "departure_stops": 16
+            }
+          },
+          "receipt_sha256": "42c67641aa60bcf30a0cdb81b5d9e342f89bbfb56a15c010a25517d2b12a9f32"
+        },
+        {
+          "id": "G1",
+          "run": "validate-8f0fdaaf",
+          "validation_sha256": "0bf71cc4b90b23637060653eaca2f031b54c5aeaf64908b49b629bc8000c57b3",
+          "untouched": {
+            "reward": 0.0,
+            "verification_sha256": "e892ce36b079c617469be2c54f6fd2784f578e965727eae40c697f37716b43b8",
+            "gateway_trace_bytes": 0
+          },
+          "oracle": {
+            "reward": 1.0,
+            "verification_sha256": "9f52148a5ed79fd4bbdfc7940d6e44207a7edd66a6dada632aa5e1cd065668da",
+            "gateway_trace_bytes": 0,
+            "successes": 15,
+            "trials": 16,
+            "rows": 17539,
+            "codes": 1122496,
+            "acceleration": 6.29933850958141,
+            "counts": {
+              "left": 8,
+              "right": 7,
+              "state_changes": 80,
+              "state_pairs": 108,
+              "state_duplicates": 16,
+              "state_noise": 0,
+              "branch_changes": 15,
+              "branch_pairs": 15,
+              "branch_duplicates": 15,
+              "branch_noise": 0,
+              "terminal_lost_standing_hold": 1,
+              "approach_revealed": 16,
+              "approach_stops": 15,
+              "pivot_revealed": 15,
+              "pivot_stops": 15,
+              "departure_revealed": 15,
+              "departure_stops": 15
+            }
+          },
+          "receipt_sha256": "634f6f9daff2079e9e74403b71bd85a50cddf78f8e00ae9de0cb931338e2fcda"
+        }
+      ],
+      "anchor_sha256": "2a1f105f74c1e73736d2b8311e31a427315399431eea68e0c9d4b7cc7607e5fd",
+      "detail_en": "16/16 courses (8/8 left, 8/8 right) then 15/16 courses (8/8 left, 7/8 right). 31/31 alternate turn probes changed the action, as did 175/220 state probes. 0/63 duplicate probes changed. Recorded strict stops on reached stages were 31/31 turns and 31/31 departures. 1 course ended during the first extended standing hold.",
+      "detail_zh": "16/16 条完整路线（左 8/8、右 8/8）；15/16 条完整路线（左 8/8、右 7/8）。 改发转向指令时 31/31 次动作发生变化；状态探针有 175/220 次，重复探针有 0/63 次。已进入的转向和末段行走分别有 31/31、31/31 次满足严格停车。1 条路线在首段延长站稳期间终止。",
+      "pr_url": "https://github.com/Grounded-Intelligence-Initiative/agentic-robotics-benchmark/pull/205"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://github.com/Grounded-Intelligence-Initiative/agentic-robotics-benchmark/pull/204",
+      "en": "Locomotion · GitHub PR #204",
+      "zh": "直行与转身 · GitHub PR #204"
+    },
+    {
+      "url": "https://zi-ang-cao.github.io/agentic-robotics-benchmark/g1-sonic-motion/evidence/sequence.json",
+      "en": "Delayed commands · final validation JSON",
+      "zh": "分段指令 · 最终验证 JSON"
+    },
+    {
+      "url": "https://github.com/Grounded-Intelligence-Initiative/agentic-robotics-benchmark/pull/205",
+      "en": "Delayed commands · GitHub PR #205",
+      "zh": "分段指令 · GitHub PR #205"
+    }
+  ],
+  "usage_en": "All 8 completed reference/untouched gateway traces represented here were empty (0 observed model calls). The motor rows above record physical control. The coding-agent table separately reports its own gateway measurements.",
+  "usage_zh": "此处各组共有 8 份已完成的参考策略/初始环境网关记录，均为空（观测到 0 次模型调用）。上方电机控制行记录物理控制。编程智能体尝试的实际网关用量另列表给出。"
+}

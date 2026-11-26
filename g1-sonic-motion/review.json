@@ -1,14 +1,14 @@
 {
   "format": "single standalone bilingual HTML with embedded MP4, image and data",
   "public_site_path": "/g1-sonic-motion/",
-  "html_bytes": 7014694,
-  "html_sha256": "5b7c54a0ff0ece5227883c5bf99ad077f910eea5beeca5d3ca1d8850696f77bf",
+  "html_bytes": 7015809,
+  "html_sha256": "1acf23fb551ff92e36b81d9a55dfc6be208216f72396f13ae5890bc88fcf726d",
   "data_sha256": {
     "walk_data.json": "affd602acf755e78c9e635178f13eacfa092575fe02c933ef881d54e2c104d8a",
     "mobile_data.json": "3b302abd3209f4e511a3debf5ff088144e1a7d4af730c826648d998cadd8d24b",
     "composed_data.json": "c7365600e9e056b7ab1e6cce8866bdd76acfe2131a2cb0550a1be00ac21d5910",
     "delayed_data.json": "08b5a4d6a571c2ed0de12a7ac449d19e0cd7633df87ab550ce84aa5c6737e8e7",
-    "official.json": "217d370b3fd8f985a66b4b9bfa6f4399b3d1d79939eaff08847df56a9554c737",
+    "official.json": "eae76dd1334d8bad9642081302af698093166ff7897d9174a2b66e64e3077efb",
     "agent_runs.json": "ec3f71b736ea971512625cb96f488e6bc02916a5af92d69f40e23ddba1c0889c",
     "five_metre.json": "0faaa0d4dbb593c9068a656fd841bf0317b735dd104570961bd4a012978fad77",
     "delayed_video.json": "10a69dcb3ed347bf9dc770678d62cfb70662010b6a328022434e160c16f6c79f",
