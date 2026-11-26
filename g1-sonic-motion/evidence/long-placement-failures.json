@@ -1,0 +1,253 @@
+{
+  "starts": 16,
+  "successful_placements": 9,
+  "timeouts": 7,
+  "qualified_lift_then_timeout": 6,
+  "timed_out_before_qualified_lift": 1,
+  "release_failure_closest_window_counts": {
+    "footprint": 5,
+    "hand_clear": 2,
+    "pad_support": 1,
+    "center_height": 2,
+    "upright": 1
+  },
+  "release_gates_never_individually_sustained_counts": {
+    "pad_support": 1,
+    "footprint": 2
+  },
+  "successful_lift_s_range": [
+    20.956,
+    23.228
+  ],
+  "successful_release_s_range": [
+    27.478,
+    35.856
+  ],
+  "successful_longest_full_release_hold_ms_range": [
+    250,
+    268
+  ],
+  "lifted_timeout_longest_full_release_hold_ms_range": [
+    0,
+    0
+  ],
+  "timeouts_by_start": [
+    {
+      "roster_position": 2,
+      "shape": "box",
+      "seed": "12488119062554585225",
+      "stage": "release",
+      "lift_s": 21.754,
+      "first_hand_contact_s": 20.886,
+      "maximum_rise_m": 0.13938340010860117,
+      "original_native_summary": "../paired_v2/clearance/box-12488119062554585225/frozen_score.json",
+      "original_native_summary_sha256": "ca4806d14d044fc0fd10da22705128206d0eb27ef5a64944453f71cb2d2bbee7",
+      "closest_window_s": [
+        27.582,
+        27.832
+      ],
+      "longest_all_predicate_hold_ms": 0,
+      "closest_window_failure_ms": {
+        "footprint": 250
+      },
+      "never_sustained_individually": [],
+      "all_minimum_interrupted_sets": [
+        [
+          "footprint"
+        ]
+      ]
+    },
+    {
+      "roster_position": 2,
+      "shape": "cylinder",
+      "seed": "12488119062554585225",
+      "stage": "lift",
+      "lift_s": null,
+      "first_hand_contact_s": 19.766000000000002,
+      "maximum_rise_m": 0.002173319531606155,
+      "original_native_summary": "../paired_v2/clearance/cylinder-12488119062554585225/frozen_score.json",
+      "original_native_summary_sha256": "4130d9a7da941ead4d5b38cfebfd464bfe957abfb71463665adcfc7765a98220",
+      "closest_window_s": [
+        23.714,
+        23.754
+      ],
+      "longest_all_predicate_hold_ms": 0,
+      "closest_window_failure_ms": {
+        "opposed": 40,
+        "hand_load": 40,
+        "rise": 40
+      },
+      "never_sustained_individually": [
+        "opposed",
+        "hand_load",
+        "rise"
+      ],
+      "all_minimum_interrupted_sets": [
+        [
+          "opposed",
+          "hand_load",
+          "rise"
+        ]
+      ]
+    },
+    {
+      "roster_position": 3,
+      "shape": "box",
+      "seed": "15434180358783540332",
+      "stage": "release",
+      "lift_s": 21.812,
+      "first_hand_contact_s": 21.3,
+      "maximum_rise_m": 0.14840256274725627,
+      "original_native_summary": "../paired_v2/clearance/box-15434180358783540332/frozen_score.json",
+      "original_native_summary_sha256": "51b4c5c31b521af5eb17ff458db8a7e8e3371a34391d06865e77e426a512c4c7",
+      "closest_window_s": [
+        27.576,
+        27.826
+      ],
+      "longest_all_predicate_hold_ms": 0,
+      "closest_window_failure_ms": {
+        "hand_clear": 250
+      },
+      "never_sustained_individually": [],
+      "all_minimum_interrupted_sets": [
+        [
+          "footprint"
+        ],
+        [
+          "hand_clear"
+        ]
+      ]
+    },
+    {
+      "roster_position": 4,
+      "shape": "cylinder",
+      "seed": "5147958931252727278",
+      "stage": "release",
+      "lift_s": 30.998,
+      "first_hand_contact_s": 19.846,
+      "maximum_rise_m": 0.09911673548593891,
+      "original_native_summary": "../paired_v2/clearance/cylinder-5147958931252727278/frozen_score.json",
+      "original_native_summary_sha256": "c363708607a522bb4b015784634cbd4e911d660d9a550d238396872a439f9ce6",
+      "closest_window_s": [
+        31.188,
+        31.438
+      ],
+      "longest_all_predicate_hold_ms": 0,
+      "closest_window_failure_ms": {
+        "pad_support": 250,
+        "hand_clear": 250,
+        "footprint": 250,
+        "center_height": 250
+      },
+      "never_sustained_individually": [
+        "pad_support",
+        "footprint"
+      ],
+      "all_minimum_interrupted_sets": [
+        [
+          "pad_support",
+          "off_pad_support_clear",
+          "footprint",
+          "center_height"
+        ],
+        [
+          "pad_support",
+          "hand_clear",
+          "footprint",
+          "center_height"
+        ],
+        [
+          "pad_support",
+          "hand_clear",
+          "footprint",
+          "upright"
+        ]
+      ]
+    },
+    {
+      "roster_position": 6,
+      "shape": "cylinder",
+      "seed": "5585985586027222569",
+      "stage": "release",
+      "lift_s": 24.184,
+      "first_hand_contact_s": 23.436,
+      "maximum_rise_m": 0.12106090856275775,
+      "original_native_summary": "../paired_v2/clearance/cylinder-5585985586027222569/frozen_score.json",
+      "original_native_summary_sha256": "6262f6c601c2e83798329e3d4d5506d2aa63d1f3004c27fcb54bcf38246405c1",
+      "closest_window_s": [
+        28.522,
+        28.772
+      ],
+      "longest_all_predicate_hold_ms": 0,
+      "closest_window_failure_ms": {
+        "footprint": 250
+      },
+      "never_sustained_individually": [],
+      "all_minimum_interrupted_sets": [
+        [
+          "footprint"
+        ]
+      ]
+    },
+    {
+      "roster_position": 8,
+      "shape": "box",
+      "seed": "4109143748843592943",
+      "stage": "release",
+      "lift_s": 21.464000000000002,
+      "first_hand_contact_s": 20.372,
+      "maximum_rise_m": 0.15387670121822405,
+      "original_native_summary": "../paired_v2/clearance/box-4109143748843592943/frozen_score.json",
+      "original_native_summary_sha256": "a5fea65c70e596997a0f113692c1b5d873393f1a4aa0de25750312d7e0688329",
+      "closest_window_s": [
+        27.616,
+        27.866
+      ],
+      "longest_all_predicate_hold_ms": 0,
+      "closest_window_failure_ms": {
+        "footprint": 250
+      },
+      "never_sustained_individually": [],
+      "all_minimum_interrupted_sets": [
+        [
+          "footprint"
+        ]
+      ]
+    },
+    {
+      "roster_position": 8,
+      "shape": "cylinder",
+      "seed": "4109143748843592943",
+      "stage": "release",
+      "lift_s": 21.696,
+      "first_hand_contact_s": 20.498,
+      "maximum_rise_m": 0.17539184100566763,
+      "original_native_summary": "../paired_v2/clearance/cylinder-4109143748843592943/frozen_score.json",
+      "original_native_summary_sha256": "839866b85ee08736b33838a7ca22e9e231057b9c4b90480b71c67e7aa3127b51",
+      "closest_window_s": [
+        28.358,
+        28.608
+      ],
+      "longest_all_predicate_hold_ms": 0,
+      "closest_window_failure_ms": {
+        "footprint": 250,
+        "upright": 250,
+        "center_height": 250
+      },
+      "never_sustained_individually": [
+        "footprint"
+      ],
+      "all_minimum_interrupted_sets": [
+        [
+          "footprint",
+          "upright",
+          "center_height"
+        ]
+      ]
+    }
+  ],
+  "reviewed_native_substeps": 257700,
+  "analysis_src_sha256": "6e406a942788bb7d503df82da1a20e77e4df94e509c767e19b91500d2a0c7729",
+  "sealed_grade_src_sha256": "be7996127f260acdfcfef2c57966c7e96a1eb43717291d2e34182003d7bc189a",
+  "evidence_sha256": "b4f8310edfda0e25904fa29c15c02fe4a35de783a1a98ed78f1aea257441d95a"
+}

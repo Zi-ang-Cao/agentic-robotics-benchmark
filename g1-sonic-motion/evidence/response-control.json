@@ -1,0 +1,352 @@
+{
+  "protocol_sha256": "c17544e6f571fcecf3ecd0a8897c8ca3beab72d8eef77bf52298344152758a21",
+  "groups": {
+    "all": {
+      "blind": {
+        "n": 16,
+        "stops": 7,
+        "raw_stop_fraction": 0.4375,
+        "terminals": {
+          "time_limit": 9,
+          "success": 7
+        },
+        "native_rows": 13565,
+        "dense_codes": 868160,
+        "perturbed_rows": 0,
+        "changed_vs_tape_fraction_of_dense_scalars": 0.0,
+        "time_mean_actual_s": 16.952999999998518,
+        "time_mean_stops_only_s": 6.606857142857582,
+        "time_mean_failures_censored_at_25s": 16.95300000000019,
+        "native_code_change_fraction": 0.057047568086205626,
+        "native_joint_accel_rms_rad_s2": 5.122827602862587,
+        "native_joint_accel_samples": 391529,
+        "mean_terminal_xy_error_m": 0.191127888882575,
+        "mean_terminal_abs_heading_error_deg": 8.89674755857519,
+        "mean_max_dwell_s": 0.4787500000000558,
+        "same_history_target_rms_all_native_rows_rad": 0.0,
+        "same_history_target_rms_edited_rows_rad": null,
+        "target_scalars_all_native_rows": 393385,
+        "target_scalars_edited_native_rows": 0,
+        "target_max_abs_rad": 0.0,
+        "nonzero_target_rows": 0,
+        "readback_checks": 91,
+        "duplicate_changes": 0,
+        "duplicate_pairs": 129,
+        "duplicate_rate": 0.0,
+        "state": {
+          "changes": 0,
+          "pairs": 98,
+          "response_fraction": 0.0,
+          "signal_minus_repeat": 0.0,
+          "enough_and_at_or_above_0.10": false,
+          "fixed_current_history_target_rms_all_probe_joint_scalars_rad": 0.0,
+          "fixed_current_history_target_rms_changed_probe_joint_scalars_rad": null
+        },
+        "same_family_goal": {
+          "changes": 0,
+          "pairs": 31,
+          "response_fraction": 0.0,
+          "signal_minus_repeat": 0.0,
+          "enough_and_at_or_above_0.10": false,
+          "fixed_current_history_target_rms_all_probe_joint_scalars_rad": 0.0,
+          "fixed_current_history_target_rms_changed_probe_joint_scalars_rad": null
+        }
+      },
+      "one_bin": {
+        "n": 16,
+        "stops": 4,
+        "raw_stop_fraction": 0.25,
+        "terminals": {
+          "time_limit": 11,
+          "path_violation": 1,
+          "success": 4
+        },
+        "native_rows": 15002,
+        "dense_codes": 960128,
+        "perturbed_rows": 9468,
+        "changed_vs_tape_fraction_of_dense_scalars": 0.009861185175309959,
+        "time_mean_actual_s": 18.75062499999798,
+        "time_mean_stops_only_s": 3.074499999999883,
+        "time_mean_failures_censored_at_25s": 19.51862499999997,
+        "native_code_change_fraction": 0.05496797010543174,
+        "native_joint_accel_rms_rad_s2": 5.083908730658536,
+        "native_joint_accel_samples": 433202,
+        "mean_terminal_xy_error_m": 0.5385463614803379,
+        "mean_terminal_abs_heading_error_deg": 13.547588913703125,
+        "mean_max_dwell_s": 0.18749999999997935,
+        "same_history_target_rms_all_native_rows_rad": 0.004836260510045721,
+        "same_history_target_rms_edited_rows_rad": 0.006087726634235384,
+        "target_scalars_all_native_rows": 435058,
+        "target_scalars_edited_native_rows": 274572,
+        "target_max_abs_rad": 0.04931571900837661,
+        "nonzero_target_rows": 9468,
+        "readback_checks": 92,
+        "duplicate_changes": 0,
+        "duplicate_pairs": 129,
+        "duplicate_rate": 0.0,
+        "state": {
+          "changes": 49,
+          "pairs": 104,
+          "response_fraction": 0.47115384615384615,
+          "signal_minus_repeat": 0.47115384615384615,
+          "enough_and_at_or_above_0.10": true,
+          "fixed_current_history_target_rms_all_probe_joint_scalars_rad": 0.00445969058840422,
+          "fixed_current_history_target_rms_changed_probe_joint_scalars_rad": 0.006497156952816916
+        },
+        "same_family_goal": {
+          "changes": 10,
+          "pairs": 25,
+          "response_fraction": 0.4,
+          "signal_minus_repeat": 0.4,
+          "enough_and_at_or_above_0.10": true,
+          "fixed_current_history_target_rms_all_probe_joint_scalars_rad": 0.004420289236616709,
+          "fixed_current_history_target_rms_changed_probe_joint_scalars_rad": 0.006989090952217878
+        }
+      }
+    },
+    "straight_stop": {
+      "blind": {
+        "n": 8,
+        "stops": 2,
+        "raw_stop_fraction": 0.25,
+        "terminals": {
+          "time_limit": 6,
+          "success": 2
+        },
+        "native_rows": 9045,
+        "dense_codes": 578880,
+        "perturbed_rows": 0,
+        "changed_vs_tape_fraction_of_dense_scalars": 0.0,
+        "time_mean_actual_s": 22.612249999998223,
+        "time_mean_stops_only_s": 15.449000000001828,
+        "time_mean_failures_censored_at_25s": 22.612250000000458,
+        "native_code_change_fraction": 0.07619370366271994,
+        "native_joint_accel_rms_rad_s2": 5.959447023701464,
+        "native_joint_accel_samples": 261377,
+        "mean_terminal_xy_error_m": 0.257698074066699,
+        "mean_terminal_abs_heading_error_deg": 9.194837695751154,
+        "mean_max_dwell_s": 0.4887500000001632,
+        "same_history_target_rms_all_native_rows_rad": 0.0,
+        "same_history_target_rms_edited_rows_rad": null,
+        "target_scalars_all_native_rows": 262305,
+        "target_scalars_edited_native_rows": 0,
+        "target_max_abs_rad": 0.0,
+        "nonzero_target_rows": 0,
+        "readback_checks": 48,
+        "duplicate_changes": 0,
+        "duplicate_pairs": 80,
+        "duplicate_rate": 0.0,
+        "state": {
+          "changes": 0,
+          "pairs": 64,
+          "response_fraction": 0.0,
+          "signal_minus_repeat": 0.0,
+          "enough_and_at_or_above_0.10": false,
+          "fixed_current_history_target_rms_all_probe_joint_scalars_rad": 0.0,
+          "fixed_current_history_target_rms_changed_probe_joint_scalars_rad": null
+        },
+        "same_family_goal": {
+          "changes": 0,
+          "pairs": 16,
+          "response_fraction": 0.0,
+          "signal_minus_repeat": 0.0,
+          "enough_and_at_or_above_0.10": false,
+          "fixed_current_history_target_rms_all_probe_joint_scalars_rad": 0.0,
+          "fixed_current_history_target_rms_changed_probe_joint_scalars_rad": null
+        }
+      },
+      "one_bin": {
+        "n": 8,
+        "stops": 0,
+        "raw_stop_fraction": 0.0,
+        "terminals": {
+          "time_limit": 7,
+          "path_violation": 1
+        },
+        "native_rows": 9386,
+        "dense_codes": 600704,
+        "perturbed_rows": 5770,
+        "changed_vs_tape_fraction_of_dense_scalars": 0.009605396334966971,
+        "time_mean_actual_s": 23.463999999997508,
+        "time_mean_stops_only_s": null,
+        "time_mean_failures_censored_at_25s": 25.0,
+        "native_code_change_fraction": 0.07701035668586052,
+        "native_joint_accel_rms_rad_s2": 6.1471114934955,
+        "native_joint_accel_samples": 271266,
+        "mean_terminal_xy_error_m": 0.9610315314233466,
+        "mean_terminal_abs_heading_error_deg": 12.79656849329785,
+        "mean_max_dwell_s": 0.0,
+        "same_history_target_rms_all_native_rows_rad": 0.004959322716080005,
+        "same_history_target_rms_edited_rows_rad": 0.006325206932390199,
+        "target_scalars_all_native_rows": 272194,
+        "target_scalars_edited_native_rows": 167330,
+        "target_max_abs_rad": 0.04931571900837661,
+        "nonzero_target_rows": 5770,
+        "readback_checks": 48,
+        "duplicate_changes": 0,
+        "duplicate_pairs": 75,
+        "duplicate_rate": 0.0,
+        "state": {
+          "changes": 40,
+          "pairs": 64,
+          "response_fraction": 0.625,
+          "signal_minus_repeat": 0.625,
+          "enough_and_at_or_above_0.10": true,
+          "fixed_current_history_target_rms_all_probe_joint_scalars_rad": 0.005183663545820977,
+          "fixed_current_history_target_rms_changed_probe_joint_scalars_rad": 0.006556873371511554
+        },
+        "same_family_goal": {
+          "changes": 4,
+          "pairs": 11,
+          "response_fraction": 0.36363636363636365,
+          "signal_minus_repeat": 0.36363636363636365,
+          "enough_and_at_or_above_0.10": true,
+          "fixed_current_history_target_rms_all_probe_joint_scalars_rad": 0.0047250720585549,
+          "fixed_current_history_target_rms_changed_probe_joint_scalars_rad": 0.0078356455628094
+        }
+      }
+    },
+    "right_turn_stop": {
+      "blind": {
+        "n": 8,
+        "stops": 5,
+        "raw_stop_fraction": 0.625,
+        "terminals": {
+          "success": 5,
+          "time_limit": 3
+        },
+        "native_rows": 4520,
+        "dense_codes": 289280,
+        "perturbed_rows": 0,
+        "changed_vs_tape_fraction_of_dense_scalars": 0.0,
+        "time_mean_actual_s": 11.293749999998811,
+        "time_mean_stops_only_s": 3.0699999999998835,
+        "time_mean_failures_censored_at_25s": 11.293749999999926,
+        "native_code_change_fraction": 0.018700132978723406,
+        "native_joint_accel_rms_rad_s2": 2.761092704185639,
+        "native_joint_accel_samples": 130152,
+        "mean_terminal_xy_error_m": 0.12455770369845102,
+        "mean_terminal_abs_heading_error_deg": 8.598657421399228,
+        "mean_max_dwell_s": 0.4687499999999484,
+        "same_history_target_rms_all_native_rows_rad": 0.0,
+        "same_history_target_rms_edited_rows_rad": null,
+        "target_scalars_all_native_rows": 131080,
+        "target_scalars_edited_native_rows": 0,
+        "target_max_abs_rad": 0.0,
+        "nonzero_target_rows": 0,
+        "readback_checks": 43,
+        "duplicate_changes": 0,
+        "duplicate_pairs": 49,
+        "duplicate_rate": 0.0,
+        "state": {
+          "changes": 0,
+          "pairs": 34,
+          "response_fraction": 0.0,
+          "signal_minus_repeat": 0.0,
+          "enough_and_at_or_above_0.10": false,
+          "fixed_current_history_target_rms_all_probe_joint_scalars_rad": 0.0,
+          "fixed_current_history_target_rms_changed_probe_joint_scalars_rad": null
+        },
+        "same_family_goal": {
+          "changes": 0,
+          "pairs": 15,
+          "response_fraction": 0.0,
+          "signal_minus_repeat": 0.0,
+          "enough_and_at_or_above_0.10": false,
+          "fixed_current_history_target_rms_all_probe_joint_scalars_rad": 0.0,
+          "fixed_current_history_target_rms_changed_probe_joint_scalars_rad": null
+        }
+      },
+      "one_bin": {
+        "n": 8,
+        "stops": 4,
+        "raw_stop_fraction": 0.5,
+        "terminals": {
+          "success": 4,
+          "time_limit": 4
+        },
+        "native_rows": 5616,
+        "dense_codes": 359424,
+        "perturbed_rows": 3698,
+        "changed_vs_tape_fraction_of_dense_scalars": 0.010288684116809117,
+        "time_mean_actual_s": 14.037249999998453,
+        "time_mean_stops_only_s": 3.074499999999883,
+        "time_mean_failures_censored_at_25s": 14.037249999999942,
+        "native_code_change_fraction": 0.018107502674750357,
+        "native_joint_accel_rms_rad_s2": 2.417331298593551,
+        "native_joint_accel_samples": 161936,
+        "mean_terminal_xy_error_m": 0.11606119153732909,
+        "mean_terminal_abs_heading_error_deg": 14.298609334108402,
+        "mean_max_dwell_s": 0.3749999999999587,
+        "same_history_target_rms_all_native_rows_rad": 0.004623280731710789,
+        "same_history_target_rms_edited_rows_rad": 0.005697447884702918,
+        "target_scalars_all_native_rows": 162864,
+        "target_scalars_edited_native_rows": 107242,
+        "target_max_abs_rad": 0.023932028781814496,
+        "nonzero_target_rows": 3698,
+        "readback_checks": 44,
+        "duplicate_changes": 0,
+        "duplicate_pairs": 54,
+        "duplicate_rate": 0.0,
+        "state": {
+          "changes": 9,
+          "pairs": 40,
+          "response_fraction": 0.225,
+          "signal_minus_repeat": 0.225,
+          "enough_and_at_or_above_0.10": true,
+          "fixed_current_history_target_rms_all_probe_joint_scalars_rad": 0.002952693002183902,
+          "fixed_current_history_target_rms_changed_probe_joint_scalars_rad": 0.0062248234120944376
+        },
+        "same_family_goal": {
+          "changes": 6,
+          "pairs": 14,
+          "response_fraction": 0.42857142857142855,
+          "signal_minus_repeat": 0.42857142857142855,
+          "enough_and_at_or_above_0.10": true,
+          "fixed_current_history_target_rms_all_probe_joint_scalars_rad": 0.00416520071407849,
+          "fixed_current_history_target_rms_changed_probe_joint_scalars_rad": 0.006362449185649599
+        }
+      }
+    }
+  },
+  "paired": {
+    "all": {
+      "paired_transitions": {
+        "neither": 9,
+        "lost": 3,
+        "both": 4
+      },
+      "pairs": 16,
+      "median_xy_difference_at_last_common_row_m": 0.4162573644335692,
+      "median_abs_heading_difference_at_last_common_row_deg": 10.542921401465556,
+      "common_accel_samples_per_arm": 373723,
+      "matched_length_blind_accel_rms_rad_s2": 5.2269791260294705,
+      "matched_length_one_bin_accel_rms_rad_s2": 5.473393817089253
+    },
+    "straight_stop": {
+      "paired_transitions": {
+        "neither": 6,
+        "lost": 2
+      },
+      "pairs": 8,
+      "median_xy_difference_at_last_common_row_m": 1.140592722411799,
+      "median_abs_heading_difference_at_last_common_row_deg": 18.599803014545767,
+      "common_accel_samples_per_arm": 243571,
+      "matched_length_blind_accel_rms_rad_s2": 6.151971366915318,
+      "matched_length_one_bin_accel_rms_rad_s2": 6.487041956369232
+    },
+    "right_turn_stop": {
+      "paired_transitions": {
+        "both": 4,
+        "lost": 1,
+        "neither": 3
+      },
+      "pairs": 8,
+      "median_xy_difference_at_last_common_row_m": 0.06548018054485155,
+      "median_abs_heading_difference_at_last_common_row_deg": 5.902033214068082,
+      "common_accel_samples_per_arm": 130152,
+      "matched_length_blind_accel_rms_rad_s2": 2.7610927041856392,
+      "matched_length_one_bin_accel_rms_rad_s2": 2.696177623802614
+    }
+  }
+}
