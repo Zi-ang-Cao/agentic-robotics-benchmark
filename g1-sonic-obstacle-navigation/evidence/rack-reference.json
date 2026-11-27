@@ -1,0 +1,46 @@
+{
+  "protocol": "N5 independent raw 16-start compound qualification",
+  "source_head": "5561bc376e7fd86b75e82c69a1ece7107c1d147b",
+  "register_sha256": "3797ce569b6e4674914d1ff3ab51e5b71519bf8d7f1ed7b95b8b532584366419",
+  "physical_register_sha256": "e8b7a3eca3e8736eb84c85c588159c205abf5ce6a2e1691a913fabc7008a2734",
+  "manifest_sha256": "120497242834f30b90571c10e3d42fb9c1d9f12a9ea28c68c1cffa692863b980",
+  "installed_solver_sha256": "847e5a4318e3396214233f5e5a5dc4e12b8201429e92084dc91811ed0ee4fcb2",
+  "snapshot_id": "f49ba1a3b0406d8eaefc6a6ba92137bb56a2269df079cece3e3f3ec652649527",
+  "totals": {
+    "starts": 16,
+    "queries": 39658,
+    "issued_rows": 39658,
+    "applied_rows": 39658,
+    "changed_coordinates": 216624,
+    "departure_substeps": 116320,
+    "strict_successes": 15,
+    "completed_stops": 45,
+    "passed_gates": 24,
+    "required_gates": 24,
+    "contact_cases": 0,
+    "contact_substeps": 0,
+    "native_substeps": 396580
+  },
+  "raw_receipt_sha256": "1e2b646f4b3e66a75adf59800c6138da31146261c1fe4e43c4d47d177b083bc9",
+  "cohort": "Independent 8-low / 8-high native qualification. The protected ALE roster has 12 low and 4 high.",
+  "heights": {
+    "low": {
+      "assigned": 8,
+      "reached": 7,
+      "strict": 7,
+      "minimum_whole_body_roof_distance_m": 0.03911428607400347,
+      "minimum_green_standing_head_top_m": 1.2771700886255215
+    },
+    "high": {
+      "assigned": 8,
+      "reached": 8,
+      "strict": 8,
+      "minimum_whole_body_roof_distance_m": 0.0787260593202923,
+      "minimum_green_standing_head_top_m": 1.276674652154711
+    }
+  },
+  "terminations": {
+    "lost_standing_hold": 1,
+    "success": 15
+  }
+}

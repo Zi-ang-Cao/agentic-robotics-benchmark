@@ -1,0 +1,310 @@
+{
+  "participant_commit": "9b3324feca315eff4483ae452ba85724710f3390",
+  "scope": "Public native feasibility and camera fixtures. The approach and pivot use known native motor tapes in the two isolated departure checks. Official whole-course reference, frontier, and 5090 results are separate.",
+  "checks": {
+    "native_overhead": {
+      "sha256": "97f6cfda6f0a8814cd2f1a4a92481ae08a2d0bb33c2001ddd7d7b0ec93e471f4",
+      "data": {
+        "environment_commit": "9b3324feca315eff4483ae452ba85724710f3390",
+        "environment_git_tree": "5cdc22781c7effcedca8afa2f765c817b1fefc97",
+        "scope": "Two public deterministic development fixtures with a replayed approach/pivot prefix, followed by an actual per-tick RGB-D and robot-local servo. A green detection and integrated local turn trigger the servo. These are feasibility fixtures; a separately registered full-course policy evaluation is required to estimate its success rate.",
+        "signed_optical_departures": [
+          {
+            "case": "layout-1",
+            "turn_deg": -87,
+            "robot_seed": 18310701160879358587,
+            "layout_seed": 1578818992,
+            "rack_seed": 7,
+            "source_layout_last_m": 1.3,
+            "actual_station_m": 4.0,
+            "assigned_variant": "low-right",
+            "physical_rows": 2357,
+            "visual_departure_rows": 747,
+            "green_seen_tick": 1610,
+            "strict_success": true,
+            "obstacle_contact_native_substeps": 0,
+            "minimum_whole_robot_to_shelf_m": 0.049992493165011524,
+            "head_under_shelf": {
+              "tick": 1955,
+              "native_time_s": 39.09000000000181,
+              "head_top_m": 1.1577494727773443,
+              "underside_m": 1.2195776284988122,
+              "head_clearance_m": 0.06182815572146794,
+              "head_forward_min_m": 1.7798930206858428,
+              "head_forward_max_m": 1.9192251382678096,
+              "head_left_min_m": -0.7806240236215848,
+              "head_left_max_m": -0.6249136714788786
+            },
+            "trailing_clear": {
+              "tick": 2126,
+              "native_time_s": 42.50200000000598,
+              "trailing_body_forward_m": 2.5458789542093347,
+              "back_m": 2.5453825039973457
+            },
+            "minimum_head_top_during_settled_dwell_m": 1.285276462017711,
+            "final_station_xy_error_m": 0.014998703405067374,
+            "final_station_dwell_s": 0.7500000000009166,
+            "all_fields_in_replayed_physical_grade_equal": true,
+            "raw_uint8_codes_sha256": "5fa703aac372a377375506da9893def87c8ccf466cbb2c2b627adafd09d9d6cc",
+            "files": [
+              {
+                "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/optical/layout-1.json",
+                "sha256": "6dda50fd11d2efa0fb9b53d0e1d3281c47c8d3be9c92fb352f9f9664b261d26e"
+              },
+              {
+                "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/optical/layout-1.npz",
+                "sha256": "4ccb4e25f6302d301fcf7395c697fa81c692ee09105bacff36313c111a3609e5"
+              },
+              {
+                "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/replay/optical-layout-1.json",
+                "sha256": "d58dba6b6d312aac4460012511fa139980ed9bcbcc65b6ecea9390c04ca6436a"
+              }
+            ]
+          },
+          {
+            "case": "layout-2",
+            "turn_deg": 87,
+            "robot_seed": 15460947848790210684,
+            "layout_seed": 804862102,
+            "rack_seed": 7,
+            "source_layout_last_m": 1.3,
+            "actual_station_m": 4.0,
+            "assigned_variant": "low-left",
+            "physical_rows": 2781,
+            "visual_departure_rows": 836,
+            "green_seen_tick": 1945,
+            "strict_success": true,
+            "obstacle_contact_native_substeps": 0,
+            "minimum_whole_robot_to_shelf_m": 0.047110330114706445,
+            "head_under_shelf": {
+              "tick": 2302,
+              "native_time_s": 46.02400000001028,
+              "head_top_m": 1.168146394997457,
+              "underside_m": 1.2166727883290467,
+              "head_clearance_m": 0.04852639333158959,
+              "head_forward_min_m": 1.915969658975735,
+              "head_forward_max_m": 2.054890436626876,
+              "head_left_min_m": 0.4734225152251415,
+              "head_left_max_m": 0.6292396910756365
+            },
+            "trailing_clear": {
+              "tick": 2458,
+              "native_time_s": 49.160000000014115,
+              "trailing_body_forward_m": 2.628093413230983,
+              "back_m": 2.6277071912289047
+            },
+            "minimum_head_top_during_settled_dwell_m": 1.2899384115147419,
+            "final_station_xy_error_m": 0.028447156837465012,
+            "final_station_dwell_s": 0.7500000000009166,
+            "all_fields_in_replayed_physical_grade_equal": true,
+            "raw_uint8_codes_sha256": "7528be370cc7a1fd51a1e44f9d663c8339bcb0af003e20fd850c2b48a64359c8",
+            "files": [
+              {
+                "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/optical/layout-2.json",
+                "sha256": "e2f3bf84cfbfe586c733cd0ca270b75f6e7fddfd797447bf3927b2688ccda560"
+              },
+              {
+                "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/optical/layout-2.npz",
+                "sha256": "28ec6664512db7aede2a086f05b28f7aa8e54d2c522f81e4cbbecd1efb3f2f0a"
+              },
+              {
+                "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/replay/optical-layout-2.json",
+                "sha256": "1259c53da836ec4ff57e569e76e7bb03f7c3301f843667241f6abffcdaf85028"
+              }
+            ]
+          }
+        ],
+        "full_course_upright_replay": {
+          "first_contact": {
+            "time_s": 37.58399999999997,
+            "native_substep": 18792,
+            "tick": 1880,
+            "gate_index": 2,
+            "panel": "rack_right_deck_front",
+            "obstacle_geom": "rack_right_deck_front",
+            "robot_body": "torso_link",
+            "robot_geom_id": 40,
+            "robot_mesh": "head_link",
+            "distance_m": -0.00014349734348794956,
+            "world_xyz_m": [
+              -4.7295705350138295,
+              2.7412507720108863,
+              1.259564918421776
+            ]
+          },
+          "outcome": "obstacle_contact",
+          "files": [
+            {
+              "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/replay/upright-low.json",
+              "sha256": "83d046311b42f31f747a7c8b42b01c4ae1ad1e74171e112bb8f36201154adbe3"
+            },
+            {
+              "path": "_workspace/temporal-overhead-gait/pilot/upright-low.npz",
+              "sha256": "261be66698d9bc3c42d50fbdead34e4af6b6525cc032ce47a5378e1035d504e3"
+            }
+          ]
+        },
+        "independent_straight_slab_motor_contrast": {
+          "underside_m": 1.215,
+          "contact_mesh": "head_link",
+          "upright_contact_normal_N": 95.05466483145024,
+          "crouched_native_run_contact": {},
+          "clearance_m": 0.04413938089645275,
+          "overlapping_forward_travel_m": 1.1752261525774905,
+          "files": [
+            {
+              "path": "_workspace/temporal-overhead-gait/beam/upright-low.json",
+              "sha256": "aec127d025272c87880f6cc2a996f13b83a655473a072c995c2834dda3229369"
+            },
+            {
+              "path": "_workspace/temporal-overhead-gait/beam/straight-low.json",
+              "sha256": "2bac29ce47135a6705e2e52324ce03ee08c48ce534e12f6c4ac947f2d846f588"
+            }
+          ]
+        },
+        "jsonl_neutral_smoke": {
+          "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/practice-smoke.json",
+          "sha256": "334c2153da7ebd63e0c4346f6d921363c6d4b42a4a1420798053da1f08394803"
+        },
+        "native_repeatability": {
+          "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/native-check.json",
+          "sha256": "b30fda7ccba00f40b65989dcef3cbdb21ab95aef9a22545005a2b0edb157b472"
+        },
+        "source_files": [
+          {
+            "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/closed_loop.py",
+            "sha256": "baf5cc51b69dcca11db5e2eba5c218249c48dbd65e9d016e009f433b26fd5ecc"
+          },
+          {
+            "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/native_replay.py",
+            "sha256": "04f2d7e1d557c70db86d1fba265c0b4201fb3a50f9f755bfea3bacc3a294de2d"
+          },
+          {
+            "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/replay_optical.py",
+            "sha256": "cf772d8628abe0b866080c75318c48c794e660530d62fbee96570894d30e5e57"
+          },
+          {
+            "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/run.sh",
+            "sha256": "bb67e7c9eeb46807bf7b50d6687147d37cc849d237fdcb7864de5a069638ec15"
+          },
+          {
+            "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/run-visual.sh",
+            "sha256": "9bc9cf5b4ac5d383787564c3ffeb0e7e05ee253b8407a9a47331413a859b1456"
+          },
+          {
+            "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/visual_motor/gait.py",
+            "sha256": "2dba1fa16abd9dafd388bd6b1d3113c901e7ec53e77073e3df5aa64cfcc3b08f"
+          },
+          {
+            "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/visual_motor/perception.py",
+            "sha256": "2d3042acdf4cd02c96e1d3362a6ad25c121eacb7328f8c96ac46809b2183c171"
+          },
+          {
+            "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/visual_motor/rack.py",
+            "sha256": "11fd60230ec3cbd178ee2673185789383703dcc1cefa7b34ee994a4d85d7c8d9"
+          },
+          {
+            "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/visual_motor/rack_vision.py",
+            "sha256": "9f74ba131aaecc42783cefb6541b939eceaf10ae907f1a5f354099abb1060121"
+          },
+          {
+            "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/visual_motor/route.py",
+            "sha256": "086470994aa4ae0249df18e97feb23d0bf437045378a69e4bfb5564429797a6d"
+          },
+          {
+            "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/visual_motor/solver.py",
+            "sha256": "c2c105ee48c0a1f377ba941cae64714c4cd6d0207eb741b60a95a0a569cdc402"
+          },
+          {
+            "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/visual_motor/temporal.py",
+            "sha256": "bcf37798d8231bc47d5f80f4ea2260f7eca40b7dd175e34589b5dd6d858c54d0"
+          },
+          {
+            "path": "sonic_token_space_control_bench/visual_navigation_obstacles_review/overhead-pilot/visual_motor/vision.py",
+            "sha256": "984d252a93b684f7c3e5a90b2e6ecd202672cd79da9cb6188d8e445f28b7f257"
+          }
+        ],
+        "reproduction": [
+          "./run-visual.sh layout-1",
+          "./run-visual.sh layout-2",
+          "./run.sh replay_optical.py",
+          "python summarize.py"
+        ]
+      }
+    },
+    "matched_future_turn": {
+      "sha256": "e1ec439bf334d40df4711901ab9ed6ab7d3f03755fd60d8043d9e4bc92e4befb",
+      "data": {
+        "robot_seed": 7,
+        "layout_seed": 7,
+        "scene_phases_right_left_s": [
+          2.0,
+          9.0
+        ],
+        "alternate_phases_s": [
+          9.0,
+          2.0
+        ],
+        "identical_future_prefix_rows": 11,
+        "unchanged_robot_sensors_on_phase_swap": 11,
+        "changed_reset_values": {
+          "rgb_png": 8625,
+          "depth_mm_png": 2875
+        }
+      }
+    },
+    "public_low_rack_score": {
+      "sha256": "234173ad37ae741a6b914685d4a53b0ed3e1470ab90fec5a00f477f1652c6128",
+      "data": [
+        {
+          "source_sha256": "6dda50fd11d2efa0fb9b53d0e1d3281c47c8d3be9c92fb352f9f9664b261d26e",
+          "case": "layout-1",
+          "success": true,
+          "branch": "right",
+          "head_under_shelf_clearance_m": 0.06182815572146794,
+          "minimum_whole_body_roof_separation_m": 0.049992493165011524,
+          "final_dwell_min_head_apex_m": 1.285276462017711,
+          "actual_rows": 2357
+        },
+        {
+          "source_sha256": "e2f3bf84cfbfe586c733cd0ca270b75f6e7fddfd797447bf3927b2688ccda560",
+          "case": "layout-2",
+          "success": true,
+          "branch": "left",
+          "head_under_shelf_clearance_m": 0.04852639333158959,
+          "minimum_whole_body_roof_separation_m": 0.047110330114706445,
+          "final_dwell_min_head_apex_m": 1.2899384115147419,
+          "actual_rows": 2781
+        }
+      ]
+    },
+    "pre_reveal_complete_prefix": {
+      "sha256": "3413c64998fe8511126ccfc10b20de4bb61bb539650bfe0614d405ae0f54466d",
+      "data": {
+        "scope": "Two real sessions share seed, both permanent racks, initial shutter schedule, approach and motor tape; only the subsequent signed turn differs.",
+        "results": {
+          "left": {
+            "pre_cue_packet_count": 294,
+            "identical_prefix_packet_transcript_sha256": "c6348f834b6286a4b5d46ca7be5bf09fe584a45e13a50effca91b28caae036db",
+            "state_count": 1470,
+            "pre_cue_qpos_qvel_sha256": "787f813c2af4ab0ee7360af0fc9d3736f5fb45068c6bd50198acd54cba05dcd2",
+            "cue_native_tick": 1470,
+            "cue_rgb_sha256": "4fac814bb8353fb2242a396d149804993b654ac7703ddfb4c4d20b0f1ea331fe",
+            "cue_depth_sha256": "3c63583e4a641dd15503c69593dfcb3c04f32fdb69b4896844c5371910cc5d8e",
+            "cue_local_sensor_sha256": "96b2f32ae361cf7380d0722c78b45585a52fd774494a86f04d274b18a65138cd"
+          },
+          "right": {
+            "pre_cue_packet_count": 294,
+            "identical_prefix_packet_transcript_sha256": "c6348f834b6286a4b5d46ca7be5bf09fe584a45e13a50effca91b28caae036db",
+            "state_count": 1470,
+            "pre_cue_qpos_qvel_sha256": "787f813c2af4ab0ee7360af0fc9d3736f5fb45068c6bd50198acd54cba05dcd2",
+            "cue_native_tick": 1470,
+            "cue_rgb_sha256": "d602f410887301f1c1d626850d1368b3866e1054b8a213abea7fee34cc658154",
+            "cue_depth_sha256": "3c63583e4a641dd15503c69593dfcb3c04f32fdb69b4896844c5371910cc5d8e",
+            "cue_local_sensor_sha256": "96b2f32ae361cf7380d0722c78b45585a52fd774494a86f04d274b18a65138cd"
+          }
+        }
+      }
+    }
+  }
+}

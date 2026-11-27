@@ -1,0 +1,1171 @@
+{
+  "versions": {
+    "original": {
+      "successes": 13,
+      "episodes": 16,
+      "reward": 0.87,
+      "source": "005aa790388479639cb039266e7edd0d5dc26bb9"
+    },
+    "stationary": {
+      "episodes": 16,
+      "successes": 16,
+      "verifier_commit": "caccae08d172ba4f378c0b9ce9103702d58a09fc",
+      "verifier_receipt_sha256": "a57eefe9447a85eb15438f66a68df19d02cfdd0f189291e153ff128434fe3768",
+      "reward": null,
+      "max_turns": 25,
+      "max_wall_minutes": 45,
+      "authoring_turns": 21,
+      "authoring_seconds": 591.172
+    },
+    "shutters": {
+      "raw": {
+        "ratio": 0.0,
+        "strict_course_fraction": 0.625,
+        "episodes": 16.0,
+        "successes": 10.0,
+        "episodes_aborted": 0.0,
+        "applied_native_rows": 23151.0,
+        "fsq_scalar_codes": 1481664.0,
+        "changed_fsq_coordinates": 213586.0,
+        "eligible_adjacent_scalar_pairs": 1480640.0,
+        "coordinate_change_fraction": 0.14425248541171384,
+        "joint_accel_samples": 669523.0,
+        "joint_accel_rms_rad_s2": 10.428707101367188,
+        "actual_elapsed_sim_s": 463.01999999994996,
+        "required_gates": 24.0,
+        "passed_gates": 21.0,
+        "obstacle_contact_courses": 3.0,
+        "obstacle_contact_substeps": 22.0,
+        "boundary_violations": 0.0,
+        "approach_stops": 13.0,
+        "pivot_stops": 12.0,
+        "departure_stops": 10.0,
+        "terminal_success": 10.0,
+        "terminal_obstacle_contact": 3.0,
+        "terminal_time_limit": 1.0,
+        "terminal_path_violation": 2.0,
+        "fork_left_passages": 7.0,
+        "fork_right_passages": 9.0,
+        "first_contact_moving_shutter_courses": 0.0,
+        "first_contact_fixed_obstacle_courses": 3.0
+      },
+      "reward": null,
+      "verification_sha256": "85a7462f9dbc31f310af137b04cf74f7af1f3f91ab1b657e3da0c0ea32ee73dd"
+    }
+  },
+  "transfers": {
+    "original_opus": {
+      "reward": 0.0,
+      "raw": {
+        "ratio": 0.0,
+        "strict_course_fraction": 0.0,
+        "episodes": 16.0,
+        "successes": 0.0,
+        "episodes_aborted": 0.0,
+        "applied_native_rows": 4380.0,
+        "fsq_scalar_codes": 280320.0,
+        "changed_fsq_coordinates": 63609.0,
+        "eligible_adjacent_scalar_pairs": 279296.0,
+        "coordinate_change_fraction": 0.2277476225939505,
+        "joint_accel_samples": 125164.0,
+        "joint_accel_rms_rad_s2": 13.99938508650419,
+        "actual_elapsed_sim_s": 87.5999999999939,
+        "required_gates": 24.0,
+        "passed_gates": 0.0,
+        "obstacle_contact_courses": 16.0,
+        "obstacle_contact_substeps": 81.0,
+        "boundary_violations": 0.0,
+        "approach_stops": 0.0,
+        "pivot_stops": 0.0,
+        "departure_stops": 0.0,
+        "terminal_obstacle_contact": 16.0,
+        "fork_left_passages": 0.0,
+        "fork_right_passages": 0.0,
+        "first_contact_moving_shutter_courses": 11.0,
+        "first_contact_fixed_obstacle_courses": 5.0,
+        "low_rack_courses": 12.0,
+        "low_rack_successes": 0.0,
+        "low_whole_body_exits": 0.0,
+        "high_rack_courses": 4.0,
+        "high_rack_successes": 0.0,
+        "high_whole_body_exits": 0.0,
+        "rack_reached_departure": 0.0,
+        "rack_front_crossings": 0.0,
+        "rack_head_under_shelf": 0.0,
+        "rack_back_crossings": 0.0,
+        "rack_whole_body_exits": 0.0,
+        "first_contact_departure_rack_courses": 0.0,
+        "episodes_completed": 16.0,
+        "episodes_unfinished": 0.0,
+        "panel_deadline_exhausted": 0.0
+      },
+      "archive_sha256": "329456319b58364c60c3aa6cec6bca02e3bb5e88b20705ef25a50ff742f5e290",
+      "verification_sha256": "4d82b7da64068b72fbd546be67b9faec933b7eb5226a44427292dd3aa976373a",
+      "source": "1ce6b078db76afa9a3135f0fdec2436ec4c75fcf"
+    },
+    "static_opus": {
+      "reward": 0.0,
+      "raw": {
+        "ratio": 0.0,
+        "strict_course_fraction": 0.0,
+        "episodes": 16.0,
+        "successes": 0.0,
+        "episodes_aborted": 0.0,
+        "applied_native_rows": 3586.0,
+        "fsq_scalar_codes": 229504.0,
+        "changed_fsq_coordinates": 28894.0,
+        "eligible_adjacent_scalar_pairs": 228480.0,
+        "coordinate_change_fraction": 0.12646183473389355,
+        "joint_accel_samples": 102138.0,
+        "joint_accel_rms_rad_s2": 8.664803667617685,
+        "actual_elapsed_sim_s": 71.71999999999565,
+        "required_gates": 24.0,
+        "passed_gates": 0.0,
+        "obstacle_contact_courses": 16.0,
+        "obstacle_contact_substeps": 85.0,
+        "boundary_violations": 0.0,
+        "approach_stops": 0.0,
+        "pivot_stops": 0.0,
+        "departure_stops": 0.0,
+        "terminal_obstacle_contact": 16.0,
+        "fork_left_passages": 0.0,
+        "fork_right_passages": 0.0,
+        "first_contact_moving_shutter_courses": 15.0,
+        "first_contact_fixed_obstacle_courses": 1.0,
+        "low_rack_courses": 12.0,
+        "low_rack_successes": 0.0,
+        "low_whole_body_exits": 0.0,
+        "high_rack_courses": 4.0,
+        "high_rack_successes": 0.0,
+        "high_whole_body_exits": 0.0,
+        "rack_reached_departure": 0.0,
+        "rack_front_crossings": 0.0,
+        "rack_head_under_shelf": 0.0,
+        "rack_back_crossings": 0.0,
+        "rack_whole_body_exits": 0.0,
+        "first_contact_departure_rack_courses": 0.0,
+        "episodes_completed": 16.0,
+        "episodes_unfinished": 0.0,
+        "panel_deadline_exhausted": 0.0
+      },
+      "archive_sha256": "a728a39a1bbfad11cf8d0d3c800b583121f67918224ac6fd6570e12fe06da0fb",
+      "verification_sha256": "a3eca48c5d5badcea8e45b6ce43a43b990d99b257fa43fa4faa13012016b14e1",
+      "source": "1ce6b078db76afa9a3135f0fdec2436ec4c75fcf"
+    },
+    "shutter_opus": {
+      "reward": 0.0,
+      "raw": {
+        "ratio": 0.0,
+        "strict_course_fraction": 0.0,
+        "episodes": 16.0,
+        "successes": 0.0,
+        "episodes_aborted": 0.0,
+        "applied_native_rows": 21648.0,
+        "fsq_scalar_codes": 1385472.0,
+        "changed_fsq_coordinates": 211805.0,
+        "eligible_adjacent_scalar_pairs": 1384448.0,
+        "coordinate_change_fraction": 0.15298877242048817,
+        "joint_accel_samples": 625936.0,
+        "joint_accel_rms_rad_s2": 10.496380471182958,
+        "actual_elapsed_sim_s": 432.9599999999455,
+        "required_gates": 24.0,
+        "passed_gates": 22.0,
+        "obstacle_contact_courses": 15.0,
+        "obstacle_contact_substeps": 70.0,
+        "boundary_violations": 0.0,
+        "approach_stops": 14.0,
+        "pivot_stops": 13.0,
+        "departure_stops": 0.0,
+        "terminal_obstacle_contact": 15.0,
+        "terminal_path_violation": 1.0,
+        "fork_left_passages": 8.0,
+        "fork_right_passages": 8.0,
+        "first_contact_moving_shutter_courses": 0.0,
+        "first_contact_fixed_obstacle_courses": 15.0,
+        "low_rack_courses": 12.0,
+        "low_rack_successes": 0.0,
+        "low_whole_body_exits": 0.0,
+        "high_rack_courses": 4.0,
+        "high_rack_successes": 0.0,
+        "high_whole_body_exits": 0.0,
+        "rack_reached_departure": 13.0,
+        "rack_front_crossings": 0.0,
+        "rack_head_under_shelf": 0.0,
+        "rack_back_crossings": 0.0,
+        "rack_whole_body_exits": 0.0,
+        "first_contact_departure_rack_courses": 13.0,
+        "minimum_measured_roof_separation_m": 0.00015218182024914116,
+        "episodes_completed": 16.0,
+        "episodes_unfinished": 0.0,
+        "panel_deadline_exhausted": 0.0
+      },
+      "archive_sha256": "17df2a3eb1f5502ac3aa691725648ef0357bbbcdc3cec3fae2844ee5a8d0bfbc",
+      "verification_sha256": "87679cc8f7505d9905278dbd998ffff83c012d5bea80d1d22225ba122d1f7f4b",
+      "source": "1ce6b078db76afa9a3135f0fdec2436ec4c75fcf"
+    }
+  },
+  "paired_diagnostics": {
+    "camera": {
+      "schema": "warehouse-rgbd-interventions-v1",
+      "protocol_sha256": "904de2c110faffa66bbd79cadb8a297967c64d5228e87cc11d1b968faf33b006",
+      "motor": "5561bc376e7fd86b75e82c69a1ece7107c1d147b",
+      "release_source": "1ce6b078db76afa9a3135f0fdec2436ec4c75fcf",
+      "native": {
+        "reference": {
+          "all": {
+            "n": 16,
+            "full_course": 16,
+            "reached_departure": 16,
+            "entered_rack": 16,
+            "exited_rack": 16,
+            "cleared_whole_body": 16,
+            "head_passed_under": 16,
+            "first_contacts": {},
+            "terminal": {
+              "success": 16
+            },
+            "actual_gates": 20,
+            "offered_gates": 20,
+            "actual_moving_forks": 16,
+            "first_contact_force_n": null,
+            "min_roof_distances_below_0p3_m": {
+              "n": 16,
+              "min": 0.040127345548957465,
+              "median": 0.07410326075765006,
+              "max": 0.1250063594732238
+            },
+            "max_head_heights_between_planes_m": {
+              "n": 16,
+              "min": 1.1693860841868968,
+              "median": 1.2311138950533334,
+              "max": 1.2946405852216867
+            },
+            "min_head_heights_in_qualified_green_dwell_m": {
+              "n": 16,
+              "min": 1.2756478394894875,
+              "median": 1.28182202215125,
+              "max": 1.285398739099799
+            },
+            "issued_rows": 39787,
+            "dense_fsq": 2546368,
+            "physics_boundaries": 39803,
+            "changed_observation_queries": 0,
+            "queries": 39787,
+            "cases_where_override_called": 0
+          },
+          "by_real_roof": {
+            "low": {
+              "n": 8,
+              "full_course": 8,
+              "reached_departure": 8,
+              "entered_rack": 8,
+              "exited_rack": 8,
+              "cleared_whole_body": 8,
+              "head_passed_under": 8,
+              "first_contacts": {},
+              "terminal": {
+                "success": 8
+              },
+              "actual_gates": 9,
+              "offered_gates": 9,
+              "actual_moving_forks": 8,
+              "first_contact_force_n": null,
+              "min_roof_distances_below_0p3_m": {
+                "n": 8,
+                "min": 0.040127345548957465,
+                "median": 0.042864717515584745,
+                "max": 0.05338060681070477
+              },
+              "max_head_heights_between_planes_m": {
+                "n": 8,
+                "min": 1.1693860841868968,
+                "median": 1.169521070701137,
+                "max": 1.1696142446155144
+              },
+              "min_head_heights_in_qualified_green_dwell_m": {
+                "n": 8,
+                "min": 1.2761775750637216,
+                "median": 1.2826679625945312,
+                "max": 1.285398739099799
+              },
+              "issued_rows": 18893,
+              "dense_fsq": 1209152,
+              "physics_boundaries": 18901,
+              "changed_observation_queries": 0,
+              "queries": 18893,
+              "cases_where_override_called": 0
+            },
+            "high": {
+              "n": 8,
+              "full_course": 8,
+              "reached_departure": 8,
+              "entered_rack": 8,
+              "exited_rack": 8,
+              "cleared_whole_body": 8,
+              "head_passed_under": 8,
+              "first_contacts": {},
+              "terminal": {
+                "success": 8
+              },
+              "actual_gates": 11,
+              "offered_gates": 11,
+              "actual_moving_forks": 8,
+              "first_contact_force_n": null,
+              "min_roof_distances_below_0p3_m": {
+                "n": 8,
+                "min": 0.09482591470459534,
+                "median": 0.11081653164599924,
+                "max": 0.1250063594732238
+              },
+              "max_head_heights_between_planes_m": {
+                "n": 8,
+                "min": 1.292613545491152,
+                "median": 1.2938276708180139,
+                "max": 1.2946405852216867
+              },
+              "min_head_heights_in_qualified_green_dwell_m": {
+                "n": 8,
+                "min": 1.2756478394894875,
+                "median": 1.2801663638257024,
+                "max": 1.2850300327890927
+              },
+              "issued_rows": 20894,
+              "dense_fsq": 1337216,
+              "physics_boundaries": 20902,
+              "changed_observation_queries": 0,
+              "queries": 20894,
+              "cases_where_override_called": 0
+            }
+          },
+          "independent_trial_replay_receipts": [
+            "6ac6e22f57660c8cdaa3b64ceb050671102bf51fb605f31d6648f90073634e3d",
+            "5776cb6abfbec4807bec52a1c4901e93ee1a9a942c4ae0b9698a9732c568b239",
+            "35c9a8b8d3271f00fb7cd44c84c988f4e53a661c77e6cb2b350d20b95d795466",
+            "e1041131e2d607023a9ae098c3c30b7cdde4818f6cc951d83c3dccbd4eab1cb0",
+            "bf2ee20c1be66823b143e37ee84abb71fd58ca71e926720f31c8e643ee31978f",
+            "eb817e34881f402759be71004c3e894136e7fb1f7d9cc7a43c19b978cfc5ff8c",
+            "60d490bcbed39cd29d7058e93bb3541b9fef679c8c1dc32188598d4013f81775",
+            "f9de3e1c67f343a8ee725ee419771763b27e7b9c5111783428e9ea819876c18d",
+            "92d798825536ab2f54f60fffd782dca32421b0f4fccdcb322276d2b0266cc8b9",
+            "83b1f5bc8790edf63d36337c37f805a238b3d2984698b2aa972f44e2b4baee9e",
+            "12a439fb6113414f29eb6b511ff4dc6c21dbad228e7f580be09194c250a592df",
+            "c5e2a42e9c18212aa4778165d3135c72d46728bfb661b65fcb5781d301ec03d5",
+            "6588a5e96938b83ea266034f1bf8091bb4747d9ef0aadd6a1ff04516a0ecd31d",
+            "407158181307333e4f28e6ac19eab84b0fbe311076915d41c5a1240156b47ab5",
+            "da1f4c6cf90313928bdaba627e4da49492cd45926538312bb6ca065976e6df3f",
+            "a263c33db1420987c847544e3514d4111f0ac55ec3debfd1258f17c0d29a259d"
+          ]
+        },
+        "side_camera": {
+          "all": {
+            "n": 16,
+            "full_course": 0,
+            "reached_departure": 16,
+            "entered_rack": 0,
+            "exited_rack": 0,
+            "cleared_whole_body": 0,
+            "head_passed_under": 0,
+            "first_contacts": {
+              "rack_left_side_minus_y": 4,
+              "rack_left_side_plus_y": 4,
+              "rack_right_side_minus_y": 4,
+              "rack_right_side_plus_y": 4
+            },
+            "terminal": {
+              "obstacle_contact": 16
+            },
+            "actual_gates": 20,
+            "offered_gates": 20,
+            "actual_moving_forks": 16,
+            "first_contact_force_n": {
+              "n": 16,
+              "min": 26.78805014325904,
+              "median": 130.1721616061277,
+              "max": 464.680077911862
+            },
+            "min_roof_distances_below_0p3_m": null,
+            "max_head_heights_between_planes_m": null,
+            "min_head_heights_in_qualified_green_dwell_m": null,
+            "issued_rows": 30985,
+            "dense_fsq": 1983040,
+            "physics_boundaries": 31001,
+            "changed_observation_queries": 30985,
+            "queries": 30985,
+            "cases_where_override_called": 0
+          },
+          "by_real_roof": {
+            "low": {
+              "n": 8,
+              "full_course": 0,
+              "reached_departure": 8,
+              "entered_rack": 0,
+              "exited_rack": 0,
+              "cleared_whole_body": 0,
+              "head_passed_under": 0,
+              "first_contacts": {
+                "rack_left_side_minus_y": 2,
+                "rack_left_side_plus_y": 2,
+                "rack_right_side_minus_y": 2,
+                "rack_right_side_plus_y": 2
+              },
+              "terminal": {
+                "obstacle_contact": 8
+              },
+              "actual_gates": 9,
+              "offered_gates": 9,
+              "actual_moving_forks": 8,
+              "first_contact_force_n": {
+                "n": 8,
+                "min": 67.07618551511112,
+                "median": 309.2560042856172,
+                "max": 464.680077911862
+              },
+              "min_roof_distances_below_0p3_m": null,
+              "max_head_heights_between_planes_m": null,
+              "min_head_heights_in_qualified_green_dwell_m": null,
+              "issued_rows": 14508,
+              "dense_fsq": 928512,
+              "physics_boundaries": 14516,
+              "changed_observation_queries": 14508,
+              "queries": 14508,
+              "cases_where_override_called": 0
+            },
+            "high": {
+              "n": 8,
+              "full_course": 0,
+              "reached_departure": 8,
+              "entered_rack": 0,
+              "exited_rack": 0,
+              "cleared_whole_body": 0,
+              "head_passed_under": 0,
+              "first_contacts": {
+                "rack_left_side_minus_y": 2,
+                "rack_left_side_plus_y": 2,
+                "rack_right_side_minus_y": 2,
+                "rack_right_side_plus_y": 2
+              },
+              "terminal": {
+                "obstacle_contact": 8
+              },
+              "actual_gates": 11,
+              "offered_gates": 11,
+              "actual_moving_forks": 8,
+              "first_contact_force_n": {
+                "n": 8,
+                "min": 26.78805014325904,
+                "median": 112.33861605030283,
+                "max": 168.4747839092911
+              },
+              "min_roof_distances_below_0p3_m": null,
+              "max_head_heights_between_planes_m": null,
+              "min_head_heights_in_qualified_green_dwell_m": null,
+              "issued_rows": 16477,
+              "dense_fsq": 1054528,
+              "physics_boundaries": 16485,
+              "changed_observation_queries": 16477,
+              "queries": 16477,
+              "cases_where_override_called": 0
+            }
+          },
+          "independent_trial_replay_receipts": [
+            "fd4e67d89ac5110943244f17277d6fc06de554daad65151890c8408a945ae41a",
+            "7bc6a56992af6cdb57466f2b5b54f4cf7aa8f17ef8014e1ac7d7d3037234032f",
+            "a27033db372c65a7fe4c220302bc4ef0d97903c165598075e8c76c2e8e877d84",
+            "bf41acd1a0669267cb2ee9ef50c65f744a08eee7a3ad07a5497e4e3f2727a043",
+            "485ad5460ab5d03d163714da124d2eb183b30c6d793e24a534e9b7c15b8c2511",
+            "9d9396fa3d3fb9344b2fa2af8a101acf43ecdaa40ae4b94d882d10d9b2903d95",
+            "a3426aff12b968c2b634dc01dd5b8d6d6ed19702b34d1f50e48c83692b2766b7",
+            "a99827818698e9be5b2a1e50971536f0c65d50219769bcc16adf1751a289f1d0",
+            "c50045d8d54a9a79c44be27578af855bb23c89dfb07fb6df0d2b3b3e2d43918e",
+            "21a9a51a2c00e34fbb1043d376f9226741c84f97a5794a38be64185c20735468",
+            "3c2e4a69ca313ab7e5127844c5db72230800e7bda62298048b3f338c6b1b99e6",
+            "f14eec1c7a97b958308cf3b9bb1b5711a3a462c2a233608831166b1755c2f3d4",
+            "1e783a69db8c3594aa1da8aba7a239f3672b631fb09299eaded53b234d7a90c8",
+            "ea997184740d5e86b46d2d8ade7f0b4d5363af29e00ea484b752e29944768e03",
+            "8dddccdd91fcd39245b81c33623c70c8b4fe25e566337189d451cdfea69a2a2f",
+            "bb3f14a74d6860461e0ac0b1ebdc0652745a88b78112c63a40bde661304fc28e"
+          ],
+          "separately_mounted_optical_effect": {
+            "independent_raster_sha256": "876e566d8888961de38ec664d9d14681c0c32cde34fe6b558bb5ec366dfb9180",
+            "n_samples": 318,
+            "sampled_poses_with_visible_difference": 318,
+            "pixels": 3907584,
+            "visible_rgb_pixels": 491796,
+            "visible_depth_pixels": 493429,
+            "either": 494953,
+            "rgb_threshold_exclusive": 2,
+            "depth_threshold_mm_exclusive": 2,
+            "note": "Sampled every 100 native policy queries. A pixel exceeds twice the largest difference between an independent re-render and its archived counterpart in that channel. This threshold describes raster reproducibility. It is unrelated to controller scoring or detector decisions."
+          },
+          "reproduced_images": {
+            "true": {
+              "samples": 318,
+              "tested_pixels": 3907584,
+              "colour_mismatches": 46,
+              "depth_mismatches": 291,
+              "max_channel_level": 1,
+              "max_depth_mm": 1
+            },
+            "seen": {
+              "samples": 318,
+              "tested_pixels": 3907584,
+              "colour_mismatches": 48,
+              "depth_mismatches": 274,
+              "max_channel_level": 1,
+              "max_depth_mm": 1
+            }
+          }
+        },
+        "height_camera": {
+          "all": {
+            "n": 16,
+            "full_course": 8,
+            "reached_departure": 16,
+            "entered_rack": 8,
+            "exited_rack": 8,
+            "cleared_whole_body": 8,
+            "head_passed_under": 8,
+            "first_contacts": {
+              "rack_left_deck_front": 4,
+              "rack_right_deck_front": 4
+            },
+            "terminal": {
+              "obstacle_contact": 8,
+              "success": 8
+            },
+            "actual_gates": 20,
+            "offered_gates": 20,
+            "actual_moving_forks": 16,
+            "first_contact_force_n": {
+              "n": 8,
+              "min": 80.84694546731293,
+              "median": 102.50733062091629,
+              "max": 132.49921863092877
+            },
+            "min_roof_distances_below_0p3_m": {
+              "n": 16,
+              "min": 1.7426944159238204e-05,
+              "median": 0.10948348389934029,
+              "max": 0.24892414138270635
+            },
+            "max_head_heights_between_planes_m": {
+              "n": 8,
+              "min": 1.1672622414956602,
+              "median": 1.1694557625198607,
+              "max": 1.169754978934722
+            },
+            "min_head_heights_in_qualified_green_dwell_m": {
+              "n": 8,
+              "min": 1.2763368063236955,
+              "median": 1.2831075741731806,
+              "max": 1.2844230011908175
+            },
+            "issued_rows": 35940,
+            "dense_fsq": 2300160,
+            "physics_boundaries": 35956,
+            "changed_observation_queries": 27165,
+            "queries": 35940,
+            "cases_where_override_called": 0
+          },
+          "by_real_roof": {
+            "low": {
+              "n": 8,
+              "full_course": 0,
+              "reached_departure": 8,
+              "entered_rack": 0,
+              "exited_rack": 0,
+              "cleared_whole_body": 0,
+              "head_passed_under": 0,
+              "first_contacts": {
+                "rack_left_deck_front": 4,
+                "rack_right_deck_front": 4
+              },
+              "terminal": {
+                "obstacle_contact": 8
+              },
+              "actual_gates": 9,
+              "offered_gates": 9,
+              "actual_moving_forks": 8,
+              "first_contact_force_n": {
+                "n": 8,
+                "min": 80.84694546731293,
+                "median": 102.50733062091629,
+                "max": 132.49921863092877
+              },
+              "min_roof_distances_below_0p3_m": {
+                "n": 8,
+                "min": 1.7426944159238204e-05,
+                "median": 0.00019754260234606933,
+                "max": 0.0006155290014838159
+              },
+              "max_head_heights_between_planes_m": null,
+              "min_head_heights_in_qualified_green_dwell_m": null,
+              "issued_rows": 14830,
+              "dense_fsq": 949120,
+              "physics_boundaries": 14838,
+              "changed_observation_queries": 12161,
+              "queries": 14830,
+              "cases_where_override_called": 0
+            },
+            "high": {
+              "n": 8,
+              "full_course": 8,
+              "reached_departure": 8,
+              "entered_rack": 8,
+              "exited_rack": 8,
+              "cleared_whole_body": 8,
+              "head_passed_under": 8,
+              "first_contacts": {},
+              "terminal": {
+                "success": 8
+              },
+              "actual_gates": 11,
+              "offered_gates": 11,
+              "actual_moving_forks": 8,
+              "first_contact_force_n": null,
+              "min_roof_distances_below_0p3_m": {
+                "n": 8,
+                "min": 0.21835143879719676,
+                "median": 0.23564242460178153,
+                "max": 0.24892414138270635
+              },
+              "max_head_heights_between_planes_m": {
+                "n": 8,
+                "min": 1.1672622414956602,
+                "median": 1.1694557625198607,
+                "max": 1.169754978934722
+              },
+              "min_head_heights_in_qualified_green_dwell_m": {
+                "n": 8,
+                "min": 1.2763368063236955,
+                "median": 1.2831075741731806,
+                "max": 1.2844230011908175
+              },
+              "issued_rows": 21110,
+              "dense_fsq": 1351040,
+              "physics_boundaries": 21118,
+              "changed_observation_queries": 15004,
+              "queries": 21110,
+              "cases_where_override_called": 0
+            }
+          },
+          "independent_trial_replay_receipts": [
+            "9795184e46d9b64a0b86dc82409fd1405a065249775c8acd6662f456425911a4",
+            "f8a37e86575ac03c99197cb6b68bbded4669e0fbf4adefc6678aaa988a4f018b",
+            "241a89123e4fa3423c7e7f0233b696a7f40d27cdbd3a3b7b1f12ebf358ad6e70",
+            "d20dfcae3885659ba4eede7adf897f5499a27a1665419315ee72e6011c6f8d36",
+            "76626b55ebd9d8c0733ab6b3d53cddfb58420da16fe2fc96498f52e57e03825d",
+            "2060918f6e7b742048b8d9d75b6d11c91fb2d0edb0ac5aa27920ecc79322e664",
+            "0ce79be8a70db800ad654d78f44cf39ed55a338166cd44ca5e9561242219dd55",
+            "bc09cb9fbaf9bf139ea87647a0e6e7c334f0f9586c664e9ff969331404cb8115",
+            "435831d42fcde43eef7c0b4249bd61cce0da4706cd6fe924b1bd3f58889de22b",
+            "4694e7624a7b25099a9f1b403187cd28eafac917ee29bd81e016989c82c4db08",
+            "beefb309b6f440162a4ebebdc66e39c86b6cccbc94aba2b7390baea46fd33811",
+            "36afd42f150719a342a45e6c516c693f7cfc1cb806a9f8cc23a8dc28f8b21c98",
+            "28bce001d5a807e54c48003d333a95f7ebf1267bf13b61d59e19264b23090a73",
+            "8c0349ad2065051306c990df675f37ca6382cdda0b3ead73b17db6c6478f09f5",
+            "c5e4d32c818b962972efcdde1abd1058fa8150c69e591ea35e905b861d0a69a8",
+            "02796558c4a9380223e001e51c1e3fec9475a2dcb0d63938fb2fdfdd67540195"
+          ],
+          "separately_mounted_optical_effect": {
+            "independent_raster_sha256": "639b42a4c275dc61474985c656e25e612530c23ba4c7a9bcfa46d89ad2983889",
+            "n_samples": 364,
+            "sampled_poses_with_visible_difference": 278,
+            "pixels": 4472832,
+            "visible_rgb_pixels": 149668,
+            "visible_depth_pixels": 170665,
+            "either": 174189,
+            "rgb_threshold_exclusive": 2,
+            "depth_threshold_mm_exclusive": 2,
+            "note": "Sampled every 100 native policy queries. A pixel exceeds twice the largest difference between an independent re-render and its archived counterpart in that channel. This threshold describes raster reproducibility. It is unrelated to controller scoring or detector decisions."
+          },
+          "reproduced_images": {
+            "true": {
+              "samples": 364,
+              "tested_pixels": 4472832,
+              "colour_mismatches": 63,
+              "depth_mismatches": 357,
+              "max_channel_level": 1,
+              "max_depth_mm": 1
+            },
+            "seen": {
+              "samples": 364,
+              "tested_pixels": 4472832,
+              "colour_mismatches": 63,
+              "depth_mismatches": 357,
+              "max_channel_level": 1,
+              "max_depth_mm": 1
+            }
+          }
+        }
+      },
+      "scope": "Same 16 physical courses; eight real low and eight high. Score is actual full completion. Same controller and unchanged physical robot and rack at each substituted RGB-D observation. Independent entire control replay and 2 ms contact scorer. The grade uses 12 low and four high on separately generated protected courses."
+    },
+    "posture": {
+      "source_sha256": "3fe006a908078f4ff31a37b7765ca5a817bef5a7d3446e836927557d6d9e87f2",
+      "geometry": "The registered 16 trajectories comprise eight seed/geometry pairs and have equal roof classes; the ordinary independent protected grader samples 12 low and four high. Do not attribute pre-rack terminations to a shelf.",
+      "native": {
+        "reference": {
+          "all": {
+            "n": 16,
+            "full_course": 16,
+            "actual_moving_forks": 16,
+            "reached_departure": 16,
+            "entered_rack": 16,
+            "exited_rack": 16,
+            "cleared_whole_body": 16,
+            "issued_rows": 39787,
+            "dense_fsq": 2546368,
+            "physics_boundaries": 39803,
+            "changed_observation_queries": 0,
+            "queries": 39787,
+            "mechanisms": {
+              "success": 16
+            },
+            "first_contact_bodies": {}
+          },
+          "by_real_roof": {
+            "low": {
+              "n": 8,
+              "full_course": 8,
+              "reached_departure": 8,
+              "cleared_whole_body": 8,
+              "max_head_heights_between_planes_m": {
+                "n": 8,
+                "min": 1.1693860841868968,
+                "median": 1.169521070701137,
+                "max": 1.1696142446155144
+              },
+              "min_roof_distances_below_0p3_m": {
+                "n": 8,
+                "min": 0.040127345548957465,
+                "median": 0.042864717515584745,
+                "max": 0.05338060681070477
+              },
+              "min_head_heights_in_qualified_green_dwell_m": {
+                "n": 8,
+                "min": 1.2761775750637216,
+                "median": 1.2826679625945312,
+                "max": 1.285398739099799
+              }
+            },
+            "high": {
+              "n": 8,
+              "full_course": 8,
+              "reached_departure": 8,
+              "cleared_whole_body": 8,
+              "max_head_heights_between_planes_m": {
+                "n": 8,
+                "min": 1.292613545491152,
+                "median": 1.2938276708180139,
+                "max": 1.2946405852216867
+              },
+              "min_roof_distances_below_0p3_m": {
+                "n": 8,
+                "min": 0.09482591470459534,
+                "median": 0.11081653164599924,
+                "max": 0.1250063594732238
+              },
+              "min_head_heights_in_qualified_green_dwell_m": {
+                "n": 8,
+                "min": 1.2756478394894875,
+                "median": 1.2801663638257024,
+                "max": 1.2850300327890927
+              }
+            }
+          }
+        },
+        "force_low": {
+          "all": {
+            "n": 16,
+            "full_course": 16,
+            "actual_moving_forks": 16,
+            "reached_departure": 16,
+            "entered_rack": 16,
+            "exited_rack": 16,
+            "cleared_whole_body": 16,
+            "issued_rows": 39908,
+            "dense_fsq": 2554112,
+            "physics_boundaries": 39924,
+            "changed_observation_queries": 0,
+            "queries": 39908,
+            "mechanisms": {
+              "success": 16
+            },
+            "first_contact_bodies": {}
+          },
+          "by_real_roof": {
+            "low": {
+              "n": 8,
+              "full_course": 8,
+              "reached_departure": 8,
+              "cleared_whole_body": 8,
+              "max_head_heights_between_planes_m": {
+                "n": 8,
+                "min": 1.1693860841868968,
+                "median": 1.169521070701137,
+                "max": 1.1696142446155144
+              },
+              "min_roof_distances_below_0p3_m": {
+                "n": 8,
+                "min": 0.040127345548957465,
+                "median": 0.042864717515584745,
+                "max": 0.05338060681070477
+              },
+              "min_head_heights_in_qualified_green_dwell_m": {
+                "n": 8,
+                "min": 1.2761775750637216,
+                "median": 1.2826679625945312,
+                "max": 1.285398739099799
+              }
+            },
+            "high": {
+              "n": 8,
+              "full_course": 8,
+              "reached_departure": 8,
+              "cleared_whole_body": 8,
+              "max_head_heights_between_planes_m": {
+                "n": 8,
+                "min": 1.1674168530463862,
+                "median": 1.16938742272625,
+                "max": 1.1696348859955445
+              },
+              "min_roof_distances_below_0p3_m": {
+                "n": 8,
+                "min": 0.21829662840350705,
+                "median": 0.23581343572849134,
+                "max": 0.249304518912298
+              },
+              "min_head_heights_in_qualified_green_dwell_m": {
+                "n": 8,
+                "min": 1.27866353658625,
+                "median": 1.2830304047279733,
+                "max": 1.2872154414692016
+              }
+            }
+          }
+        },
+        "force_upright": {
+          "all": {
+            "n": 16,
+            "full_course": 8,
+            "actual_moving_forks": 16,
+            "reached_departure": 16,
+            "entered_rack": 8,
+            "exited_rack": 8,
+            "cleared_whole_body": 8,
+            "issued_rows": 35710,
+            "dense_fsq": 2285440,
+            "physics_boundaries": 35726,
+            "changed_observation_queries": 0,
+            "queries": 35710,
+            "mechanisms": {
+              "roof_contact": 8,
+              "success": 8
+            },
+            "first_contact_bodies": {
+              "torso_link": 8
+            }
+          },
+          "by_real_roof": {
+            "low": {
+              "n": 8,
+              "full_course": 0,
+              "reached_departure": 8,
+              "cleared_whole_body": 0,
+              "max_head_heights_between_planes_m": null,
+              "min_roof_distances_below_0p3_m": {
+                "n": 8,
+                "min": 1.9895163300427192e-05,
+                "median": 7.242836221199758e-05,
+                "max": 0.00034740132795339133
+              },
+              "min_head_heights_in_qualified_green_dwell_m": null
+            },
+            "high": {
+              "n": 8,
+              "full_course": 8,
+              "reached_departure": 8,
+              "cleared_whole_body": 8,
+              "max_head_heights_between_planes_m": {
+                "n": 8,
+                "min": 1.292613545491152,
+                "median": 1.2938276708180139,
+                "max": 1.2946405852216867
+              },
+              "min_roof_distances_below_0p3_m": {
+                "n": 8,
+                "min": 0.09482591470459534,
+                "median": 0.11081653164599924,
+                "max": 0.1250063594732238
+              },
+              "min_head_heights_in_qualified_green_dwell_m": {
+                "n": 8,
+                "min": 1.2756478394894875,
+                "median": 1.2801663638257024,
+                "max": 1.2850300327890927
+              }
+            }
+          }
+        }
+      },
+      "paired_reference_controls": {
+        "force_low": {
+          "both": 16,
+          "live_only": 0,
+          "alternative_only": 0,
+          "neither": 0,
+          "changed_control": 8,
+          "by_physical_roof": {
+            "low": {
+              "n": 8,
+              "live_success": 8,
+              "alternative_success": 8,
+              "changed_actions": 0,
+              "first_different_action_index": null
+            },
+            "high": {
+              "n": 8,
+              "live_success": 8,
+              "alternative_success": 8,
+              "changed_actions": 8,
+              "first_different_action_index": {
+                "n": 8,
+                "min": 1683,
+                "median": 1992.5,
+                "max": 2345
+              }
+            }
+          }
+        },
+        "force_upright": {
+          "both": 8,
+          "live_only": 8,
+          "alternative_only": 0,
+          "neither": 0,
+          "changed_control": 8,
+          "by_physical_roof": {
+            "low": {
+              "n": 8,
+              "live_success": 8,
+              "alternative_success": 0,
+              "changed_actions": 8,
+              "first_different_action_index": {
+                "n": 8,
+                "min": 1554,
+                "median": 1670.5,
+                "max": 1951
+              }
+            },
+            "high": {
+              "n": 8,
+              "live_success": 8,
+              "alternative_success": 8,
+              "changed_actions": 0,
+              "first_different_action_index": null
+            }
+          }
+        }
+      }
+    },
+    "matched": {
+      "geometry": "The registered 16 trajectories comprise eight seed/geometry pairs and have equal roof classes; the ordinary independent protected grader samples 12 low and four high. Do not attribute pre-rack terminations to a shelf.",
+      "control_period_s": 0.02,
+      "contact_period_s": 0.002,
+      "native": {
+        "opus_predecessor": {
+          "n": 16,
+          "full_course": 0,
+          "actual_moving_forks": 0,
+          "reached_departure": 0,
+          "entered_rack": 0,
+          "exited_rack": 0,
+          "cleared_whole_body": 0,
+          "issued_rows": 4084,
+          "dense_fsq": 261376,
+          "physics_boundaries": 4100,
+          "changed_observation_queries": 0,
+          "queries": 4084,
+          "mechanisms": {
+            "approach_furniture_contact": 16
+          },
+          "first_contact_bodies": {
+            "left_hand_index_1_link": 4,
+            "left_hand_middle_1_link": 1,
+            "left_knee_link": 2,
+            "right_ankle_roll_link": 1,
+            "right_hand_index_1_link": 6,
+            "right_knee_link": 2
+          },
+          "true_roof": {
+            "low": {
+              "n": 8,
+              "full_course": 0,
+              "reached_departure": 0,
+              "cleared_whole_body": 0,
+              "max_head_heights_between_planes_m": null,
+              "min_roof_distances_below_0p3_m": null,
+              "min_head_heights_in_qualified_green_dwell_m": null
+            },
+            "high": {
+              "n": 8,
+              "full_course": 0,
+              "reached_departure": 0,
+              "cleared_whole_body": 0,
+              "max_head_heights_between_planes_m": null,
+              "min_roof_distances_below_0p3_m": null,
+              "min_head_heights_in_qualified_green_dwell_m": null
+            }
+          }
+        },
+        "opus_static": {
+          "n": 16,
+          "full_course": 0,
+          "actual_moving_forks": 0,
+          "reached_departure": 0,
+          "entered_rack": 0,
+          "exited_rack": 0,
+          "cleared_whole_body": 0,
+          "issued_rows": 3534,
+          "dense_fsq": 226176,
+          "physics_boundaries": 3550,
+          "changed_observation_queries": 0,
+          "queries": 3534,
+          "mechanisms": {
+            "approach_furniture_contact": 16
+          },
+          "first_contact_bodies": {
+            "left_hand_index_1_link": 6,
+            "right_ankle_roll_link": 4,
+            "right_hand_index_1_link": 4,
+            "right_knee_link": 2
+          },
+          "true_roof": {
+            "low": {
+              "n": 8,
+              "full_course": 0,
+              "reached_departure": 0,
+              "cleared_whole_body": 0,
+              "max_head_heights_between_planes_m": null,
+              "min_roof_distances_below_0p3_m": null,
+              "min_head_heights_in_qualified_green_dwell_m": null
+            },
+            "high": {
+              "n": 8,
+              "full_course": 0,
+              "reached_departure": 0,
+              "cleared_whole_body": 0,
+              "max_head_heights_between_planes_m": null,
+              "min_roof_distances_below_0p3_m": null,
+              "min_head_heights_in_qualified_green_dwell_m": null
+            }
+          }
+        },
+        "opus_temporal": {
+          "n": 16,
+          "full_course": 0,
+          "actual_moving_forks": 16,
+          "reached_departure": 12,
+          "entered_rack": 1,
+          "exited_rack": 1,
+          "cleared_whole_body": 1,
+          "issued_rows": 23295,
+          "dense_fsq": 1490880,
+          "physics_boundaries": 23311,
+          "changed_observation_queries": 0,
+          "queries": 23295,
+          "mechanisms": {
+            "path_violation": 4,
+            "rack_side_or_frame_contact": 9,
+            "roof_contact": 2,
+            "time_limit": 1
+          },
+          "first_contact_bodies": {
+            "left_hand_index_1_link": 1,
+            "right_hand_index_1_link": 8,
+            "torso_link": 2
+          },
+          "true_roof": {
+            "low": {
+              "n": 8,
+              "full_course": 0,
+              "reached_departure": 7,
+              "cleared_whole_body": 0,
+              "max_head_heights_between_planes_m": null,
+              "min_roof_distances_below_0p3_m": {
+                "n": 4,
+                "min": 3.2528545848026855e-06,
+                "median": 0.12077506191242214,
+                "max": 0.25312591674054435
+              },
+              "min_head_heights_in_qualified_green_dwell_m": null
+            },
+            "high": {
+              "n": 8,
+              "full_course": 0,
+              "reached_departure": 5,
+              "cleared_whole_body": 1,
+              "max_head_heights_between_planes_m": {
+                "n": 1,
+                "min": 1.2866520494716518,
+                "median": 1.2866520494716518,
+                "max": 1.2866520494716518
+              },
+              "min_roof_distances_below_0p3_m": {
+                "n": 2,
+                "min": 0.10938028880228644,
+                "median": 0.20226056067267323,
+                "max": 0.29514083254306
+              },
+              "min_head_heights_in_qualified_green_dwell_m": null
+            }
+          }
+        },
+        "opus_warehouse": {
+          "n": 16,
+          "full_course": 0,
+          "actual_moving_forks": 6,
+          "reached_departure": 0,
+          "entered_rack": 0,
+          "exited_rack": 0,
+          "cleared_whole_body": 0,
+          "issued_rows": 18386,
+          "dense_fsq": 1176704,
+          "physics_boundaries": 18402,
+          "changed_observation_queries": 0,
+          "queries": 3683,
+          "mechanisms": {
+            "approach_furniture_contact": 10,
+            "path_violation": 2,
+            "rack_side_or_frame_contact": 2,
+            "time_limit": 2
+          },
+          "first_contact_bodies": {
+            "left_hand_index_1_link": 8,
+            "right_hand_index_1_link": 4
+          },
+          "true_roof": {
+            "low": {
+              "n": 8,
+              "full_course": 0,
+              "reached_departure": 0,
+              "cleared_whole_body": 0,
+              "max_head_heights_between_planes_m": null,
+              "min_roof_distances_below_0p3_m": null,
+              "min_head_heights_in_qualified_green_dwell_m": null
+            },
+            "high": {
+              "n": 8,
+              "full_course": 0,
+              "reached_departure": 0,
+              "cleared_whole_body": 0,
+              "max_head_heights_between_planes_m": null,
+              "min_roof_distances_below_0p3_m": null,
+              "min_head_heights_in_qualified_green_dwell_m": null
+            }
+          }
+        }
+      }
+    }
+  }
+}
