@@ -1,0 +1,69 @@
+{
+  "model": "claude-opus-5-5",
+  "coding_harness": "First-party Claude Code CLI with a single participant-only shell in offline Docker",
+  "scoring": "Frozen verifier executed separately with pinned ALE 0.1.1",
+  "per_task_budget": {
+    "attempts": 1,
+    "turn_limit": 25,
+    "wall_limit_minutes": 45
+  },
+  "results": {
+    "navigation": {
+      "task_commit": "005aa790388479639cb039266e7edd0d5dc26bb9",
+      "ale_commit": "bfb75050aca2c54b45c5ab23bae6028a834a468a",
+      "participant_coding_seconds": 541.374,
+      "cli_completion": "error_max_turns",
+      "reward": 0.87,
+      "metrics": {
+        "ratio": 0.8125,
+        "reward_exact": 0.8666666666666667,
+        "episodes": 16.0,
+        "episodes_aborted": 0.0,
+        "successes": 13.0,
+        "strict_course_fraction": 0.8125,
+        "left_successes": 6.0,
+        "right_successes": 7.0,
+        "turn_semantic_changed": 13.0,
+        "turn_probe_count": 13.0,
+        "range_semantic_changed": 29.0,
+        "range_probe_count": 29.0,
+        "applied_native_rows": 15494.0,
+        "fsq_scalar_codes": 991616.0
+      },
+      "verification_sha256": "f15400752763962dc2074790d8a6d3ca7266353ca170799dedfaa4848af8ef67",
+      "source_capture": "Original export failed. Replaying the recorded source writes recovered the controller. A second full shell replay reproduced the same three file hashes. The original live files had no independent hash.",
+      "shell_replay_receipt_sha256": "e8a1ed19b7c88d68c4ca7db859173a822eec2fc56f578ee74b62b83f11e49744"
+    },
+    "delivery": {
+      "task_commit": "2bceae6f7aa6c343e01fe4ea75aed860f711a08a",
+      "ale_commit": "bfb75050aca2c54b45c5ab23bae6028a834a468a",
+      "participant_coding_seconds": 949.146,
+      "cli_completion": "success",
+      "reward": 0.0,
+      "metrics": {
+        "ratio": 0.0,
+        "reward_exact": 0.0,
+        "episodes": 12.0,
+        "episodes_aborted": 0.0,
+        "time_limits": 12.0,
+        "strict_deliveries": 0.0,
+        "strict_layout_fraction": 0.0,
+        "layouts": 4.0,
+        "all_signals_released": 0.0,
+        "walked": 0.0,
+        "docked": 6.0,
+        "contacted": 6.0,
+        "lifted": 0.0,
+        "placed": 0.0,
+        "wrong_pad": 0.0,
+        "fell": 0.0,
+        "disqualified": 0.0,
+        "applied_rows": 13200.0,
+        "applied_codes": 844800.0,
+        "simulated_s": 264.0
+      },
+      "verification_sha256": "830f09421dd3025f8b35b3ba0d8b90798f307e5652ac1ade714f4d3929b62139",
+      "source_capture": "Collected directly from the original participant container."
+    }
+  }
+}
