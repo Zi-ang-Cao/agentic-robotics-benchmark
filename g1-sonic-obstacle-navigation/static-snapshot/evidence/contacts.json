@@ -1,0 +1,41 @@
+{
+  "source": "6b4605fa43c19dfda979d23b620cc8c998cd1254",
+  "scope": "Deliberately positioned native contact fixtures and equal-state egocentric RGB-D checks, independent of policy success.",
+  "matched_sensor_pairs": 18,
+  "robot_resets": 3,
+  "only_image_and_its_hash_change_when_the_physical_gap_is_mirrored": true,
+  "floor_contact_does_not_count_as_a_cabinet_collision": true,
+  "limb_only": [
+    {
+      "kind": "arm_only",
+      "terminal": "obstacle_contact",
+      "first_body": "right_wrist_yaw_link",
+      "time_s": 0.002
+    },
+    {
+      "kind": "foot_only",
+      "terminal": "obstacle_contact",
+      "first_body": "right_ankle_roll_link",
+      "time_s": 0.002
+    }
+  ],
+  "wall_fixtures": {
+    "initial_yaws": 3,
+    "wall_trials": 24,
+    "contact_failures": 24,
+    "unobstructed_gap_trials": 12,
+    "gap_trials_with_contact": 0
+  },
+  "body_part_first_contact": {
+    "ankle": 4,
+    "hip": 4,
+    "hand": 4,
+    "substep_seconds": 0.002
+  },
+  "receipt_sha256": {
+    "native-gates-frozen.json": "fee1ba1ad98a34b3dd6de6634f100a05d69da6d2f8f25733ac38ceb486aa7705",
+    "limb-only-frozen.json": "64d4288f6e1610b266ef67308015fb75fa76bc405ab0752c0426101784a63448",
+    "native-contact-fixtures.json": "7ba05640638cf201c61c7ae6789527369cfbbddc2354b0cd64e2f7d7a1ff3605",
+    "native-part-specific.json": "3125690ea86e1a035b9f3f3855ef3217c7708aefe523854006110a63f171887e"
+  }
+}

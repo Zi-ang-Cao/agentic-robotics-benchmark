@@ -1,0 +1,764 @@
+{
+  "scope": "Public native fixtures and fork-only probes. Exact robot-sensor equality applies to the short matched intervention. Longer phase twins can produce floating-point roundoff after moving actuators accelerate. Whole-course scores are in the validation and difficulty receipts.",
+  "receipts": {
+    "sensor_and_geometry": {
+      "sha256": "277d059351e04fcb29b92d9b6246a3c685dd99d2af111922a0e21d25806b0ff5",
+      "data": {
+        "camera": [
+          {
+            "changed_depth_pixels_range": [
+              2843,
+              2893
+            ],
+            "changed_rgb_pixels_range": [
+              2843,
+              2893
+            ],
+            "matched_control_rows": 10,
+            "native_contacts": 0,
+            "noncamera_proprio_history_exact": true,
+            "public_seed": 7,
+            "robot_qpos_qvel_motor_ctrl_exact": true,
+            "ticks_verified": 11
+          },
+          {
+            "changed_depth_pixels_range": [
+              2769,
+              2882
+            ],
+            "changed_rgb_pixels_range": [
+              2770,
+              2882
+            ],
+            "matched_control_rows": 10,
+            "native_contacts": 0,
+            "noncamera_proprio_history_exact": true,
+            "public_seed": 31,
+            "robot_qpos_qvel_motor_ctrl_exact": true,
+            "ticks_verified": 11
+          },
+          {
+            "changed_depth_pixels_range": [
+              2735,
+              2800
+            ],
+            "changed_rgb_pixels_range": [
+              2737,
+              2800
+            ],
+            "matched_control_rows": 10,
+            "native_contacts": 0,
+            "noncamera_proprio_history_exact": true,
+            "public_seed": 73,
+            "robot_qpos_qvel_motor_ctrl_exact": true,
+            "ticks_verified": 11
+          }
+        ],
+        "environment_commit": "6c0d28987857f7c0c40264fc863e75c89bd0795a",
+        "geometry": [
+          {
+            "actual_aperture_at_least_0p60m_seconds": 5.12,
+            "actual_fork_forward_m": 2.303508346838502,
+            "commanded_stroke_m": 1.09667488160488,
+            "effectively_closed_under_1mm_seconds": 5.94,
+            "first_last_full_sample_s": [
+              0.9400000000000001,
+              5.34
+            ],
+            "fully_open_seconds": 4.42,
+            "maximum_actual_aperture_m": 1.0533497632097597,
+            "public_seed": 7,
+            "service": "both",
+            "side": "right",
+            "static_width_m": 1.0533497632097597,
+            "tail": "none"
+          },
+          {
+            "actual_aperture_at_least_0p60m_seconds": 5.1000000000000005,
+            "actual_fork_forward_m": 2.303508346838502,
+            "commanded_stroke_m": 1.0804827095982408,
+            "effectively_closed_under_1mm_seconds": 6.0200000000000005,
+            "first_last_full_sample_s": [
+              0.9400000000000001,
+              5.34
+            ],
+            "fully_open_seconds": 4.42,
+            "maximum_actual_aperture_m": 1.0209654191964819,
+            "public_seed": 7,
+            "service": "both",
+            "side": "left",
+            "static_width_m": 1.0209654191964819,
+            "tail": "none"
+          },
+          {
+            "actual_aperture_at_least_0p60m_seconds": 5.12,
+            "actual_fork_forward_m": 2.364490269956063,
+            "commanded_stroke_m": 1.0938865193208787,
+            "effectively_closed_under_1mm_seconds": 5.94,
+            "first_last_full_sample_s": [
+              0.9400000000000001,
+              5.34
+            ],
+            "fully_open_seconds": 4.42,
+            "maximum_actual_aperture_m": 1.0477730386417567,
+            "public_seed": 31,
+            "service": "right",
+            "side": "right",
+            "static_width_m": 1.0477730386417567,
+            "tail": "left"
+          },
+          {
+            "actual_aperture_at_least_0p60m_seconds": 0.0,
+            "actual_fork_forward_m": 2.364490269956063,
+            "commanded_stroke_m": 0.09677616988619753,
+            "effectively_closed_under_1mm_seconds": 6.7,
+            "first_last_full_sample_s": null,
+            "fully_open_seconds": 0.0,
+            "maximum_actual_aperture_m": 0.05802865298354118,
+            "public_seed": 31,
+            "service": "right",
+            "side": "left",
+            "static_width_m": 1.002478412455487,
+            "tail": "left"
+          },
+          {
+            "actual_aperture_at_least_0p60m_seconds": 0.0,
+            "actual_fork_forward_m": 2.3830738295925067,
+            "commanded_stroke_m": 0.09245477584131614,
+            "effectively_closed_under_1mm_seconds": 6.74,
+            "first_last_full_sample_s": null,
+            "fully_open_seconds": 0.0,
+            "maximum_actual_aperture_m": 0.05202305082378711,
+            "public_seed": 73,
+            "service": "left",
+            "side": "right",
+            "static_width_m": 0.999111181942954,
+            "tail": "right"
+          },
+          {
+            "actual_aperture_at_least_0p60m_seconds": 5.1000000000000005,
+            "actual_fork_forward_m": 2.3830738295925067,
+            "commanded_stroke_m": 1.081131509259765,
+            "effectively_closed_under_1mm_seconds": 6.0200000000000005,
+            "first_last_full_sample_s": [
+              0.9400000000000001,
+              5.34
+            ],
+            "fully_open_seconds": 4.42,
+            "maximum_actual_aperture_m": 1.0222630185195305,
+            "public_seed": 73,
+            "service": "left",
+            "side": "left",
+            "static_width_m": 1.0222630185195305,
+            "tail": "right"
+          }
+        ],
+        "motors": {
+          "body_joints_verified": 29,
+          "finger_motors_verified": 14,
+          "new_rail_motors": [
+            {
+              "dof_index": 49,
+              "mass_kg": 3.0,
+              "motor_id": 43,
+              "qpos_index": 50,
+              "side": "right"
+            },
+            {
+              "dof_index": 50,
+              "mass_kg": 3.0,
+              "motor_id": 44,
+              "qpos_index": 51,
+              "side": "left"
+            }
+          ],
+          "original_motors": [
+            0,
+            42
+          ],
+          "original_name_motor_joint_qpos_dof_sha256": "ef06b238e8715b7255e2913c8cf956fd1da3b55ed32fa0e6c5fa1b72dbc3e16c"
+        },
+        "public_task_commit": "15e096c89e54c27da5626252380315bb56435aaa"
+      }
+    },
+    "shutter_contacts": {
+      "sha256": "b1a5013f74215281876f38b6fe9f27aa7e63c9c7d01176012e3b85b6461e6405",
+      "data": {
+        "environment_commit": "6c0d28987857f7c0c40264fc863e75c89bd0795a",
+        "fixtures": {
+          "left": {
+            "arm_only": {
+              "applied_control_rows": 1,
+              "first_native_contact": {
+                "distance_m": -0.011594148803972032,
+                "gate_index": 0,
+                "native_substep": 1,
+                "obstacle_geom": "shutter_left",
+                "panel": "shutter_left",
+                "robot_body": "left_hand_index_1_link",
+                "robot_geom_id": 70,
+                "tick": 1,
+                "time_s": 0.002,
+                "world_xyz_m": [
+                  0.4211181083297051,
+                  -2.2071347105218813,
+                  0.6080001980313932
+                ]
+              },
+              "native_solved_forecontact_bodies": [
+                "left_hand_index_1_link"
+              ],
+              "passed_gates": 0,
+              "pelvis_before_leaf_midplane_m": 0.30600000000000005,
+              "phase_right_left_s": [
+                9,
+                9
+              ],
+              "public_robot_and_layout_seed": 7,
+              "reason": "obstacle_contact",
+              "representative_initial_contact": {
+                "body": "left_hand_index_1_link",
+                "efc_address": 43,
+                "native_distance_m": -0.011688737689983986,
+                "normal_force_n": 68.20373761210527,
+                "shutter": "shutter_left",
+                "world_normal": [
+                  -0.0034101971275240584,
+                  0.9999941852608701,
+                  0.0
+                ]
+              },
+              "shutter_side": "left",
+              "solved_contact_substeps": 10,
+              "test_root_forward_left_m": [
+                1.8575083468385016,
+                0.21113992829856026
+              ],
+              "uncontrolled_initial_pose_age_s": 0
+            }
+          },
+          "right": {
+            "arm_only": {
+              "applied_control_rows": 1,
+              "first_native_contact": {
+                "distance_m": -0.011594148803972009,
+                "gate_index": 0,
+                "native_substep": 1,
+                "obstacle_geom": "shutter_right",
+                "panel": "shutter_right",
+                "robot_body": "left_hand_index_1_link",
+                "robot_geom_id": 70,
+                "tick": 1,
+                "time_s": 0.002,
+                "world_xyz_m": [
+                  -0.9242931574569379,
+                  -2.211722854834669,
+                  0.6080001980313932
+                ]
+              },
+              "native_solved_forecontact_bodies": [
+                "left_hand_index_1_link"
+              ],
+              "passed_gates": 0,
+              "pelvis_before_leaf_midplane_m": 0.30600000000000005,
+              "phase_right_left_s": [
+                9,
+                9
+              ],
+              "public_robot_and_layout_seed": 7,
+              "reason": "obstacle_contact",
+              "representative_initial_contact": {
+                "body": "left_hand_index_1_link",
+                "efc_address": 43,
+                "native_distance_m": -0.011688737689983958,
+                "normal_force_n": 68.20373761210442,
+                "shutter": "shutter_right",
+                "world_normal": [
+                  -0.0034101971275240584,
+                  0.9999941852608701,
+                  -9.498228586107244e-15
+                ]
+              },
+              "shutter_side": "right",
+              "solved_contact_substeps": 10,
+              "test_root_forward_left_m": [
+                1.8575083468385016,
+                -1.1342791607491056
+              ],
+              "uncontrolled_initial_pose_age_s": 0
+            }
+          }
+        },
+        "method": "Deliberately relocated initial public regression poses. A free G1 then applies one native 20ms control row. These tests isolate contact and are not policy rollouts."
+      }
+    },
+    "phase_replays": {
+      "sha256": "6cad91c32430b84f11c73f3d9467ef3290a7b1bd0e2bdfec1b014e4caf473fa4",
+      "data": {
+        "scope": "Development physics feasibility at the first junction. These are two previously published robot starts, not an independent evaluation of complete courses.",
+        "production_environment_commit": "6c0d28987857f7c0c40264fc863e75c89bd0795a",
+        "static_control_tapes_commit": "caccae08d172ba4f378c0b9ce9103702d58a09fc",
+        "phase_grid": {
+          "left": {
+            "equally_spaced_offsets_s": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "clean_offsets_s": [
+              0,
+              8,
+              9,
+              10,
+              11
+            ],
+            "passed": 5,
+            "out_of": 12,
+            "phase_blind_grid_fraction": 0.4166666666666667
+          },
+          "right": {
+            "equally_spaced_offsets_s": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "clean_offsets_s": [
+              7,
+              8,
+              9,
+              10
+            ],
+            "passed": 4,
+            "out_of": 12,
+            "phase_blind_grid_fraction": 0.3333333333333333
+          }
+        },
+        "pilot_reference_clearance": {
+          "left": {
+            "hypothetical_closed_overlap_20ms_s": [
+              4.799999999999693,
+              5.73999999999959
+            ],
+            "whole_robot_min_sampled_furniture_distance_m": 0.16125890430777257,
+            "gate_crossing_s": 5.827700354362101,
+            "static_edge_pelvis_clearance_m": 0.4358542599067534
+          },
+          "right": {
+            "hypothetical_closed_overlap_20ms_s": [
+              6.179999999999541,
+              7.559999999999389
+            ],
+            "whole_robot_min_sampled_furniture_distance_m": 0.0889887439102218,
+            "gate_crossing_s": 7.682521387307675,
+            "static_edge_pelvis_clearance_m": 0.38705943288965095
+          }
+        },
+        "production_crossings": [
+          {
+            "tape": "left",
+            "service": "both",
+            "phase_offsets_right_left_s": [
+              9.0,
+              4.0
+            ],
+            "physical_frame_crossed": false,
+            "cabinet_crossing_pelvis_clearance_m": null,
+            "moving_leaf_crossing_pelvis_clearance_m": null,
+            "native_first_contact": {
+              "time_s": 4.413999999999736,
+              "native_substep": 2207,
+              "tick": 221,
+              "gate_index": 0,
+              "panel": "shutter_left",
+              "obstacle_geom": "shutter_left",
+              "robot_body": "left_hand_index_1_link",
+              "robot_geom_id": 70,
+              "distance_m": -0.0004981047621428086,
+              "world_xyz_m": [
+                -2.240990830750575,
+                -0.37760879838726424,
+                0.6721932163440458
+              ]
+            }
+          },
+          {
+            "tape": "left",
+            "service": "both",
+            "phase_offsets_right_left_s": [
+              4.0,
+              9.0
+            ],
+            "physical_frame_crossed": true,
+            "cabinet_crossing_pelvis_clearance_m": 0.42960840700804015,
+            "moving_leaf_crossing_pelvis_clearance_m": 0.47185107925055314,
+            "native_first_contact": null
+          },
+          {
+            "tape": "left",
+            "service": "right",
+            "phase_offsets_right_left_s": [
+              4.0,
+              9.0
+            ],
+            "physical_frame_crossed": false,
+            "cabinet_crossing_pelvis_clearance_m": null,
+            "moving_leaf_crossing_pelvis_clearance_m": null,
+            "native_first_contact": {
+              "time_s": 4.413999999999736,
+              "native_substep": 2207,
+              "tick": 221,
+              "gate_index": 0,
+              "panel": "shutter_left",
+              "obstacle_geom": "shutter_left",
+              "robot_body": "left_hand_index_1_link",
+              "robot_geom_id": 70,
+              "distance_m": -0.000498104627168044,
+              "world_xyz_m": [
+                -2.2409908325206995,
+                -0.37760880910603867,
+                0.6721932525284504
+              ]
+            }
+          },
+          {
+            "tape": "right",
+            "service": "both",
+            "phase_offsets_right_left_s": [
+              9.0,
+              4.0
+            ],
+            "physical_frame_crossed": true,
+            "cabinet_crossing_pelvis_clearance_m": 0.4317184466556555,
+            "moving_leaf_crossing_pelvis_clearance_m": 0.35322132045911736,
+            "native_first_contact": null
+          },
+          {
+            "tape": "right",
+            "service": "both",
+            "phase_offsets_right_left_s": [
+              4.0,
+              9.0
+            ],
+            "physical_frame_crossed": false,
+            "cabinet_crossing_pelvis_clearance_m": null,
+            "moving_leaf_crossing_pelvis_clearance_m": null,
+            "native_first_contact": {
+              "time_s": 6.093999999999551,
+              "native_substep": 3047,
+              "tick": 305,
+              "gate_index": 0,
+              "panel": "shutter_right",
+              "obstacle_geom": "shutter_right",
+              "robot_body": "left_hand_index_1_link",
+              "robot_geom_id": 70,
+              "distance_m": -0.0006064812034311716,
+              "world_xyz_m": [
+                1.1937714959747354,
+                -1.7894434012039002,
+                0.6486248626559443
+              ]
+            }
+          },
+          {
+            "tape": "right",
+            "service": "left",
+            "phase_offsets_right_left_s": [
+              9.0,
+              4.0
+            ],
+            "physical_frame_crossed": false,
+            "cabinet_crossing_pelvis_clearance_m": null,
+            "moving_leaf_crossing_pelvis_clearance_m": null,
+            "native_first_contact": {
+              "time_s": 6.093999999999551,
+              "native_substep": 3047,
+              "tick": 305,
+              "gate_index": 0,
+              "panel": "shutter_right",
+              "obstacle_geom": "shutter_right",
+              "robot_body": "left_hand_index_1_link",
+              "robot_geom_id": 70,
+              "distance_m": -0.0006065444098542114,
+              "world_xyz_m": [
+                1.193771565445458,
+                -1.7894433843544157,
+                0.6486248487585936
+              ]
+            }
+          }
+        ],
+        "production_actuator_cycle": [
+          {
+            "service": "left",
+            "side": "right",
+            "width_m": 1.0533497632097597,
+            "max_actual_slide_m": 0.06477683160075917,
+            "max_actual_clear_width_m": 0.05145171320563899,
+            "commanded_max_slide_m": 0.06476769723456956,
+            "available_full_width_s": null
+          },
+          {
+            "service": "left",
+            "side": "left",
+            "width_m": 1.0209654191964814,
+            "max_actual_slide_m": 1.0806350930417228,
+            "max_actual_clear_width_m": 1.0209654191964814,
+            "commanded_max_slide_m": 1.0804827095982408,
+            "available_full_width_s": [
+              0.9400000000000007,
+              5.345999999999633
+            ]
+          },
+          {
+            "service": "right",
+            "side": "right",
+            "width_m": 1.0533497632097597,
+            "max_actual_slide_m": 1.0968295486748436,
+            "max_actual_clear_width_m": 1.0533497632097597,
+            "commanded_max_slide_m": 1.09667488160488,
+            "available_full_width_s": [
+              0.9400000000000007,
+              5.3439999999996335
+            ]
+          },
+          {
+            "service": "right",
+            "side": "left",
+            "width_m": 1.0209654191964814,
+            "max_actual_slide_m": 0.06477683160075917,
+            "max_actual_clear_width_m": 0.03525954119899985,
+            "commanded_max_slide_m": 0.06476769723456956,
+            "available_full_width_s": null
+          },
+          {
+            "service": "both",
+            "side": "right",
+            "width_m": 1.0533497632097597,
+            "max_actual_slide_m": 1.0968295486748436,
+            "max_actual_clear_width_m": 1.0533497632097597,
+            "commanded_max_slide_m": 1.09667488160488,
+            "available_full_width_s": [
+              0.9400000000000007,
+              5.3439999999996335
+            ]
+          },
+          {
+            "service": "both",
+            "side": "left",
+            "width_m": 1.0209654191964814,
+            "max_actual_slide_m": 1.0806350930417228,
+            "max_actual_clear_width_m": 1.0209654191964814,
+            "commanded_max_slide_m": 1.0804827095982408,
+            "available_full_width_s": [
+              0.9400000000000007,
+              5.345999999999633
+            ]
+          }
+        ],
+        "production_practice": {
+          "applied_rows": 12,
+          "scalar_codes": 768,
+          "reason": "step_limit"
+        },
+        "source_hashes": {
+          "native-tapes.json": "efe8ed03849651d9e5d0fa8b86fa98ab5b6d81eb7dcde9388d19dd24d23c3258",
+          "production-smoke.json": "83914446ec424a6da862ede5b1785d6f9ab74f90fb9cf5c616951ebee5b613c9",
+          "production-cycle.json": "aff3f65bdadf0fb926ee9232b3270200ae9386b51d21c3bdf811db2f0c08ef63",
+          "blind-sweep.json": "80bc26fd3cfeeae845d293d4b12f1fe94c38b116503fd386b62d5ce3a1d6b731",
+          "production-practice.json": "6ec1ff268ae36d8444ba3bc5400b53e209645f1968f805f48120ea07e6b4ed51",
+          "practice-12.jsonl.gz": "b00f8afca92e1cdf6f20195335a45db77c19c88fb291da74caea4524d1945206",
+          "measure.py": "8f7e2bda3558005d3edb749ab8ebbb963c1b49b331a9b8863ce446872f942def",
+          "native.py": "e4c1af5b644810a27182c4ad2f190a4c784d91b3f2160ce5d8e8fffbd79f54ae",
+          "shutters.py": "56f1a1c4441c41ef84d28adda4c43bd84bba5e930c781d3349778181ae4c417b",
+          "production-cycle.py": "fc982defd48b0b62899a7ee51a854b3a632733f43656103be425391aa9050a9e",
+          "production-smoke.py": "30575f85480e284a749b6412d414ed96e8956087a6bc3d329a9932d0d81873da",
+          "fixtures/left-controls.npz": "3600bc3b824363904108be00e6966766e5700f3f65455a8009601c22f1f2c3df",
+          "fixtures/right-controls.npz": "ba63184644321f8fd1b0ec48747251ac3044586c3d1725d7f5c214a0e38060f9",
+          "fixtures/left-record.json": "b03ec8aedfe1840d6dd576fad8c2d2b0f686efc54832e9bc3c1c5d2a39d03e3d",
+          "fixtures/right-record.json": "00523ffe65dc99ceda0789af246351cf3a692852e4efd2fef0ef083423e536a8",
+          "run.sh": "443754963759269e0c72c1db85525efc3e8f9720222ab444b1faf0c3a43c9b75",
+          "run-candidate.sh": "f255f3a7669d8831ef558fea93118bbfc685d7be920a9c2c1aa506cad21c5d99",
+          "sweep.py": "23b8e71e9f70401e5e3249891723280dd04da410298c5bc49c35d5ff1043ec33"
+        }
+      }
+    },
+    "extended_independent_native_checks": {
+      "sha256": "7ae6efc62ce05f8f6a47d0d35c911986bb338fa39729eab908af2be1e6472ea6",
+      "data": {
+        "actuator_registration": {
+          "body_joints_verified": 29,
+          "finger_motors_verified": 14,
+          "new_rail_motors": [
+            {
+              "dof_index": 49,
+              "mass_kg": 3.0,
+              "motor_id": 43,
+              "qpos_index": 50,
+              "side": "right"
+            },
+            {
+              "dof_index": 50,
+              "mass_kg": 3.0,
+              "motor_id": 44,
+              "qpos_index": 51,
+              "side": "left"
+            }
+          ],
+          "original_motors": [
+            0,
+            42
+          ],
+          "original_name_motor_joint_qpos_dof_sha256": "ef06b238e8715b7255e2913c8cf956fd1da3b55ed32fa0e6c5fa1b72dbc3e16c"
+        },
+        "artifact_sha256": {
+          "delayed-optics.json": "fe202cf1b68bac251679d8021fe7710c4522de57638f6e73b0d8a28d5f9caca5",
+          "delayed_optics.py": "93f247a008a16dc094402c4140871eb86a8570a34cbe3a11650cab052270e777",
+          "production-qa.json": "277d059351e04fcb29b92d9b6246a3c685dd99d2af111922a0e21d25806b0ff5",
+          "production_qa.py": "b85f5ab6a989c89bcd7958e2ea83353a64b0db9fc856a7b5a87124ea80a26ffe",
+          "run_qa.sh": "6bbfe27848b1a1cec50daf371d7a14baa07c4a6b4cc8303a44f8bb486d8aa569",
+          "shutter-touch-limbs.json": "a71e4d8e2e931523c64a881d7dbd9754aeece72d54f1e4ca788894f761b1e8d2",
+          "shutter_touch.py": "5c6ed4f7f008deaffcdd8669b2aee2d4497a25e3f6e16204ecd5115cf98aa914"
+        },
+        "camera_intervention": {
+          "initially_identical_still_delayed_futures": {
+            "complete_reset_state_and_wire_exact": true,
+            "decoder_history_and_contact_flags_exact": true,
+            "depth_first_different_tick": [
+              61,
+              61
+            ],
+            "first_nonimage_proprio_different_tick": [
+              61,
+              61
+            ],
+            "maximum_absolute_nonimage_sensor_difference_through_tick85": 2.220446049250313e-13,
+            "public_seeds": [
+              7,
+              31
+            ],
+            "rgb_first_different_tick": [
+              62,
+              61
+            ]
+          },
+          "visible_schedule_swap": {
+            "bit_exact_proprio_decoder_history_and_robot_qpos_qvel_ctrl": true,
+            "changed_depth_pixels_range": [
+              2735,
+              2893
+            ],
+            "changed_rgb_pixels_range": [
+              2737,
+              2893
+            ],
+            "matched_rows_per_seed": 10,
+            "matched_states_per_seed": 11,
+            "observation_ids_recomputed": true,
+            "public_seeds": [
+              7,
+              31,
+              73
+            ],
+            "wire_keys_checked": true
+          }
+        },
+        "contacts": [
+          {
+            "body": "left_hand_index_1_link",
+            "count": 10,
+            "first_solved_substep": 1,
+            "fixture": "arm_only",
+            "leaf": "left",
+            "passages": 0,
+            "pelvis_upstream_of_leaf_m": 0.30600000000000005,
+            "terminal": "obstacle_contact"
+          },
+          {
+            "body": "left_ankle_roll_link",
+            "count": 10,
+            "first_solved_substep": 1,
+            "fixture": "foot_only",
+            "leaf": "left",
+            "passages": 0,
+            "pelvis_upstream_of_leaf_m": 0.4392499999999999,
+            "terminal": "obstacle_contact"
+          },
+          {
+            "body": "left_hand_index_1_link",
+            "count": 10,
+            "first_solved_substep": 1,
+            "fixture": "arm_only",
+            "leaf": "right",
+            "passages": 0,
+            "pelvis_upstream_of_leaf_m": 0.30600000000000005,
+            "terminal": "obstacle_contact"
+          },
+          {
+            "body": "left_ankle_roll_link",
+            "count": 5,
+            "first_solved_substep": 1,
+            "fixture": "foot_only",
+            "leaf": "right",
+            "passages": 0,
+            "pelvis_upstream_of_leaf_m": 0.47,
+            "terminal": "obstacle_contact"
+          }
+        ],
+        "docker_image": "sha256:9722df16b1bbff646e9b9e7d6fec9742a7211a597f6b7b7980e3278427e0970c",
+        "environment_commit": "6c0d28987857f7c0c40264fc863e75c89bd0795a",
+        "physical_apertures": {
+          "complete_native_cycles": 3,
+          "elapsed_seconds_at_least_0p60m_open_full_service": [
+            5.1000000000000005,
+            5.12
+          ],
+          "full_service_peak_width_range_m": [
+            1.0209654191964819,
+            1.0533497632097597
+          ],
+          "fully_open_seconds_per_cycle": [
+            4.42,
+            4.42
+          ],
+          "measured_static_width_range_m": [
+            0.999111181942954,
+            1.0533497632097597
+          ],
+          "native_control_hz": 50,
+          "native_substeps_per_cycle": 6000,
+          "period_s": 12,
+          "public_seeds": [
+            7,
+            31,
+            73
+          ],
+          "restricted_fully_open_seconds": 0,
+          "restricted_peak_width_range_m": [
+            0.05202305082378711,
+            0.05802865298354118
+          ]
+        },
+        "public_task_commit": "15e096c89e54c27da5626252380315bb56435aaa",
+        "scope": "Isolated local public practice fixtures; external research QA."
+      }
+    }
+  }
+}

@@ -1,0 +1,1743 @@
+{
+  "source": "e0674ac34aa39b713561824035831f7e04033580",
+  "registration_sha256": "7e783d8b6960e223268311277fa2349a83deb3d8327069e77f993a5361f5f5b8",
+  "mirrored_amendment_sha256": "cc1b02c85e3f6f047f76a9f824046c83ddc07bba80e0ebf79504352c0a466dcf",
+  "frozen_plan_sha256": "695d01fc8dbe04a6a20850ca9cd80b1aa641b4c17624ce5d4ae248148ed026ba",
+  "scope": "Six predeclared feasibility cases plus an independently declared same-seed optical/physical mirror; not an official ALE panel.",
+  "numerical_backend": "Both hosts: MuJoCo 3.3.4, ONNX Runtime CPU 1.22.1, NumPy 1.26.4, Mesa llvmpipe. Local Python 3.10.12 LLVM 15.0.7; workstation with RTX 5090 Python 3.12.3 LLVM 20.1.2. No GPU inference or rasterization.",
+  "registered_six": {
+    "success": 6,
+    "required_gates": 10,
+    "passed_gates": 10,
+    "stages_completed": 18,
+    "simulated_s": 168.97999999997162,
+    "applied_rows": 8449,
+    "scalar_codes": 540736,
+    "code_changes": 55111,
+    "eligible_code_pairs": 540352,
+    "joint_accel_square_sum": 11056606.01037276,
+    "joint_accel_samples": 244325,
+    "obstacle_contact_substeps": 0,
+    "episodes": 6,
+    "body_readbacks": 245021,
+    "finger_readbacks": 118286,
+    "exact_rgbd_queries": 8449,
+    "native_states": 8455,
+    "code_change_fraction": 0.10199092443444273,
+    "joint_accel_rms_rad_s2": 6.727085746246965
+  },
+  "with_separate_mirror": {
+    "success": 7,
+    "required_gates": 12,
+    "passed_gates": 12,
+    "stages_completed": 21,
+    "simulated_s": 202.75999999996694,
+    "applied_rows": 10138,
+    "scalar_codes": 648832,
+    "code_changes": 66491,
+    "eligible_code_pairs": 648384,
+    "joint_accel_square_sum": 13423139.781827148,
+    "joint_accel_samples": 293190,
+    "obstacle_contact_substeps": 0,
+    "episodes": 7,
+    "body_readbacks": 294002,
+    "finger_readbacks": 141932,
+    "exact_rgbd_queries": 10138,
+    "native_states": 10145,
+    "code_change_fraction": 0.10254879824301648,
+    "joint_accel_rms_rad_s2": 6.766319167538964
+  },
+  "all_replayed": true,
+  "cases": [
+    {
+      "case": {
+        "case": "witness-left-right",
+        "robot_seed": 7,
+        "obstacle_seed_search_from": 1397776721,
+        "required_sides": [
+          1,
+          -1
+        ],
+        "first_m": 6.7,
+        "turn_deg": 90.0,
+        "last_m": 1.5,
+        "obstacle_seed": 1397776730,
+        "geometry": {
+          "gates": [
+            {
+              "forward_m": 1.8852559933996595,
+              "left_m": 0.7551534383639563,
+              "gap_width_m": 1.042624111652332,
+              "rgb": [
+                0.07840401334189603,
+                0.542088536220085,
+                0.6034594804231428
+              ]
+            },
+            {
+              "forward_m": 4.542318697460646,
+              "left_m": -0.7588197072533878,
+              "gap_width_m": 0.9507249571522599,
+              "rgb": [
+                0.09559924183597032,
+                0.5487750534048597,
+                0.585426075309839
+              ]
+            }
+          ]
+        }
+      },
+      "record_sha256": "50f1d354e1daea87e4ba3c430862c147b4025c0b227b6d7a373c956f37ebea5a",
+      "replay_sha256": "46df04351b72376c4f10d659393a3c4fe8ed9f69491a61e384cfd2523baa4d7a",
+      "controls_sha256": "69372278f390febee1a585f725734d3cff84b9e9fa3b319f29d7ff9ccb159701",
+      "original_jsonl_gz_sha256": "bef9a5b09f06304ecc5fece1ccf8c2d39bcd8bc374eae99c56d673dc31101cdc",
+      "native_streams": {
+        "qpos": "b8eba8c8b9a02feb7f99cb341ba675267e981afaada165d2827dc9f158f3ace8",
+        "qvel": "63745a43cfed9e48bfcc3d6c5fe949c86237339258a1de64b9475fa9add9e410",
+        "ctrl": "3c287efbe11b1753ac2ad28a297536bdc21d6caad950658b8e9bab4da1976fd0",
+        "decoded_targets": "5107c1deaebfc285087d8087e7651fa436e49e5d102e112ce8f62061f62b9d04",
+        "finger_targets": "3b7d0b353a28fe4eeb86de448c7a35ae03746c33ee929875fae4da4d5c384c80",
+        "history": "215bf46c34ef58008f92460bd01366a599d0f5e55658fabcb879e5c0b93e5f0b"
+      },
+      "native_obstacle_geometry": [
+        {
+          "name": "gate_0_minus_y_cabinet",
+          "position_m": [
+            -1.0076910631894356,
+            -1.9729564419280072,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_0_plus_y_cabinet",
+          "position_m": [
+            2.434913030501765,
+            -1.9612164150713025,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_minus_y_cabinet",
+          "position_m": [
+            -2.466644987781615,
+            -4.635009945618504,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_plus_y_cabinet",
+          "position_m": [
+            0.8840604857791233,
+            -4.623583312994496,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        }
+      ],
+      "outcomes": {
+        "reason": "success",
+        "success": true,
+        "stages_completed": 3,
+        "required_gates": 2,
+        "passed_gates": 2,
+        "passages": [
+          {
+            "gate_index": 0,
+            "side": 1,
+            "tick": 239,
+            "native_time_s": 4.772571752469496,
+            "forward_m": 1.8852559933996595,
+            "left_m": 0.7019022828074374,
+            "gap_edge_clearance_m": 0.4680609002696471,
+            "world_xy_m": [
+              0.6603601377412237,
+              -1.9672680254373711
+            ]
+          },
+          {
+            "gate_index": 1,
+            "side": -1,
+            "tick": 654,
+            "native_time_s": 13.075211288114994,
+            "forward_m": 4.542318697460646,
+            "left_m": -0.7313725413226893,
+            "gap_edge_clearance_m": 0.44791531264543144,
+            "world_xy_m": [
+              -0.7638452446686569,
+              -4.6292030290600845
+            ]
+          }
+        ],
+        "obstacle_contact": false,
+        "obstacle_contact_substeps": 0,
+        "course_boundary_violation": false,
+        "missed_passage": false,
+        "simulated_s": 28.299999999995194,
+        "applied_rows": 1415,
+        "scalar_codes": 90560,
+        "code_changes": 9213,
+        "eligible_code_pairs": 90496,
+        "code_change_fraction": 0.10180560466760961,
+        "joint_accel_square_sum": 1832960.161029873,
+        "joint_accel_samples": 40919,
+        "joint_accel_rms_rad_s2": 6.692894928121587
+      },
+      "native_states": 1416,
+      "public_rgbd_queries": 1415,
+      "readbacks": {
+        "body": 41035,
+        "fingers": 19810
+      }
+    },
+    {
+      "case": {
+        "case": "witness-right-left",
+        "robot_seed": 7,
+        "obstacle_seed_search_from": 1317296963,
+        "required_sides": [
+          -1,
+          1
+        ],
+        "first_m": 6.7,
+        "turn_deg": 90.0,
+        "last_m": 1.5,
+        "obstacle_seed": 1317296963,
+        "geometry": {
+          "gates": [
+            {
+              "forward_m": 1.7769479722327377,
+              "left_m": -0.7189007387554165,
+              "gap_width_m": 0.9595477914957128,
+              "rgb": [
+                0.07545114507822484,
+                0.5816743149816634,
+                0.5765284470688297
+              ]
+            },
+            {
+              "forward_m": 4.23598352850704,
+              "left_m": 0.7091070728502893,
+              "gap_width_m": 0.9708154929731844,
+              "rgb": [
+                0.0858647808129573,
+                0.546675697143201,
+                0.619115049279947
+              ]
+            }
+          ]
+        }
+      },
+      "record_sha256": "3bf32fc962ae81e0f3bdc94a515bed9cc0203d111c34b57767eef052a580763c",
+      "replay_sha256": "f36baa1aa0cdeee292dee14e5fb0541e3ced6f2e9065d82cd7f7719150f87d71",
+      "controls_sha256": "2ed369604c267229fd918546f5afc1a2c39a40d5fb2a5ecd9005ad3a0048041d",
+      "original_jsonl_gz_sha256": "bc0cf660bf11aae61570aab33db07687ad30c461187ae5637b65606a2c9bb25f",
+      "native_streams": {
+        "qpos": "ed5a91b2dce20609d5ee21bbc1b9fc4df21e30a5dc3b8447230cf0e49fe3ed0f",
+        "qvel": "ce88ba399b048543c4491bc790caf730028090fe2cecd063216f3684b49c13c9",
+        "ctrl": "1cb72b43e5fb2126fb29fb65770821c7872d9fff2576c413d71bbbfb57dd5c07",
+        "decoded_targets": "e32749da1e978ba7e92edad78ce10ea1f0378874ac4f47f16837edfb946b0220",
+        "finger_targets": "2308e76a17e6f47827d3bf236016f998a02239af0bb2110c5c9dc8d49af9a96e",
+        "history": "fee5cf1b6e81349dfe1978add5ceaae9200ea94dc6205f37c7bce8447e7d7a2c"
+      },
+      "native_obstacle_geometry": [
+        {
+          "name": "gate_0_minus_y_cabinet",
+          "position_m": [
+            -2.4405681022262313,
+            -1.869534212550421,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_0_plus_y_cabinet",
+          "position_m": [
+            0.9189601543754792,
+            -1.8580774923220797,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_minus_y_cabinet",
+          "position_m": [
+            -1.009816616102301,
+            -4.323704894578838,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_plus_y_cabinet",
+          "position_m": [
+            2.360979276458137,
+            -4.312209749267284,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        }
+      ],
+      "outcomes": {
+        "reason": "success",
+        "success": true,
+        "stages_completed": 3,
+        "required_gates": 2,
+        "passed_gates": 2,
+        "passages": [
+          {
+            "gate_index": 0,
+            "side": -1,
+            "tick": 308,
+            "native_time_s": 6.153894551521449,
+            "forward_m": 1.7769479722327377,
+            "left_m": -0.6385181511059066,
+            "gap_edge_clearance_m": 0.3993913080983465,
+            "world_xy_m": [
+              -0.680421853679644,
+              -1.863531731966745
+            ]
+          },
+          {
+            "gate_index": 1,
+            "side": 1,
+            "tick": 683,
+            "native_time_s": 13.651461909383764,
+            "forward_m": 4.23598352850704,
+            "left_m": 0.6876738467959986,
+            "gap_edge_clearance_m": 0.46397452043230153,
+            "world_xy_m": [
+              0.6541482287522455,
+              -4.318030413448985
+            ]
+          }
+        ],
+        "obstacle_contact": false,
+        "obstacle_contact_substeps": 0,
+        "course_boundary_violation": false,
+        "missed_passage": false,
+        "simulated_s": 31.179999999993598,
+        "applied_rows": 1559,
+        "scalar_codes": 99776,
+        "code_changes": 10479,
+        "eligible_code_pairs": 99712,
+        "code_change_fraction": 0.10509266688061618,
+        "joint_accel_square_sum": 2143336.9110496817,
+        "joint_accel_samples": 45095,
+        "joint_accel_rms_rad_s2": 6.894154723727093
+      },
+      "native_states": 1560,
+      "public_rgbd_queries": 1559,
+      "readbacks": {
+        "body": 45211,
+        "fingers": 21826
+      }
+    },
+    {
+      "case": {
+        "case": "single-left",
+        "robot_seed": 18310701160879358587,
+        "obstacle_seed_search_from": 1578818992,
+        "required_sides": [
+          1
+        ],
+        "first_m": 5.8,
+        "turn_deg": -87.0,
+        "last_m": 1.3,
+        "obstacle_seed": 1578818992,
+        "geometry": {
+          "gates": [
+            {
+              "forward_m": 2.4732058225239664,
+              "left_m": 0.6477767566735385,
+              "gap_width_m": 0.9549890965151346,
+              "rgb": [
+                0.09765715253727306,
+                0.5896845075096745,
+                0.6745877521561378
+              ]
+            }
+          ]
+        }
+      },
+      "record_sha256": "3f35015cb687b475c480dbd3a0eba4beb03dc03bd405e82de008aeadcd194acc",
+      "replay_sha256": "3b44950e9a95a4ea47d4c96a2b008876f60980113651edd21e971f3a4fa12a82",
+      "controls_sha256": "13705f000921865eb8156f0820c3ff90684a1f0f6ec45eae5620d85b8750c716",
+      "original_jsonl_gz_sha256": "1a27cf1644207235b67707fb82a7a0a1e5fd8a024e32ce5ed6600580e19ff351",
+      "native_streams": {
+        "qpos": "4ccc9ad591fdcd5f15d2768f80fbe5bd42a113ea557cd4919d34957f393a5d31",
+        "qvel": "8ff7dbcb48ac6510cefd07f3ef77fca42d5d7b4f6c9f87983dd6fa35932e9336",
+        "ctrl": "298bc911f8c04756504670d7e45a49f2e7c941616fc5b1ad9107c368836939a8",
+        "decoded_targets": "5515b1d6850a84d5ab90fe6a402a447bb62d7d6cb6c59e20451351e7b1e81599",
+        "finger_targets": "157a80af8bd98385520f3705c57f2ade96abde4b2248309625a9f827d1370033",
+        "history": "1dd6e5c511c12fb5857251c89890dc66ae9231511c7fe3e66097ac040bc5bf6f"
+      },
+      "native_obstacle_geometry": [
+        {
+          "name": "gate_0_minus_y_cabinet",
+          "position_m": [
+            -2.2685862993088435,
+            1.5580784835204105,
+            0.36
+          ],
+          "orientation": [
+            [
+              -0.9856055054302044,
+              -0.16906149078270705,
+              0.0
+            ],
+            [
+              0.16906149078270705,
+              -0.9856055054302044,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_0_plus_y_cabinet",
+          "position_m": [
+            -2.8357857575254197,
+            -1.7486172406632137,
+            0.36
+          ],
+          "orientation": [
+            [
+              -0.9856055054302044,
+              -0.16906149078270705,
+              0.0
+            ],
+            [
+              0.16906149078270705,
+              -0.9856055054302044,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        }
+      ],
+      "outcomes": {
+        "reason": "success",
+        "success": true,
+        "stages_completed": 3,
+        "required_gates": 1,
+        "passed_gates": 1,
+        "passages": [
+          {
+            "gate_index": 0,
+            "side": 1,
+            "tick": 292,
+            "native_time_s": 5.827611523522824,
+            "forward_m": 2.4732058225239664,
+            "left_m": 0.6557861486066465,
+            "gap_edge_clearance_m": 0.4694851563244593,
+            "world_xy_m": [
+              -2.5535401081576063,
+              -0.10316347935582118
+            ]
+          }
+        ],
+        "obstacle_contact": false,
+        "obstacle_contact_substeps": 0,
+        "course_boundary_violation": false,
+        "missed_passage": false,
+        "simulated_s": 26.079999999996424,
+        "applied_rows": 1304,
+        "scalar_codes": 83456,
+        "code_changes": 8463,
+        "eligible_code_pairs": 83392,
+        "code_change_fraction": 0.10148455487336915,
+        "joint_accel_square_sum": 1895538.938760049,
+        "joint_accel_samples": 37700,
+        "joint_accel_rms_rad_s2": 7.090807249334603
+      },
+      "native_states": 1305,
+      "public_rgbd_queries": 1304,
+      "readbacks": {
+        "body": 37816,
+        "fingers": 18256
+      }
+    },
+    {
+      "case": {
+        "case": "single-right",
+        "robot_seed": 15460947848790210684,
+        "obstacle_seed_search_from": 804862091,
+        "required_sides": [
+          -1
+        ],
+        "first_m": 5.8,
+        "turn_deg": 87.0,
+        "last_m": 1.3,
+        "obstacle_seed": 804862102,
+        "geometry": {
+          "gates": [
+            {
+              "forward_m": 2.3534954240910766,
+              "left_m": -0.5793203269010285,
+              "gap_width_m": 1.0716603494741486,
+              "rgb": [
+                0.08850009246834097,
+                0.4938386494052571,
+                0.5868082204805046
+              ]
+            }
+          ]
+        }
+      },
+      "record_sha256": "e134c3b92e2d5105642a2debf8b4c9656eea8dac0d7e986abca89fa27c77a954",
+      "replay_sha256": "04e1e00324c743578097e8de15874a824d2af685985afb39eb425b52a88738c3",
+      "controls_sha256": "ee08a383bdb99ed7af69ba28dd6540f281db680d572c048aef77f144bc85c872",
+      "original_jsonl_gz_sha256": "cd6dcb2d9a8d5420aaddcc5505061e0228b8df22fe4b06631699d31ef7d677ca",
+      "native_streams": {
+        "qpos": "4d787f91905fcc18d4cb9d9a6dd84f00fae0e025557187a74f26a3c12c992292",
+        "qvel": "f47228540d8d09fe4086f4e1e42aa29be411c5465fa81de9194dfe96cfa3c111",
+        "ctrl": "21e850836c84a6220ae02b18aab4b99535b3501f74f74f9e585596436022abd8",
+        "decoded_targets": "af458f07148c707e11bc197f8c12b308ce80f0b25f7710568fe4fe8c9303f348",
+        "finger_targets": "4525abaec04992947614b53640bf89bc3e560124727f758cf6f9933618495ac6",
+        "history": "ae6a608545e272f20e488e5842824c962eab892d28df7dd36845b1c116857158"
+      },
+      "native_obstacle_geometry": [
+        {
+          "name": "gate_0_minus_y_cabinet",
+          "position_m": [
+            -0.17139686954690533,
+            -3.235510025547112,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.6410615983639562,
+              0.7674894312647244,
+              0.0
+            ],
+            [
+              -0.7674894312647244,
+              0.6410615983639562,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_0_plus_y_cabinet",
+          "position_m": [
+            2.4930657576153026,
+            -1.0099618929364444,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.6410615983639562,
+              0.7674894312647244,
+              0.0
+            ],
+            [
+              -0.7674894312647244,
+              0.6410615983639562,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        }
+      ],
+      "outcomes": {
+        "reason": "success",
+        "success": true,
+        "stages_completed": 3,
+        "required_gates": 1,
+        "passed_gates": 1,
+        "passages": [
+          {
+            "gate_index": 0,
+            "side": -1,
+            "tick": 385,
+            "native_time_s": 7.682417488738297,
+            "forward_m": 2.3534954240910766,
+            "left_m": -0.6070949493035748,
+            "gap_edge_clearance_m": 0.5080555523345281,
+            "world_xy_m": [
+              1.139517714882876,
+              -2.14054120307311
+            ]
+          }
+        ],
+        "obstacle_contact": false,
+        "obstacle_contact_substeps": 0,
+        "course_boundary_violation": false,
+        "missed_passage": false,
+        "simulated_s": 25.199999999996912,
+        "applied_rows": 1260,
+        "scalar_codes": 80640,
+        "code_changes": 7973,
+        "eligible_code_pairs": 80576,
+        "code_change_fraction": 0.09895005957108817,
+        "joint_accel_square_sum": 1439040.2980244409,
+        "joint_accel_samples": 36424,
+        "joint_accel_rms_rad_s2": 6.285540937292561
+      },
+      "native_states": 1261,
+      "public_rgbd_queries": 1260,
+      "readbacks": {
+        "body": 36540,
+        "fingers": 17640
+      }
+    },
+    {
+      "case": {
+        "case": "same-left",
+        "robot_seed": 3950249629074938998,
+        "obstacle_seed_search_from": 1719419036,
+        "required_sides": [
+          1,
+          1
+        ],
+        "first_m": 6.9,
+        "turn_deg": -94.0,
+        "last_m": 1.7,
+        "obstacle_seed": 1719419042,
+        "geometry": {
+          "gates": [
+            {
+              "forward_m": 1.9345663110280455,
+              "left_m": 0.7242235464387357,
+              "gap_width_m": 0.9699276705080587,
+              "rgb": [
+                0.08244797678382891,
+                0.5566899392009231,
+                0.5662540309312364
+              ]
+            },
+            {
+              "forward_m": 4.459681401495779,
+              "left_m": 0.6893924650752754,
+              "gap_width_m": 0.9796060685494614,
+              "rgb": [
+                0.10560433451900934,
+                0.5457599588407659,
+                0.6558063792103691
+              ]
+            }
+          ]
+        }
+      },
+      "record_sha256": "bbd4a1e5771b9477d5ffa4a8b149d1cbb9c840ce737e0899a59c11dec29efe82",
+      "replay_sha256": "72fce83f4ed3644d9645d26f038d016149003a4eb360d363fe13ecd099de7c4b",
+      "controls_sha256": "538a1a2f5594c0d9f9c5617d94630b76a51ccb759884ceb180d3b45cf93f48af",
+      "original_jsonl_gz_sha256": "d7b43f07dfdc0862b96af5d71249e7ff29f9f577fb440a1259c1fd196bfa6958",
+      "native_streams": {
+        "qpos": "e4e17b8fbd3797bb89614fcc03a86969cf02a884332e02440a6476c2fe63064d",
+        "qvel": "f00bc7322d81025d6be57a8d034118a104e892e998c9550aa4d60fc040b8cdf0",
+        "ctrl": "18870c0eaa4dfd0fe46dbddd26ec792c8d2a77a0a644ec490112a53a05bbce9d",
+        "decoded_targets": "23b030b7fbf9b5208c850ed033ce90463a87603751d80e8c5976b402d2c671a4",
+        "finger_targets": "723546d4139cedf977b64961eea6020549b92b71c5aa869d7905d5e8e394f81c",
+        "history": "909484c81cae97f8851951a009e90b6baa12d9b9c69ab8fe478a141144137e94"
+      },
+      "native_obstacle_geometry": [
+        {
+          "name": "gate_0_minus_y_cabinet",
+          "position_m": [
+            -1.3067955570890966,
+            1.545466504222764,
+            0.36
+          ],
+          "orientation": [
+            [
+              -0.9247711906469167,
+              -0.3805236457166414,
+              0.0
+            ],
+            [
+              0.3805236457166414,
+              -0.9247711906469167,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_0_plus_y_cabinet",
+          "position_m": [
+            -2.5891327200722114,
+            -1.5709455200269635,
+            0.36
+          ],
+          "orientation": [
+            [
+              -0.9247711906469167,
+              -0.3805236457166414,
+              0.0
+            ],
+            [
+              0.3805236457166414,
+              -0.9247711906469167,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_minus_y_cabinet",
+          "position_m": [
+            -3.626853766103056,
+            2.54301843672581,
+            0.36
+          ],
+          "orientation": [
+            [
+              -0.9247711906469167,
+              -0.3805236457166414,
+              0.0
+            ],
+            [
+              0.3805236457166414,
+              -0.9247711906469167,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_plus_y_cabinet",
+          "position_m": [
+            -4.912873788393583,
+            -0.5823438912042196,
+            0.36
+          ],
+          "orientation": [
+            [
+              -0.9247711906469167,
+              -0.3805236457166414,
+              0.0
+            ],
+            [
+              0.3805236457166414,
+              -0.9247711906469167,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        }
+      ],
+      "outcomes": {
+        "reason": "success",
+        "success": true,
+        "stages_completed": 3,
+        "required_gates": 2,
+        "passed_gates": 2,
+        "passages": [
+          {
+            "gate_index": 0,
+            "side": 1,
+            "tick": 242,
+            "native_time_s": 4.838740803703227,
+            "forward_m": 1.9345663110280455,
+            "left_m": 0.7094387416023928,
+            "gap_edge_clearance_m": 0.47017903041768655,
+            "world_xy_m": [
+              -1.9423381707431195,
+              0.000933053669887246
+            ]
+          },
+          {
+            "gate_index": 1,
+            "side": 1,
+            "tick": 542,
+            "native_time_s": 10.829880331735238,
+            "forward_m": 4.459681401495779,
+            "left_m": 0.7110795795143704,
+            "gap_edge_clearance_m": 0.46811591983563583,
+            "world_xy_m": [
+              -4.278116237099758,
+              0.9602816541192576
+            ]
+          }
+        ],
+        "obstacle_contact": false,
+        "obstacle_contact_substeps": 0,
+        "course_boundary_violation": false,
+        "missed_passage": false,
+        "simulated_s": 28.259999999995216,
+        "applied_rows": 1413,
+        "scalar_codes": 90432,
+        "code_changes": 9280,
+        "eligible_code_pairs": 90368,
+        "code_change_fraction": 0.10269121813031161,
+        "joint_accel_square_sum": 1788183.499855422,
+        "joint_accel_samples": 40861,
+        "joint_accel_rms_rad_s2": 6.615330496914179
+      },
+      "native_states": 1414,
+      "public_rgbd_queries": 1413,
+      "readbacks": {
+        "body": 40977,
+        "fingers": 19782
+      }
+    },
+    {
+      "case": {
+        "case": "same-right",
+        "robot_seed": 473920301269286826,
+        "obstacle_seed_search_from": 760038814,
+        "required_sides": [
+          -1,
+          -1
+        ],
+        "first_m": 6.9,
+        "turn_deg": 94.0,
+        "last_m": 1.7,
+        "obstacle_seed": 760038816,
+        "geometry": {
+          "gates": [
+            {
+              "forward_m": 1.9339779287092023,
+              "left_m": -0.6632569726833731,
+              "gap_width_m": 0.9587678540601677,
+              "rgb": [
+                0.09552538971308583,
+                0.5027224534054974,
+                0.6348922925015623
+              ]
+            },
+            {
+              "forward_m": 4.372631570492656,
+              "left_m": -0.5825313385147539,
+              "gap_width_m": 1.0702107774552978,
+              "rgb": [
+                0.104962280675729,
+                0.5080523712692473,
+                0.6151880433509518
+              ]
+            }
+          ]
+        }
+      },
+      "record_sha256": "225085a1b4510735215f50c2e958a0371c4c89dbd47e9f35516f142ffa638d2e",
+      "replay_sha256": "a9b43c8348fdb86dcffbfd384423724bfc1cda72730654000e1b47a101950b4a",
+      "controls_sha256": "5c57f5096f0f44cf7692e475602751b95549e64c86f876033f84eaf1bbbdd4bf",
+      "original_jsonl_gz_sha256": "84fa528fc9487aa112d54dc3ffba67daee718e613e7709b90ca051d7a5edbde5",
+      "native_streams": {
+        "qpos": "4ab778b53f5ca9139f7530e7608ff4d419288aa2198bb5ab2357726111174266",
+        "qvel": "8dfd28fc1720c09191cac15b5c26ede0842827f8120bff639e04cc5bc9d40ef6",
+        "ctrl": "a78c8c8d43daf69f717abe148b71e1cdbbdd8cfefe3e8a0975e5e4809e06c5de",
+        "decoded_targets": "83aaedaa687db28cafefc1f718efffb09d403d36d735ad9d9543668995f9688d",
+        "finger_targets": "a1523d220b0c0dacc39170362c5f6b7f2c5486f56fd7d954372cea4386db0f92",
+        "history": "b49ab74efd555c18412fe2bdb578e3ef635be7169ef33565496f39f3bbfb8f66"
+      },
+      "native_obstacle_geometry": [
+        {
+          "name": "gate_0_minus_y_cabinet",
+          "position_m": [
+            1.849636636267803,
+            -2.4860510097188184,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.9995788870199439,
+              0.02901807409133216,
+              0.0
+            ],
+            [
+              -0.02901807409133216,
+              0.9995788870199439,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              0.9999999999999999
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_0_plus_y_cabinet",
+          "position_m": [
+            1.9471016107125054,
+            0.8713024236010096,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.9995788870199439,
+              0.02901807409133216,
+              0.0
+            ],
+            [
+              -0.02901807409133216,
+              0.9995788870199439,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              0.9999999999999999
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_minus_y_cabinet",
+          "position_m": [
+            4.287988902278198,
+            -2.531822398889717,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.9995788870199439,
+              0.02901807409133216,
+              0.0
+            ],
+            [
+              -0.02901807409133216,
+              0.9995788870199439,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              0.9999999999999999
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_plus_y_cabinet",
+          "position_m": [
+            4.388687735730936,
+            0.9369270277636643,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.9995788870199439,
+              0.02901807409133216,
+              0.0
+            ],
+            [
+              -0.02901807409133216,
+              0.9995788870199439,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              0.9999999999999999
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        }
+      ],
+      "outcomes": {
+        "reason": "success",
+        "success": true,
+        "stages_completed": 3,
+        "required_gates": 2,
+        "passed_gates": 2,
+        "passages": [
+          {
+            "gate_index": 0,
+            "side": -1,
+            "tick": 376,
+            "native_time_s": 7.511332295736349,
+            "forward_m": 1.9339779287092023,
+            "left_m": -0.7070129530014078,
+            "gap_edge_clearance_m": 0.4356279467120492,
+            "world_xy_m": [
+              1.8970994092113467,
+              -0.8511118471656721
+            ]
+          },
+          {
+            "gate_index": 1,
+            "side": -1,
+            "tick": 693,
+            "native_time_s": 13.856022365283772,
+            "forward_m": 4.372631570492656,
+            "left_m": -0.6385785722947743,
+            "gap_edge_clearance_m": 0.4790581549476285,
+            "world_xy_m": [
+              4.336711936222124,
+              -0.8534713171254056
+            ]
+          }
+        ],
+        "obstacle_contact": false,
+        "obstacle_contact_substeps": 0,
+        "course_boundary_violation": false,
+        "missed_passage": false,
+        "simulated_s": 29.959999999994274,
+        "applied_rows": 1498,
+        "scalar_codes": 95872,
+        "code_changes": 9703,
+        "eligible_code_pairs": 95808,
+        "code_change_fraction": 0.10127546760187041,
+        "joint_accel_square_sum": 1957546.2016532929,
+        "joint_accel_samples": 43326,
+        "joint_accel_rms_rad_s2": 6.721740047341043
+      },
+      "native_states": 1499,
+      "public_rgbd_queries": 1498,
+      "readbacks": {
+        "body": 43442,
+        "fingers": 20972
+      }
+    },
+    {
+      "case": {
+        "case": "mirror-of-left-right",
+        "robot_seed": 7,
+        "obstacle_seed_search_from": 1397776721,
+        "required_sides": [
+          -1,
+          1
+        ],
+        "first_m": 6.7,
+        "turn_deg": 90.0,
+        "last_m": 1.5,
+        "obstacle_seed": 1397776730,
+        "geometry": {
+          "gates": [
+            {
+              "forward_m": 1.8852559933996595,
+              "left_m": -0.7551534383639563,
+              "gap_width_m": 1.042624111652332,
+              "rgb": [
+                0.07840401334189603,
+                0.542088536220085,
+                0.6034594804231428
+              ]
+            },
+            {
+              "forward_m": 4.542318697460646,
+              "left_m": 0.7588197072533878,
+              "gap_width_m": 0.9507249571522599,
+              "rgb": [
+                0.09559924183597032,
+                0.5487750534048597,
+                0.585426075309839
+              ]
+            }
+          ]
+        },
+        "gaps": "RL"
+      },
+      "record_sha256": "3a00a6ba668c952e2344f4e8fc586a0f8061a4af223eb59cfa41083746fb1f8b",
+      "replay_sha256": "c05b60ab7da48f0003b8ba37fb87b432b38d175b2bbf75ffee0e416a6abf518b",
+      "controls_sha256": "aa9bb88a9da84c649eb239b2e709f1e0c08339db3470752971d19e7a4e017d9e",
+      "original_jsonl_gz_sha256": "9485d647bc1c49274048b831b38b7fad019eceae756f2d653fe71b12b9549088",
+      "native_streams": {
+        "qpos": "3572696d3ac4203dee6872a9c5b1b0c28d0d80c7cd8a15bcea90ceb50ab437c9",
+        "qvel": "86a6026a85018c9923d7e2275740c63211c5a599d2939a5a459fd17329015d10",
+        "ctrl": "5e08deafb0fd52486f91af2895fee183f4fdaa17def0dc47c6d660a97625fbe2",
+        "decoded_targets": "7acef5b9193994a5fdb0c15e74c08ff64804aab45ca61a4317c0042a58383f4c",
+        "finger_targets": "9a7bf52895fb11d58780fef676ef7c8509f4dc21452d5140c8fdfb4a2e467d51",
+        "history": "569a089ced1eb42a68386319decfbdbddef27b3ee2449c8e3a232e07562921a4"
+      },
+      "native_obstacle_geometry": [
+        {
+          "name": "gate_0_minus_y_cabinet",
+          "position_m": [
+            -2.5179891578768543,
+            -1.9781068861007058,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_0_plus_y_cabinet",
+          "position_m": [
+            0.9246149358143465,
+            -1.9663668592440011,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_minus_y_cabinet",
+          "position_m": [
+            -0.9490143979521276,
+            -4.629834496046533,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_plus_y_cabinet",
+          "position_m": [
+            2.401691075608611,
+            -4.618407863422527,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        }
+      ],
+      "outcomes": {
+        "reason": "success",
+        "success": true,
+        "stages_completed": 3,
+        "required_gates": 2,
+        "passed_gates": 2,
+        "passages": [
+          {
+            "gate_index": 0,
+            "side": -1,
+            "tick": 355,
+            "native_time_s": 7.084083505857604,
+            "forward_m": 1.8852559933996595,
+            "left_m": -0.7191127841334255,
+            "gap_edge_clearance_m": 0.4852714015956352,
+            "world_xy_m": [
+              -0.7606466663677254,
+              -1.9721139669368224
+            ]
+          },
+          {
+            "gate_index": 1,
+            "side": 1,
+            "tick": 747,
+            "native_time_s": 14.934933063918562,
+            "forward_m": 4.542318697460646,
+            "left_m": 0.7972650929166462,
+            "gap_edge_clearance_m": 0.4369170929128715,
+            "world_xy_m": [
+              0.7647835009416114,
+              -4.623990073390774
+            ]
+          }
+        ],
+        "obstacle_contact": false,
+        "obstacle_contact_substeps": 0,
+        "course_boundary_violation": false,
+        "missed_passage": false,
+        "simulated_s": 33.77999999999532,
+        "applied_rows": 1689,
+        "scalar_codes": 108096,
+        "code_changes": 11380,
+        "eligible_code_pairs": 108032,
+        "code_change_fraction": 0.10533915876777251,
+        "joint_accel_square_sum": 2366533.7714543873,
+        "joint_accel_samples": 48865,
+        "joint_accel_rms_rad_s2": 6.959169294911254
+      },
+      "native_states": 1690,
+      "public_rgbd_queries": 1689,
+      "readbacks": {
+        "body": 48981,
+        "fingers": 23646
+      }
+    }
+  ],
+  "crosshost": {
+    "witness-left-right": {
+      "rows": [
+        1415,
+        1415
+      ],
+      "codes": {
+        "compared": 1415,
+        "exact": 1415,
+        "first_difference": null
+      },
+      "state": {
+        "compared": 1416,
+        "exact": 1416,
+        "first_difference": null
+      },
+      "base_qpos": {
+        "compared": 1416,
+        "exact": 1416,
+        "first_difference": null
+      },
+      "camera_ticks": {
+        "compared": 1415,
+        "exact": 1415,
+        "first_difference": null
+      },
+      "sensor_packets": {
+        "observation": {
+          "exact": 1415,
+          "compared": 1415,
+          "first_difference": null
+        },
+        "decoder_history": {
+          "exact": 1415,
+          "compared": 1415,
+          "first_difference": null
+        },
+        "observation_id": {
+          "exact": 1415,
+          "compared": 1415,
+          "first_difference": null
+        },
+        "rgb_png": {
+          "exact": 1415,
+          "compared": 1415,
+          "first_difference": null
+        },
+        "depth_mm_png": {
+          "exact": 1415,
+          "compared": 1415,
+          "first_difference": null
+        }
+      },
+      "all_native_stream_hashes_equal": true,
+      "terminal_score_and_geometry_equal": true
+    },
+    "mirror-of-left-right": {
+      "rows": [
+        1689,
+        1689
+      ],
+      "codes": {
+        "compared": 1689,
+        "exact": 1689,
+        "first_difference": null
+      },
+      "state": {
+        "compared": 1690,
+        "exact": 1690,
+        "first_difference": null
+      },
+      "base_qpos": {
+        "compared": 1690,
+        "exact": 1690,
+        "first_difference": null
+      },
+      "camera_ticks": {
+        "compared": 1689,
+        "exact": 1689,
+        "first_difference": null
+      },
+      "sensor_packets": {
+        "observation": {
+          "exact": 1689,
+          "compared": 1689,
+          "first_difference": null
+        },
+        "decoder_history": {
+          "exact": 1689,
+          "compared": 1689,
+          "first_difference": null
+        },
+        "observation_id": {
+          "exact": 1689,
+          "compared": 1689,
+          "first_difference": null
+        },
+        "rgb_png": {
+          "exact": 1689,
+          "compared": 1689,
+          "first_difference": null
+        },
+        "depth_mm_png": {
+          "exact": 1689,
+          "compared": 1689,
+          "first_difference": null
+        }
+      },
+      "all_native_stream_hashes_equal": true,
+      "terminal_score_and_geometry_equal": true
+    },
+    "witness-right-left": {
+      "rows": [
+        1559,
+        1559
+      ],
+      "codes": {
+        "compared": 1559,
+        "exact": 1559,
+        "first_difference": null
+      },
+      "state": {
+        "compared": 1560,
+        "exact": 1560,
+        "first_difference": null
+      },
+      "base_qpos": {
+        "compared": 1560,
+        "exact": 1560,
+        "first_difference": null
+      },
+      "camera_ticks": {
+        "compared": 1559,
+        "exact": 1559,
+        "first_difference": null
+      },
+      "sensor_packets": {
+        "observation": {
+          "exact": 1559,
+          "compared": 1559,
+          "first_difference": null
+        },
+        "decoder_history": {
+          "exact": 1559,
+          "compared": 1559,
+          "first_difference": null
+        },
+        "observation_id": {
+          "exact": 1559,
+          "compared": 1559,
+          "first_difference": null
+        },
+        "rgb_png": {
+          "exact": 1559,
+          "compared": 1559,
+          "first_difference": null
+        },
+        "depth_mm_png": {
+          "exact": 1559,
+          "compared": 1559,
+          "first_difference": null
+        }
+      },
+      "all_native_stream_hashes_equal": true,
+      "terminal_score_and_geometry_equal": true
+    }
+  },
+  "physical_mirror_at_same_reset": {
+    "rows": [
+      1415,
+      1689
+    ],
+    "codes": {
+      "compared": 1415,
+      "exact": 0,
+      "first_difference": 0
+    },
+    "state": {
+      "compared": 1416,
+      "exact": 1,
+      "first_difference": 1
+    },
+    "base_qpos": {
+      "compared": 1416,
+      "exact": 1,
+      "first_difference": 1
+    },
+    "camera_ticks": {
+      "compared": 1415,
+      "exact": 1415,
+      "first_difference": null
+    },
+    "sensor_packets": {
+      "observation": {
+        "exact": 1,
+        "compared": 1415,
+        "first_difference": 1
+      },
+      "decoder_history": {
+        "exact": 1,
+        "compared": 1415,
+        "first_difference": 1
+      },
+      "observation_id": {
+        "exact": 0,
+        "compared": 1415,
+        "first_difference": 0
+      },
+      "rgb_png": {
+        "exact": 0,
+        "compared": 1415,
+        "first_difference": 0
+      },
+      "depth_mm_png": {
+        "exact": 0,
+        "compared": 1415,
+        "first_difference": 0
+      }
+    }
+  }
+}

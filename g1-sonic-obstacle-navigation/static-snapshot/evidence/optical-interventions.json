@@ -1,0 +1,464 @@
+{
+  "historical_ale": {
+    "commit": "005aa790388479639cb039266e7edd0d5dc26bb9",
+    "reward": 0.87,
+    "successes": 13,
+    "n": 16,
+    "raw": 0.8125,
+    "participant_tar_sha256": "329456319b58364c60c3aa6cec6bca02e3bb5e88b20705ef25a50ff742f5e290",
+    "report_sha256": "cc78829354f429cda994a4d132368b3eac60a24dcd1516e3d6ea4890ae00afe9",
+    "source_status": "Canonical previously graded artifact, reconstructed from logged participant shell writes. A full independent command replay matched all three files. The original unexported live container was removed before collecting a direct source digest. Unchanged transfer with no model calls."
+  },
+  "native": {
+    "legacy_clean_opus": {
+      "n": 8,
+      "successes": 6,
+      "terminal": {
+        "path_violation": 1,
+        "success": 6,
+        "time_limit": 1
+      },
+      "stage_stops": 19,
+      "passed_gates": 0,
+      "offered_gates": 0,
+      "routes_with_contact": 0,
+      "first_contact_robot_body": {},
+      "first_contact_range_s": null,
+      "first_contact_largest_normal_force_range_n": null,
+      "solved_contact_samples": 0,
+      "course_boundary_violations": 0,
+      "applied_50hz_rows": 9623,
+      "dense_fsq_codes": 615872,
+      "simulated_seconds": 192.46,
+      "queries": 9623,
+      "changed_camera_queries": 0,
+      "joint_acceleration_rms_rad_s2": 12.126691655150593,
+      "recorded_independent_physics_replay_cases": 8,
+      "exact_replayed_native_state_boundaries": 9631
+    },
+    "revised_empty_opus": {
+      "n": 8,
+      "successes": 6,
+      "terminal": {
+        "path_violation": 1,
+        "success": 6,
+        "time_limit": 1
+      },
+      "stage_stops": 19,
+      "passed_gates": 0,
+      "offered_gates": 0,
+      "routes_with_contact": 0,
+      "first_contact_robot_body": {},
+      "first_contact_range_s": null,
+      "first_contact_largest_normal_force_range_n": null,
+      "solved_contact_samples": 0,
+      "course_boundary_violations": 0,
+      "applied_50hz_rows": 10323,
+      "dense_fsq_codes": 660672,
+      "simulated_seconds": 206.46,
+      "queries": 10323,
+      "changed_camera_queries": 0,
+      "joint_acceleration_rms_rad_s2": 11.706997321807117,
+      "recorded_independent_physics_replay_cases": 8,
+      "exact_replayed_native_state_boundaries": 10331
+    },
+    "opus": {
+      "n": 16,
+      "successes": 0,
+      "terminal": {
+        "obstacle_contact": 14,
+        "time_limit": 2
+      },
+      "stage_stops": 0,
+      "passed_gates": 0,
+      "offered_gates": 30,
+      "routes_with_contact": 14,
+      "first_contact_robot_body": {
+        "left_hand_index_1_link": 8,
+        "right_hand_index_1_link": 5,
+        "right_knee_link": 1
+      },
+      "first_contact_range_s": [
+        3.301999999999858,
+        5.507999999999615
+      ],
+      "first_contact_largest_normal_force_range_n": [
+        13.580569438936621,
+        485.1090053087372
+      ],
+      "solved_contact_samples": 74,
+      "course_boundary_violations": 0,
+      "applied_50hz_rows": 6834,
+      "dense_fsq_codes": 437376,
+      "simulated_seconds": 136.68,
+      "queries": 6834,
+      "changed_camera_queries": 0,
+      "joint_acceleration_rms_rad_s2": 9.170395821011734,
+      "recorded_independent_physics_replay_cases": 16,
+      "exact_replayed_native_state_boundaries": 6850
+    },
+    "beacons": {
+      "n": 16,
+      "successes": 0,
+      "terminal": {
+        "obstacle_contact": 16
+      },
+      "stage_stops": 0,
+      "passed_gates": 0,
+      "offered_gates": 30,
+      "routes_with_contact": 16,
+      "first_contact_robot_body": {
+        "left_hand_index_1_link": 8,
+        "right_ankle_roll_link": 2,
+        "right_hand_index_1_link": 6
+      },
+      "first_contact_range_s": [
+        3.199999999999869,
+        4.7079999999997035
+      ],
+      "first_contact_largest_normal_force_range_n": [
+        24.878812874898248,
+        167.41104786756296
+      ],
+      "solved_contact_samples": 78,
+      "course_boundary_violations": 0,
+      "applied_50hz_rows": 2967,
+      "dense_fsq_codes": 189888,
+      "simulated_seconds": 59.34,
+      "queries": 2967,
+      "changed_camera_queries": 0,
+      "joint_acceleration_rms_rad_s2": 7.646394173294052,
+      "recorded_independent_physics_replay_cases": 16,
+      "exact_replayed_native_state_boundaries": 2983
+    },
+    "neutral": {
+      "n": 16,
+      "successes": 0,
+      "terminal": {
+        "obstacle_contact": 16
+      },
+      "stage_stops": 0,
+      "passed_gates": 0,
+      "offered_gates": 30,
+      "routes_with_contact": 16,
+      "first_contact_robot_body": {
+        "left_hand_index_1_link": 9,
+        "right_hand_index_1_link": 7
+      },
+      "first_contact_range_s": [
+        10.198000000000075,
+        11.696000000000575
+      ],
+      "first_contact_largest_normal_force_range_n": [
+        33.01156621248604,
+        133.96121811668135
+      ],
+      "solved_contact_samples": 79,
+      "course_boundary_violations": 0,
+      "applied_50hz_rows": 8541,
+      "dense_fsq_codes": 546624,
+      "simulated_seconds": 170.82,
+      "queries": 1716,
+      "changed_camera_queries": 0,
+      "joint_acceleration_rms_rad_s2": 7.401627561376371,
+      "recorded_independent_physics_replay_cases": 16,
+      "exact_replayed_native_state_boundaries": 8557
+    },
+    "reference": {
+      "n": 16,
+      "successes": 14,
+      "terminal": {
+        "lost_standing_hold": 2,
+        "success": 14
+      },
+      "stage_stops": 42,
+      "passed_gates": 30,
+      "offered_gates": 30,
+      "routes_with_contact": 0,
+      "first_contact_robot_body": {},
+      "first_contact_range_s": null,
+      "first_contact_largest_normal_force_range_n": null,
+      "solved_contact_samples": 0,
+      "course_boundary_violations": 0,
+      "applied_50hz_rows": 19801,
+      "dense_fsq_codes": 1267264,
+      "simulated_seconds": 396.02,
+      "queries": 19801,
+      "changed_camera_queries": 0,
+      "joint_acceleration_rms_rad_s2": 6.379184505613953,
+      "recorded_independent_physics_replay_cases": 16,
+      "exact_replayed_native_state_boundaries": 19817
+    },
+    "camera_intervention": {
+      "n": 16,
+      "successes": 0,
+      "terminal": {
+        "obstacle_contact": 16
+      },
+      "stage_stops": 0,
+      "passed_gates": 0,
+      "offered_gates": 30,
+      "routes_with_contact": 16,
+      "first_contact_robot_body": {
+        "left_hand_index_1_link": 11,
+        "right_hand_index_1_link": 5
+      },
+      "first_contact_range_s": [
+        3.4579999999998408,
+        7.10399999999944
+      ],
+      "first_contact_largest_normal_force_range_n": [
+        30.435140929422122,
+        187.18901707880545
+      ],
+      "solved_contact_samples": 85,
+      "course_boundary_violations": 0,
+      "applied_50hz_rows": 3655,
+      "dense_fsq_codes": 233920,
+      "simulated_seconds": 73.1,
+      "queries": 3655,
+      "changed_camera_queries": 3571,
+      "joint_acceleration_rms_rad_s2": 8.421231268141936,
+      "recorded_independent_physics_replay_cases": 16,
+      "exact_replayed_native_state_boundaries": 3671
+    }
+  },
+  "matched_contrasts": [
+    {
+      "index": 0,
+      "pair": 0,
+      "live_win": false,
+      "mirrored_camera_win": false,
+      "original_clean_win": true,
+      "revised_empty_win": true,
+      "hard_opus_win": false,
+      "ref_mirror_shared_action_rows": 0,
+      "ref_mirror_shared_pose_boundaries": 1,
+      "opus_empty_hard_shared_action_rows": 210,
+      "opus_empty_hard_shared_pose_boundaries": 211
+    },
+    {
+      "index": 1,
+      "pair": 0,
+      "live_win": false,
+      "mirrored_camera_win": false,
+      "original_clean_win": true,
+      "revised_empty_win": true,
+      "hard_opus_win": false,
+      "ref_mirror_shared_action_rows": 0,
+      "ref_mirror_shared_pose_boundaries": 1,
+      "opus_empty_hard_shared_action_rows": 204,
+      "opus_empty_hard_shared_pose_boundaries": 204
+    },
+    {
+      "index": 2,
+      "pair": 1,
+      "live_win": true,
+      "mirrored_camera_win": false,
+      "original_clean_win": true,
+      "revised_empty_win": true,
+      "hard_opus_win": false,
+      "ref_mirror_shared_action_rows": 0,
+      "ref_mirror_shared_pose_boundaries": 1,
+      "opus_empty_hard_shared_action_rows": 195,
+      "opus_empty_hard_shared_pose_boundaries": 195
+    },
+    {
+      "index": 3,
+      "pair": 1,
+      "live_win": true,
+      "mirrored_camera_win": false,
+      "original_clean_win": true,
+      "revised_empty_win": true,
+      "hard_opus_win": false,
+      "ref_mirror_shared_action_rows": 0,
+      "ref_mirror_shared_pose_boundaries": 1,
+      "opus_empty_hard_shared_action_rows": 192,
+      "opus_empty_hard_shared_pose_boundaries": 192
+    },
+    {
+      "index": 4,
+      "pair": 2,
+      "live_win": true,
+      "mirrored_camera_win": false,
+      "original_clean_win": false,
+      "revised_empty_win": false,
+      "hard_opus_win": false,
+      "ref_mirror_shared_action_rows": 0,
+      "ref_mirror_shared_pose_boundaries": 1,
+      "opus_empty_hard_shared_action_rows": 0,
+      "opus_empty_hard_shared_pose_boundaries": 1
+    },
+    {
+      "index": 5,
+      "pair": 2,
+      "live_win": true,
+      "mirrored_camera_win": false,
+      "original_clean_win": false,
+      "revised_empty_win": false,
+      "hard_opus_win": false,
+      "ref_mirror_shared_action_rows": 0,
+      "ref_mirror_shared_pose_boundaries": 1,
+      "opus_empty_hard_shared_action_rows": 0,
+      "opus_empty_hard_shared_pose_boundaries": 1
+    },
+    {
+      "index": 6,
+      "pair": 3,
+      "live_win": true,
+      "mirrored_camera_win": false,
+      "original_clean_win": true,
+      "revised_empty_win": true,
+      "hard_opus_win": false,
+      "ref_mirror_shared_action_rows": 0,
+      "ref_mirror_shared_pose_boundaries": 1,
+      "opus_empty_hard_shared_action_rows": 177,
+      "opus_empty_hard_shared_pose_boundaries": 177
+    },
+    {
+      "index": 7,
+      "pair": 3,
+      "live_win": true,
+      "mirrored_camera_win": false,
+      "original_clean_win": true,
+      "revised_empty_win": true,
+      "hard_opus_win": false,
+      "ref_mirror_shared_action_rows": 0,
+      "ref_mirror_shared_pose_boundaries": 1,
+      "opus_empty_hard_shared_action_rows": 185,
+      "opus_empty_hard_shared_pose_boundaries": 185
+    },
+    {
+      "index": 8,
+      "pair": 4,
+      "live_win": true,
+      "mirrored_camera_win": false,
+      "original_clean_win": false,
+      "revised_empty_win": false,
+      "hard_opus_win": false,
+      "ref_mirror_shared_action_rows": 0,
+      "ref_mirror_shared_pose_boundaries": 1,
+      "opus_empty_hard_shared_action_rows": 195,
+      "opus_empty_hard_shared_pose_boundaries": 195
+    },
+    {
+      "index": 9,
+      "pair": 4,
+      "live_win": true,
+      "mirrored_camera_win": false,
+      "original_clean_win": false,
+      "revised_empty_win": false,
+      "hard_opus_win": false,
+      "ref_mirror_shared_action_rows": 0,
+      "ref_mirror_shared_pose_boundaries": 1,
+      "opus_empty_hard_shared_action_rows": 194,
+      "opus_empty_hard_shared_pose_boundaries": 195
+    },
+    {
+      "index": 10,
+      "pair": 5,
+      "live_win": true,
+      "mirrored_camera_win": false,
+      "original_clean_win": true,
+      "revised_empty_win": true,
+      "hard_opus_win": false,
+      "ref_mirror_shared_action_rows": 0,
+      "ref_mirror_shared_pose_boundaries": 1,
+      "opus_empty_hard_shared_action_rows": 171,
+      "opus_empty_hard_shared_pose_boundaries": 171
+    },
+    {
+      "index": 11,
+      "pair": 5,
+      "live_win": true,
+      "mirrored_camera_win": false,
+      "original_clean_win": true,
+      "revised_empty_win": true,
+      "hard_opus_win": false,
+      "ref_mirror_shared_action_rows": 0,
+      "ref_mirror_shared_pose_boundaries": 1,
+      "opus_empty_hard_shared_action_rows": 166,
+      "opus_empty_hard_shared_pose_boundaries": 166
+    },
+    {
+      "index": 12,
+      "pair": 6,
+      "live_win": true,
+      "mirrored_camera_win": false,
+      "original_clean_win": true,
+      "revised_empty_win": true,
+      "hard_opus_win": false,
+      "ref_mirror_shared_action_rows": 0,
+      "ref_mirror_shared_pose_boundaries": 1,
+      "opus_empty_hard_shared_action_rows": 0,
+      "opus_empty_hard_shared_pose_boundaries": 1
+    },
+    {
+      "index": 13,
+      "pair": 6,
+      "live_win": true,
+      "mirrored_camera_win": false,
+      "original_clean_win": true,
+      "revised_empty_win": true,
+      "hard_opus_win": false,
+      "ref_mirror_shared_action_rows": 0,
+      "ref_mirror_shared_pose_boundaries": 1,
+      "opus_empty_hard_shared_action_rows": 0,
+      "opus_empty_hard_shared_pose_boundaries": 1
+    },
+    {
+      "index": 14,
+      "pair": 7,
+      "live_win": true,
+      "mirrored_camera_win": false,
+      "original_clean_win": true,
+      "revised_empty_win": true,
+      "hard_opus_win": false,
+      "ref_mirror_shared_action_rows": 0,
+      "ref_mirror_shared_pose_boundaries": 1,
+      "opus_empty_hard_shared_action_rows": 256,
+      "opus_empty_hard_shared_pose_boundaries": 256
+    },
+    {
+      "index": 15,
+      "pair": 7,
+      "live_win": true,
+      "mirrored_camera_win": false,
+      "original_clean_win": true,
+      "revised_empty_win": true,
+      "hard_opus_win": false,
+      "ref_mirror_shared_action_rows": 0,
+      "ref_mirror_shared_pose_boundaries": 1,
+      "opus_empty_hard_shared_action_rows": 276,
+      "opus_empty_hard_shared_pose_boundaries": 276
+    }
+  ],
+  "source_commits": {
+    "legacy_clean_opus": "005aa790388479639cb039266e7edd0d5dc26bb9",
+    "revised_empty_opus": "6b4605fa43c19dfda979d23b620cc8c998cd1254",
+    "opus": "6b4605fa43c19dfda979d23b620cc8c998cd1254",
+    "beacons": "6b4605fa43c19dfda979d23b620cc8c998cd1254",
+    "neutral": "6b4605fa43c19dfda979d23b620cc8c998cd1254",
+    "reference": "caccae08d172ba4f378c0b9ce9103702d58a09fc",
+    "camera_intervention": "caccae08d172ba4f378c0b9ce9103702d58a09fc"
+  },
+  "protocol_sha256": "0c4786679012da2854f20a91124f8c55249230b3a5746c14826de588a7fbb266",
+  "mirror_protocol_sha256": "16462bea90c3f3e4775102bff8a692090448d15f5f0918417ae1696190e19e88",
+  "additional_empty_control_protocol_sha256": "c5eeda042a38e652b601db68df84abf4ff48bef66e16d24b07c8a8718013854d",
+  "native_case_count": 96,
+  "native_rows": 61744,
+  "exact_replayed_qpos_qvel_boundaries": 61840,
+  "camera_reproduction": {
+    "sha256": "184236e903ed5472ce8acf92b5ddc918b3280862ea0734e8dd2c5d05b0ae88a1",
+    "separately_reconstructed_samples": 42,
+    "total_pixels_per_channel": 516096,
+    "rgb_changed_pixels": 5,
+    "depth_changed_pixels": 35,
+    "max_rgb_byte_error": 1,
+    "max_depth_error_mm": 1,
+    "exact_both": 27,
+    "matched_original_committed_intervention_raster": 42
+  },
+  "detailed_case_receipts_sha256": "6bcfb5bac80f738cf7626b4baeabd9a3cd0cebf29dc4fa7a0f329f370de6b912",
+  "notes": "Eight numeric robot+layout seeds, each paired with its exact mirror, balanced turns. Training-free transfer and frozen source interventions. Supplementary revised empty control was registered after first obstacle runs had started and before inspecting outcome labels."
+}

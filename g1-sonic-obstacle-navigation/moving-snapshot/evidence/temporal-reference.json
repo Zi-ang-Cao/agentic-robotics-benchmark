@@ -1,0 +1,44 @@
+{
+  "protocol": "N3 independent raw 16-start moving-fork qualification",
+  "source_head": "bf0f2701a6ad4c9c3303c4a769e177028ffbecf9",
+  "register_sha256": "f298dd1feef5f3721c4ae32e5efbaba4d7abdf5d91e5cd74d9a7507fce774c20",
+  "physical_register_sha256": "4f9a64b7f52254d3783236301f7a8c47f3b067fa4c7ce75a447c5626a1bd840e",
+  "manifest_sha256": "eb5680947d7b5fc788061205b43015b8e77fb037f06d5a34cf64cede461e22c7",
+  "installed_solver_sha256": "f5d5a367c0cfe39c075af5fd234d508cadb5420fa79974def2800d91415de3ca",
+  "snapshot_id": "19634bd02c6d6b92ee32b231808b01de814ea1b2597ad1ad731348e665c89f4e",
+  "totals": {
+    "starts": 16,
+    "queries": 31609,
+    "issued_rows": 31609,
+    "applied_rows": 31609,
+    "changed_coordinates": 148729,
+    "strict_successes": 16,
+    "completed_stops": 48,
+    "passed_gates": 24,
+    "required_gates": 24,
+    "contact_cases": 0,
+    "contact_substeps": 0,
+    "native_substeps": 316090
+  },
+  "source_receipt_sha256": "c8da201b3e163e1476503baeb9950e1af2614c08e70dffe1a807e92eea3bc0ff",
+  "by_service": {
+    "both": {
+      "successes": 8,
+      "courses": 8
+    },
+    "left": {
+      "successes": 4,
+      "courses": 4
+    },
+    "right": {
+      "successes": 4,
+      "courses": 4
+    }
+  },
+  "minimum_sampled_whole_robot_surface_clearance_m": 0.15239419753586247,
+  "minmax_slow_staging_s": [
+    6.66200000000109,
+    9.524000000000035
+  ],
+  "note": "Pre-registered production native cohort on 16 previously unused layouts and reset poses. The denominator is separate from the protected ALE validation."
+}

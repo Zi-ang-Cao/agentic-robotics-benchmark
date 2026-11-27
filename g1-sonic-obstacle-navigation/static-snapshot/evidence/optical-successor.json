@@ -1,0 +1,102 @@
+{
+  "source_commit": "e0674ac34aa39b713561824035831f7e04033580",
+  "solution_tree": "b63e1a01ef7e6422206a7788bf435cbd5f3dbe5f",
+  "protocol_sha256": "9d8972a95c9d498a35560cdca8902a1af7bbd75c31eb81851c744ea48d0adef2",
+  "original_comparison": "caccae08d172ba4f378c0b9ce9103702d58a09fc",
+  "note": "Supplementary measurement on the same 16 previously evaluated cases, on the independently revised release participant.",
+  "arms": {
+    "reference": {
+      "cases": 16,
+      "strict_successes": 15,
+      "terminal": {
+        "success": 15,
+        "lost_standing_hold": 1
+      },
+      "passed_gates": 30,
+      "offered_gates": 30,
+      "cabinet_contacts": 0,
+      "applied_rows": 20382,
+      "verified_state_boundaries": 20398,
+      "total_queries": 20382,
+      "changed_camera_queries": 0,
+      "receipt_sha256": [
+        "f3cb93c03d115dab6a29eff1a7b9034aefe0250443c45e859cb7d4d792c97e10",
+        "0d7780f604de48af08dbe0aa3fa84154445bdcf86ccbfe3d47284ca8ae60dea5",
+        "3ff019b5a1acc13d3f1823e04f05245c98b8ec8ab5fe8106634a948829e1f86d",
+        "f65f7f26d38da57b2532da3daa3b861cd7ed3af165d00556ff936b58ab246c5d",
+        "3780f41079256bd099db6e59761fcac5396f584216a943af5200b383de3a17f1",
+        "b2d63223af1f6995dba59c9eb0d621bdb1f2fc7c48dfdae4b80e431188ef1232",
+        "f3aabef8ef93d860c8eaffbe0acf2bb82dd6458f5c2b54a43f86d28d29be3a57",
+        "c87c553f3edcec0638e517dbb890c0c78c73d3c6de6c94a01fffe013eabe0e74",
+        "28310dfe040b6233c81167bbe7a4a9eb18e81358153901d201f2d7b9a8c4f0f3",
+        "7f9a309bd543289afb0ed7234b6e44463acbc456ef94bcb5e0d9c4d26b3a5c6e",
+        "f2be18a182e40e41f142a6310683374dadec592d7e8a81f02b9529436786c14f",
+        "0860873cc4c80e4a9d87824f563ff4e9471d89840707091af0c1de7d209ad2ac",
+        "eb8bb1cac943f7d203712082b33a8af11a49238321fc9e2f87755585211f6be7",
+        "c012146afa2b34ee47b36724f150fbf4ecd0afcecfaae9c34eabee2cb9d0d48e",
+        "825c10c39cf9b6343ae6a91b852126c359fc483a490296d6f9e7bdc3f21e51e1",
+        "93ae6d954b181c662be114ce3efa9646a9c7ff645dd14a7141c98dad94086287"
+      ]
+    },
+    "camera_intervention": {
+      "cases": 16,
+      "strict_successes": 0,
+      "terminal": {
+        "obstacle_contact": 16
+      },
+      "passed_gates": 0,
+      "offered_gates": 30,
+      "cabinet_contacts": 16,
+      "applied_rows": 3655,
+      "verified_state_boundaries": 3671,
+      "total_queries": 3655,
+      "changed_camera_queries": 3571,
+      "receipt_sha256": [
+        "e4146b07e949efa7de0042f6d69347395cb22e58853085784930a8b973dbc825",
+        "8c36af6a50125522c5d92c480ec39c71f23114869d9d1a235454b631194167e5",
+        "06c4cd2edcdab0517dc53ee4e56b1f2582926d1ce6cc3ec9f081716b9cf6dfe1",
+        "3175a91ebce3886a4328ec427b8a3d04f805652d215eb492fefd669b5e9a01e3",
+        "25f4b60ca4dcde5e7a0d5bcce8588cbeebc19be48d0bf2d0708afba81a4c0c50",
+        "c4a150757b00e32b3b6f274a848ce7725606c580750e70da6aa49c24f075f7f6",
+        "5d958e71c47714add03df6dd60c405f20207ba88522f1d2e837940bd281fb934",
+        "c24253d6d2306569814a8e5581e48646bf9f5f98444b82fa0cafc43a0e5293dc",
+        "362c2a774ae9662a430ba8739eb808acdf3999214011933be72e85624d548749",
+        "501e61017e06e19fdd7b87d2610e8edf39180bfee85bbcb17e6738560b861a69",
+        "26854e3c801d9cef39f41dc198dc7e7badc8df95e845f6c1bfd854decca2087d",
+        "2e5abcce59d18d0fde807d999c87b416ab010b3a770d098f282003f88e666c7f",
+        "15a7180dad0ec351a422150aeda14793648228b5a46e3b1354d7c1ffc7b481e7",
+        "b763606f92e1346408ebfd2cb00e72ca968a0a02b4bbba790f262b70ac988083",
+        "503c7eeebaa630e6e3ee49318235dab29765e962de6e94f6f6997f22f58a19a4",
+        "2079152e8c6e201b29c16a40edb2640a724084c0b9e6597f14a9751d3d13a453"
+      ]
+    }
+  },
+  "shared_first_applied_rows": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "raster": {
+    "receipt_sha256": "184236e903ed5472ce8acf92b5ddc918b3280862ea0734e8dd2c5d05b0ae88a1",
+    "independent_samples": 42,
+    "original_hash_matches": 42,
+    "inspected_pixels": 516096,
+    "diff_rgb_pixels": 5,
+    "diff_depth_pixels": 35,
+    "max_rgb_byte_error": 1,
+    "max_depth_error_mm": 1
+  }
+}

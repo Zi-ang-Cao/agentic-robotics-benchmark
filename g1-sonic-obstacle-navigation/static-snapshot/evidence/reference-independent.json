@@ -1,0 +1,56 @@
+{
+  "scope": "uncalibrated independent native 16-case host qualification",
+  "task_source": "caccae08d172ba4f378c0b9ce9103702d58a09fc",
+  "reference_receipt_sha256": "0b65c5409c7c811f01bc8adf50e60b5a8457e51f307ab01ebcf489276b41fa3f",
+  "registration_sha256": "d9675a5f452c38958e0eae6b14f60da69dee02e538bdc0ac8e6ea6e086d9f948",
+  "summary": {
+    "episodes": 16,
+    "strict_successes": 16,
+    "success_fraction": 1.0,
+    "approach_stops": 16,
+    "pivot_stops": 16,
+    "departure_stops": 16,
+    "passed_gates": 29,
+    "required_gates": 29,
+    "contact_cases": 0,
+    "contact_substeps": 0,
+    "boundary_violations": 0,
+    "missed_gate_cases": 0,
+    "reasons": {
+      "success": 16
+    },
+    "layout_families": {
+      "single": [
+        3,
+        3
+      ],
+      "same": [
+        8,
+        8
+      ],
+      "opposite": [
+        5,
+        5
+      ]
+    },
+    "turn_directions": {
+      "left": [
+        8,
+        8
+      ],
+      "right": [
+        8,
+        8
+      ]
+    },
+    "min_full_robot_post_tick_surface_clearance_m": 0.038340175275015785,
+    "max_per_case_min_surface_clearance_m": 0.23367970311935218,
+    "min_pelvis_edge_at_successful_crossing_m": 0.42156071311874055,
+    "max_pelvis_edge_at_successful_crossing_m": 0.5300180386530617,
+    "total_simulated_s": 451.53999999992504,
+    "queries": 22577,
+    "issued_rows": 22577,
+    "applied_rows": 22577,
+    "changed_coordinates": 148077
+  }
+}

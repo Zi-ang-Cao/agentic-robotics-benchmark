@@ -1,0 +1,2673 @@
+{
+  "source": "bf0f2701a6ad4c9c3303c4a769e177028ffbecf9",
+  "registration_sha256": "06b95b17a3a23115f0329e6f38a278083e04b63a8bbd90f464c33e021ea9c0cd",
+  "phase_binding_sha256": "aeafdfe0579c2029240828c66c344e9bdc876b3f56cdb85b0922e01976c19c40",
+  "wait_rule_sha256": "8591735696e70ba99fc4fff6e8ab3ba9c7a92fc766cfec9bb9dadbaee05437cd",
+  "frozen_plan_sha256": "d2ad4099c9b93cda6d5f4fd81710575f97ad8e7879766fe220713725f320e3ce",
+  "scope": "Prespecified same-reset opposite-door-phase pair plus four independent default layouts. Native practice evidence.",
+  "numerical_backend": "Both hosts: MuJoCo 3.3.4, ONNX Runtime CPU 1.22.1, NumPy 1.26.4, Mesa llvmpipe. Local Python 3.10.12 LLVM 15.0.7; workstation with RTX 5090 Python 3.12.3 LLVM 20.1.2. No GPU inference or rasterization.",
+  "default_four": {
+    "success": 4,
+    "required_gates": 5,
+    "passed_gates": 5,
+    "stages_completed": 12,
+    "simulated_s": 159.5200000000111,
+    "applied_rows": 7976,
+    "scalar_codes": 510464,
+    "code_changes": 35010,
+    "eligible_code_pairs": 510208,
+    "joint_accel_square_sum": 6969911.837261904,
+    "joint_accel_samples": 230840,
+    "obstacle_contact_substeps": 0,
+    "episodes": 4,
+    "body_readbacks": 231304,
+    "finger_readbacks": 111664,
+    "public_camera_queries": 7976,
+    "exact_rgbd_queries": 7976,
+    "native_states": 7980,
+    "code_change_fraction": 0.06861907300551932,
+    "joint_accel_rms_rad_s2": 5.4948786971100185
+  },
+  "matched_pair": {
+    "success": 2,
+    "required_gates": 4,
+    "passed_gates": 4,
+    "stages_completed": 6,
+    "simulated_s": 75.86000000000078,
+    "applied_rows": 3793,
+    "scalar_codes": 242752,
+    "code_changes": 19501,
+    "eligible_code_pairs": 242624,
+    "joint_accel_square_sum": 3710893.662179202,
+    "joint_accel_samples": 109765,
+    "obstacle_contact_substeps": 0,
+    "episodes": 2,
+    "body_readbacks": 109997,
+    "finger_readbacks": 53102,
+    "public_camera_queries": 3793,
+    "exact_rgbd_queries": 3793,
+    "native_states": 3795,
+    "code_change_fraction": 0.08037539567396465,
+    "joint_accel_rms_rad_s2": 5.814432242603197
+  },
+  "all_six": {
+    "success": 6,
+    "required_gates": 9,
+    "passed_gates": 9,
+    "stages_completed": 18,
+    "simulated_s": 235.3800000000119,
+    "applied_rows": 11769,
+    "scalar_codes": 753216,
+    "code_changes": 54511,
+    "eligible_code_pairs": 752832,
+    "joint_accel_square_sum": 10680805.499441108,
+    "joint_accel_samples": 340605,
+    "obstacle_contact_substeps": 0,
+    "episodes": 6,
+    "body_readbacks": 341301,
+    "finger_readbacks": 164766,
+    "public_camera_queries": 11769,
+    "exact_rgbd_queries": 11769,
+    "native_states": 11775,
+    "code_change_fraction": 0.07240792102354841,
+    "joint_accel_rms_rad_s2": 5.599851286657042
+  },
+  "all_replayed": true,
+  "cases": [
+    {
+      "case": {
+        "case": "left-opens-first",
+        "robot_seed": 7,
+        "layout_seed": 1397776730,
+        "first_m": 6.7,
+        "turn_deg": 90,
+        "last_m": 1.5,
+        "tail": null,
+        "service": "both",
+        "phases": [
+          6.6,
+          10.8
+        ],
+        "geometry": {
+          "fork": {
+            "forward_m": 2.2249889738618402,
+            "island_center_m": 0.012787385739401486,
+            "right_width_m": 0.9656088367847662,
+            "left_width_m": 1.0563457761591846,
+            "rgb": [
+              0.09379801431712478,
+              0.5486952319187245,
+              0.5914279158156335
+            ]
+          },
+          "tail": {
+            "forward_m": 4.817210527111325,
+            "left_m": 0.5889458105453174,
+            "gap_width_m": 0.9706921085829717,
+            "rgb": [
+              0.07859349268732019,
+              0.5744719165558687,
+              0.66475209422503
+            ]
+          },
+          "service": "both",
+          "phases": [
+            6.6,
+            10.8
+          ],
+          "short_stroke_m": 0.07912687280477301
+        }
+      },
+      "record_sha256": "5829a99a3008d0bf359289a033d854fd9cbbea907e7167cf1743926eac4f5b87",
+      "replay_sha256": "4de6ae1f24dcb015451a8cca2968ce85c691b4cfaa9b844ee2d9680776173cc3",
+      "controls_sha256": "ba32b1937f3fb23b2771bce9a9059cb7d58ad9b33383ac8b2d1d8b5a76406c33",
+      "original_jsonl_gz_sha256": "c2da1321f0cab6ea54e9719baf0385c0b821721541fc941bd22642af4ac4618c",
+      "native_streams": {
+        "qpos": "d314a4e6b0a82de9feaba56204b5d468323a512b4ee045a16d1ce047eede24f1",
+        "qvel": "7cb7df81f9a60fb2c1b7e3ae6ff10f6850c994ef61af9197b6cd88693a249c3d",
+        "ctrl": "d6596cb20edd798a04dbbcd088ee8fbd5e44582d1f82cfcba5a3330447308b7a",
+        "decoded_targets": "c8cd8c5a0d0224dd1a44c7e04021c6c9d8229972a092aaa10fb7cb4d5b36d938",
+        "finger_targets": "b8c8203cb1da752cb218ef26cb5ec1e55996fb497175aac2730913affe3218ce",
+        "history": "f9a67b1b9705d5c3d6d6884a4673758c57667c688d98fbea19a1a826b48a9952",
+        "world_geometry": "366d83372fff6a385b27abf908d160942242fbcd6ba3f2aa12848f9397c9299a",
+        "mocap": "f939de9825c8c695d066557c6cb21e9aeb07a23a48e6376fb224d94b8c795709",
+        "shutters": "720ca8ee122bd5284b679ac9b2a1d4a0bb0cca76c40c6bfc129c5032bd58b61d"
+      },
+      "native_obstacle_geometry": [
+        {
+          "name": "fork_island",
+          "position_m": [
+            -0.02759219586935764,
+            -2.3093490480834125,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            0.22,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "fork_left_jamb",
+          "position_m": [
+            2.448739180985143,
+            -2.300904220830796,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "fork_right_jamb",
+          "position_m": [
+            -2.413187160961072,
+            -2.317484444486014,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_minus_y_cabinet",
+          "position_m": [
+            -1.1279333892234165,
+            -4.905338076708755,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_plus_y_cabinet",
+          "position_m": [
+            2.2427391196642565,
+            -4.893843352162295,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "shutter_right",
+          "position_m": [
+            -0.730869955235242,
+            -2.171746563755704,
+            0.38
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.045,
+            0.54,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "shutter_left",
+          "position_m": [
+            0.720098914182213,
+            -2.1667984451130695,
+            0.38
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.045,
+            0.54,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        }
+      ],
+      "outcomes": {
+        "reason": "success",
+        "success": true,
+        "stages_completed": 3,
+        "required_gates": 2,
+        "passed_gates": 2,
+        "passages": [
+          {
+            "gate_index": 0,
+            "side": 1,
+            "tick": 784,
+            "native_time_s": 15.66292633886494,
+            "forward_m": 2.2249889738618402,
+            "left_m": 0.680679612674244,
+            "gap_edge_clearance_m": 0.44789222693484254,
+            "world_xy_m": [
+              0.6402961474464185,
+              -2.307071403929623
+            ],
+            "shutter_crossing": {
+              "side": 1,
+              "native_time_s": 15.409990845235546,
+              "tick": 771,
+              "forward_m": 2.08498897386184,
+              "left_m": 0.6750593162730888,
+              "actual_slide_m": 1.098172888079591,
+              "clear_lo_m": 0.2327873857394015,
+              "clear_hi_m": 1.2891331618985862,
+              "clear_width_m": 1.0563457761591848,
+              "gap_edge_clearance_m": 0.4422719305336873
+            }
+          },
+          {
+            "gate_index": 1,
+            "side": 1,
+            "tick": 1096,
+            "native_time_s": 21.903068966323065,
+            "forward_m": 4.817210527111325,
+            "left_m": 0.5723837126040523,
+            "gap_edge_clearance_m": 0.4687839563502208,
+            "world_xy_m": [
+              0.540840863583434,
+              -4.89964719445435
+            ]
+          }
+        ],
+        "first_obstacle_contact": null,
+        "fork_staging_entry_s": 4.613999999999714,
+        "fork_staging_slow_s": 8.854000000001452,
+        "phases_right_left_s": [
+          6.6,
+          10.8
+        ],
+        "service": "both",
+        "obstacle_contact": false,
+        "obstacle_contact_substeps": 0,
+        "course_boundary_violation": false,
+        "missed_passage": false,
+        "simulated_s": 37.98000000000045,
+        "applied_rows": 1899,
+        "scalar_codes": 121536,
+        "code_changes": 9507,
+        "eligible_code_pairs": 121472,
+        "code_change_fraction": 0.07826494994731296,
+        "joint_accel_square_sum": 1896909.308122263,
+        "joint_accel_samples": 54955,
+        "joint_accel_rms_rad_s2": 5.875159720382949
+      },
+      "optical_exact": {
+        "rgb": 1899,
+        "depth": 1899,
+        "local_state": 1899,
+        "packet_id": 1899
+      },
+      "optical_exceptions": [],
+      "waiting": {
+        "gates": [
+          {
+            "gate_index": 0,
+            "tick_start": 209,
+            "tick_end": 674,
+            "longest_consecutive_s": 9.32
+          },
+          {
+            "gate_index": 1,
+            "tick_start": null,
+            "tick_end": null,
+            "longest_consecutive_s": 0.0
+          }
+        ],
+        "peak_solved_open_width_m_right_left": [
+          0.9656088367847662,
+          1.0563457761591848
+        ],
+        "native_door_q_dq_ctrl_min_right_left": [
+          [
+            -0.0001444358357464868,
+            -1.6492945709420515,
+            0.0
+          ],
+          [
+            -0.0001506600049521798,
+            -1.7203675731422954,
+            0.0
+          ]
+        ],
+        "native_door_q_dq_ctrl_max_right_left": [
+          [
+            1.0529488542281331,
+            1.649294570940021,
+            1.0528044183923833
+          ],
+          [
+            1.0983235480845408,
+            1.7203675731446075,
+            1.0981728880795925
+          ]
+        ]
+      },
+      "native_states": 1900,
+      "public_rgbd_queries": 1899,
+      "readbacks": {
+        "body": 55071,
+        "fingers": 26586
+      }
+    },
+    {
+      "case": {
+        "case": "right-opens-first",
+        "robot_seed": 7,
+        "layout_seed": 1397776730,
+        "first_m": 6.7,
+        "turn_deg": 90,
+        "last_m": 1.5,
+        "tail": null,
+        "service": "both",
+        "phases": [
+          10.8,
+          6.6
+        ],
+        "geometry": {
+          "fork": {
+            "forward_m": 2.2249889738618402,
+            "island_center_m": 0.012787385739401486,
+            "right_width_m": 0.9656088367847662,
+            "left_width_m": 1.0563457761591846,
+            "rgb": [
+              0.09379801431712478,
+              0.5486952319187245,
+              0.5914279158156335
+            ]
+          },
+          "tail": {
+            "forward_m": 4.817210527111325,
+            "left_m": 0.5889458105453174,
+            "gap_width_m": 0.9706921085829717,
+            "rgb": [
+              0.07859349268732019,
+              0.5744719165558687,
+              0.66475209422503
+            ]
+          },
+          "service": "both",
+          "phases": [
+            10.8,
+            6.6
+          ],
+          "short_stroke_m": 0.07912687280477301
+        }
+      },
+      "record_sha256": "e77c6d603bdfbc31d4b0c543db0e0a0cce987291ecb9044b48a1006abc4d1e15",
+      "replay_sha256": "e5950a0c7a196695f756288430ff15721c1a50dd44141ea8fa6fc6a95bb707aa",
+      "controls_sha256": "6870bc331bc393b3cac14590be2f087328ca59951c6690fd2910c30a8a529825",
+      "original_jsonl_gz_sha256": "c82fcf2b845cffdca312ea7348044537fa0e0f282d0e45ca3669103b39d401e0",
+      "native_streams": {
+        "qpos": "2fd69815685c4ab607cda8861df6875e4c96df219a9ceab0673b78ef05e909e3",
+        "qvel": "5aa1af528ee98e785e7b4450b4b5ee3136604c05977cbf0a38d1d6ea1c69b4e6",
+        "ctrl": "879444496730bfe45a1976db6832d3462c82a88eb1521d621c6b69491d0acc75",
+        "decoded_targets": "4f70624e47dada957d3ddbfa4ca5704f9a4da4d086936e70fbbcd8b1e0b51f92",
+        "finger_targets": "9ecdd606ba98d5f91a3bf72bcb4554c5c51cd496dddba60799dce09b723de7f5",
+        "history": "a3edaa1f096deb94c28bb3e464ba5f927dffa72f4bf6a820df5ad1eaabe613c2",
+        "world_geometry": "26de7af30b4cf444f7d3cc6df1947a837c9576eafcf1119bb9b246eafa337ba5",
+        "mocap": "8721801606c0d72b1e9065de2e112e1f50f04eda45a08e8db2025f098bd1eb55",
+        "shutters": "127a5b5a1c9cfab421fede17bb1e4cdb60d34912925119a50cc9c263b9ddd83d"
+      },
+      "native_obstacle_geometry": [
+        {
+          "name": "fork_island",
+          "position_m": [
+            -0.02759219586935764,
+            -2.3093490480834125,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            0.22,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "fork_left_jamb",
+          "position_m": [
+            2.448739180985143,
+            -2.300904220830796,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "fork_right_jamb",
+          "position_m": [
+            -2.413187160961072,
+            -2.317484444486014,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_minus_y_cabinet",
+          "position_m": [
+            -1.1279333892234165,
+            -4.905338076708755,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_plus_y_cabinet",
+          "position_m": [
+            2.2427391196642565,
+            -4.893843352162295,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "shutter_right",
+          "position_m": [
+            -0.730869955235242,
+            -2.171746563755704,
+            0.38
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.045,
+            0.54,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "shutter_left",
+          "position_m": [
+            0.720098914182213,
+            -2.1667984451130695,
+            0.38
+          ],
+          "orientation": [
+            [
+              0.0034101971275249388,
+              0.99999418526087,
+              0.0
+            ],
+            [
+              -0.99999418526087,
+              0.0034101971275249388,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.045,
+            0.54,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        }
+      ],
+      "outcomes": {
+        "reason": "success",
+        "success": true,
+        "stages_completed": 3,
+        "required_gates": 2,
+        "passed_gates": 2,
+        "passages": [
+          {
+            "gate_index": 0,
+            "side": -1,
+            "tick": 792,
+            "native_time_s": 15.830959648111934,
+            "forward_m": 2.2249889738618402,
+            "left_m": -0.7045998491456487,
+            "gap_edge_clearance_m": 0.46822160189971607,
+            "world_xy_m": [
+              -0.7449752593347818,
+              -2.3117954799711407
+            ],
+            "shutter_crossing": {
+              "side": -1,
+              "native_time_s": 15.569442714111707,
+              "tick": 779,
+              "forward_m": 2.08498897386184,
+              "left_m": -0.7578387737926668,
+              "actual_slide_m": 1.0528044183923817,
+              "clear_lo_m": -1.1728214510453647,
+              "clear_hi_m": -0.2072126142605985,
+              "clear_width_m": 0.9656088367847662,
+              "gap_edge_clearance_m": 0.4149826772526979
+            }
+          },
+          {
+            "gate_index": 1,
+            "side": 1,
+            "tick": 1114,
+            "native_time_s": 22.26198928100986,
+            "forward_m": 4.817210527111325,
+            "left_m": 0.6413629763656634,
+            "gap_edge_clearance_m": 0.43292888847113975,
+            "world_xy_m": [
+              0.609819726248621,
+              -4.899411961567212
+            ]
+          }
+        ],
+        "first_obstacle_contact": null,
+        "fork_staging_entry_s": 4.01399999999978,
+        "fork_staging_slow_s": 9.58400000000143,
+        "phases_right_left_s": [
+          10.8,
+          6.6
+        ],
+        "service": "both",
+        "obstacle_contact": false,
+        "obstacle_contact_substeps": 0,
+        "course_boundary_violation": false,
+        "missed_passage": false,
+        "simulated_s": 37.88000000000033,
+        "applied_rows": 1894,
+        "scalar_codes": 121216,
+        "code_changes": 9994,
+        "eligible_code_pairs": 121152,
+        "code_change_fraction": 0.08249141574220814,
+        "joint_accel_square_sum": 1813984.354056939,
+        "joint_accel_samples": 54810,
+        "joint_accel_rms_rad_s2": 5.75290056229991
+      },
+      "optical_exact": {
+        "rgb": 1894,
+        "depth": 1894,
+        "local_state": 1894,
+        "packet_id": 1894
+      },
+      "optical_exceptions": [],
+      "waiting": {
+        "gates": [
+          {
+            "gate_index": 0,
+            "tick_start": 191,
+            "tick_end": 684,
+            "longest_consecutive_s": 9.88
+          },
+          {
+            "gate_index": 1,
+            "tick_start": null,
+            "tick_end": null,
+            "longest_consecutive_s": 0.0
+          }
+        ],
+        "peak_solved_open_width_m_right_left": [
+          0.9656088367847662,
+          1.0563457761591848
+        ],
+        "native_door_q_dq_ctrl_min_right_left": [
+          [
+            -0.00014443583575082507,
+            -1.6492945709400146,
+            0.0
+          ],
+          [
+            -0.00015066000494765472,
+            -1.7203675731444232,
+            0.0
+          ]
+        ],
+        "native_door_q_dq_ctrl_max_right_left": [
+          [
+            1.0529488542281307,
+            1.6492945709422306,
+            1.0528044183923833
+          ],
+          [
+            1.0983235480845437,
+            1.7203675731422998,
+            1.0981728880795925
+          ]
+        ]
+      },
+      "native_states": 1895,
+      "public_rgbd_queries": 1894,
+      "readbacks": {
+        "body": 54926,
+        "fingers": 26516
+      }
+    },
+    {
+      "case": {
+        "robot_seed": 18310701160879358587,
+        "layout_seed": 1578818992,
+        "first_m": 5.8,
+        "turn_deg": -87,
+        "last_m": 1.3,
+        "case": "layout-1",
+        "phases": null,
+        "service": null,
+        "tail": null,
+        "geometry": {
+          "fork": {
+            "forward_m": 2.254869393685475,
+            "island_center_m": 0.007873562785974831,
+            "right_width_m": 0.9672383363482934,
+            "left_width_m": 1.021744690020739,
+            "rgb": [
+              0.0853103559914489,
+              0.5951301703423476,
+              0.5656111247490885
+            ]
+          },
+          "tail": null,
+          "service": "both",
+          "phases": [
+            9.49169985539181,
+            2.9722838768270616
+          ],
+          "short_stroke_m": 0.08394662139777563
+        }
+      },
+      "record_sha256": "56471feca6bb62c21e0b75c474e2c3929f9061f17e578e16bdcdf658fd395839",
+      "replay_sha256": "9194f7e0958c593c899c81133498c6fbf71aa70178cc170ee80853b1b7607e70",
+      "controls_sha256": "8bf9c19180d91a8d523c2d29bc5cc18a3744f3ee4fd1c0d111c770779ff81845",
+      "original_jsonl_gz_sha256": "374ae859a349f71027926ddecde0f90016ff944f2362d84956072789168debb6",
+      "native_streams": {
+        "qpos": "931aec43a9f8857340ee7c6119162edc955c224b59e1c3511ecb0764f223c045",
+        "qvel": "77b856a02eded18f85d2f8028b68f7709590ef8c570448287cb6c31a23452a2a",
+        "ctrl": "013a1b9e02d3d0def7c5867f3dc1a2f95e6f56dfd6cd33106a7599c68478c697",
+        "decoded_targets": "d04712026875ac4ee59a22913edf9bfed20ce333e6fac3035518fbab1ea951fd",
+        "finger_targets": "db663150027e1f73aea09f5095e5b7af1bf1ac4c14d459aeca45a3027d3a8cd3",
+        "history": "b1cae4d841e7b08ff07b169a366ec358b7fd629847f02b30bf36c09dac8d85bb",
+        "world_geometry": "b6db516129a6ba17688363fd74f5ffe4803255d7639b6983240046bb5f7a2b40",
+        "mocap": "ab01a6f2703d5216afb696bf09aa7f14793717aca74047774659edd47cec477d",
+        "shutters": "7a186f9e9918f6302a373e7f8841c240f15b37e0aa0529155dc2fcae949bb751"
+      },
+      "native_obstacle_geometry": [
+        {
+          "name": "fork_island",
+          "position_m": [
+            -2.2288094542026977,
+            0.4985104501149449,
+            0.36
+          ],
+          "orientation": [
+            [
+              -0.9856055054302044,
+              -0.16906149078270705,
+              0.0
+            ],
+            [
+              0.16906149078270705,
+              -0.9856055054302044,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            0.22,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "fork_left_jamb",
+          "position_m": [
+            -2.641614451608363,
+            -1.9080865592244634,
+            0.36
+          ],
+          "orientation": [
+            [
+              -0.9856055054302044,
+              -0.16906149078270705,
+              0.0
+            ],
+            [
+              0.16906149078270705,
+              -0.9856055054302044,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "fork_right_jamb",
+          "position_m": [
+            -1.8252193822060256,
+            2.851385697193865,
+            0.36
+          ],
+          "orientation": [
+            [
+              -0.9856055054302044,
+              -0.16906149078270705,
+              0.0
+            ],
+            [
+              0.16906149078270705,
+              -0.9856055054302044,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_minus_y_cabinet",
+          "position_m": [
+            0.0,
+            0.0,
+            -4.0
+          ],
+          "orientation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_plus_y_cabinet",
+          "position_m": [
+            0.0,
+            0.0,
+            -4.0
+          ],
+          "orientation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "shutter_right",
+          "position_m": [
+            -1.9718697779276593,
+            1.1683327672840258,
+            0.38
+          ],
+          "orientation": [
+            [
+              -0.9856055054302044,
+              -0.16906149078270705,
+              0.0
+            ],
+            [
+              0.16906149078270705,
+              -0.9856055054302044,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.045,
+            0.54,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "shutter_left",
+          "position_m": [
+            -2.3971209416550283,
+            -1.3108236995130136,
+            0.38
+          ],
+          "orientation": [
+            [
+              -0.9856055054302044,
+              -0.16906149078270705,
+              0.0
+            ],
+            [
+              0.16906149078270705,
+              -0.9856055054302044,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.045,
+            0.54,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        }
+      ],
+      "outcomes": {
+        "reason": "success",
+        "success": true,
+        "stages_completed": 3,
+        "required_gates": 1,
+        "passed_gates": 1,
+        "passages": [
+          {
+            "gate_index": 0,
+            "side": -1,
+            "tick": 857,
+            "native_time_s": 17.137295692312517,
+            "forward_m": 2.254869393685475,
+            "left_m": -0.7016997629930922,
+            "gap_edge_clearance_m": 0.4776650105692263,
+            "world_xy_m": [
+              -2.1088479299268448,
+              1.1978698265092134
+            ],
+            "shutter_crossing": {
+              "side": -1,
+              "native_time_s": 16.880942330960515,
+              "tick": 845,
+              "forward_m": 2.114869393685475,
+              "left_m": -0.6586214421772228,
+              "actual_slide_m": 1.0536191681741454,
+              "clear_lo_m": -1.1793647735623185,
+              "clear_hi_m": -0.21212643721402516,
+              "clear_width_m": 0.9672383363482934,
+              "gap_edge_clearance_m": 0.4464950049631977
+            }
+          }
+        ],
+        "first_obstacle_contact": null,
+        "fork_staging_entry_s": 5.315999999999637,
+        "fork_staging_slow_s": 9.382000000002087,
+        "phases_right_left_s": [
+          9.49169985539181,
+          2.9722838768270616
+        ],
+        "service": "both",
+        "obstacle_contact": false,
+        "obstacle_contact_substeps": 0,
+        "course_boundary_violation": false,
+        "missed_passage": false,
+        "simulated_s": 36.279999999998374,
+        "applied_rows": 1814,
+        "scalar_codes": 116096,
+        "code_changes": 8808,
+        "eligible_code_pairs": 116032,
+        "code_change_fraction": 0.07591009376723662,
+        "joint_accel_square_sum": 1745178.4563153747,
+        "joint_accel_samples": 52490,
+        "joint_accel_rms_rad_s2": 5.766092899485553
+      },
+      "optical_exact": {
+        "rgb": 1814,
+        "depth": 1814,
+        "local_state": 1814,
+        "packet_id": 1814
+      },
+      "optical_exceptions": [],
+      "waiting": {
+        "gates": [
+          {
+            "gate_index": 0,
+            "tick_start": 275,
+            "tick_end": 752,
+            "longest_consecutive_s": 9.56
+          }
+        ],
+        "peak_solved_open_width_m_right_left": [
+          0.9672383363482934,
+          1.021744690020739
+        ],
+        "native_door_q_dq_ctrl_min_right_left": [
+          [
+            -0.00014815130602027635,
+            -1.650145000293598,
+            0.0
+          ],
+          [
+            -0.00015222434118379764,
+            -1.692746310427417,
+            0.0
+          ]
+        ],
+        "native_door_q_dq_ctrl_max_right_left": [
+          [
+            1.053767319480168,
+            1.6501450002910503,
+            1.0536191681741467
+          ],
+          [
+            1.081024569351553,
+            1.6927463104298586,
+            1.0808723450103697
+          ]
+        ]
+      },
+      "native_states": 1815,
+      "public_rgbd_queries": 1814,
+      "readbacks": {
+        "body": 52606,
+        "fingers": 25396
+      }
+    },
+    {
+      "case": {
+        "robot_seed": 15460947848790210684,
+        "layout_seed": 804862102,
+        "first_m": 5.8,
+        "turn_deg": 87,
+        "last_m": 1.3,
+        "case": "layout-2",
+        "phases": null,
+        "service": null,
+        "tail": null,
+        "geometry": {
+          "fork": {
+            "forward_m": 2.3395155089735566,
+            "island_center_m": 0.002392587561856136,
+            "right_width_m": 1.0164998016083178,
+            "left_width_m": 0.9606022047779362,
+            "rgb": [
+              0.0818775858312442,
+              0.5270745130478033,
+              0.6254332910142812
+            ]
+          },
+          "tail": null,
+          "service": "left",
+          "phases": [
+            10.653362616750066,
+            1.916436802072658
+          ],
+          "short_stroke_m": 0.10456747096574918
+        }
+      },
+      "record_sha256": "fa350c2c6256ffa7635f853106f5a3545b7fd45f55f3057428eee12f4a38fbef",
+      "replay_sha256": "1ab71649ed54dbe7a6bbadb0989d916dd888f819fe08c1f72fe87a86ad5d6eb4",
+      "controls_sha256": "c4861a4e2ff07d5739cb7424c9a6307ab30f6f5236baaae7614fe1d2fc4bf60f",
+      "original_jsonl_gz_sha256": "afbec7d141ddc76f17d6eca6545e7552f1782f8541f3a953de50fe01d5e09493",
+      "native_streams": {
+        "qpos": "0fb9b1b67a973a9ceff0ca8ac12902aa3aff4198f93e6edbbadaab55fdbc96ca",
+        "qvel": "8f4fbc119cff8e010d68ca94a4fae94817ce966dea541b14b7a0c0bbb16e71b2",
+        "ctrl": "46516de447089d59cfb35c593c45b3e98d9335c91a59a24386278b522dc8fada",
+        "decoded_targets": "7867e25789e3767e14916e05347ebf49d160b0a5266d161cc8e3750f9117212d",
+        "finger_targets": "b38832ce759a6c35b0b489425748d08afb1af807a9f283be9e19f46c3b6a34f6",
+        "history": "98ce465774fa56e261f64a16df50078d6cdc66c7eb501b6fd28d121261bb5659",
+        "world_geometry": "ffe3b928369d1fc713aaf9dd377f5d5bc356cbd9e4c1b868d9cdfbb851649c86",
+        "mocap": "7e53dafdd4c6f197bd52332c3d8b5353f1085fdd63c92be4340888011a8681df",
+        "shutters": "6b53760dd2c66f3d8b4f0a359161ab4026e941a252cc646aab6e202e4157da53"
+      },
+      "native_obstacle_geometry": [
+        {
+          "name": "fork_island",
+          "position_m": [
+            1.5983309711844333,
+            -1.739092711404572,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.6410615983639562,
+              0.7674894312647244,
+              0.0
+            ],
+            [
+              -0.7674894312647244,
+              0.6410615983639562,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            0.22,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "fork_left_jamb",
+          "position_m": [
+            3.425418003397,
+            -0.2129800569408704,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.6410615983639562,
+              0.7674894312647244,
+              0.0
+            ],
+            [
+              -0.7674894312647244,
+              0.6410615983639562,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "fork_right_jamb",
+          "position_m": [
+            -0.2716568758285477,
+            -3.3010391686370615,
+            0.36
+          ],
+          "orientation": [
+            [
+              0.6410615983639562,
+              0.7674894312647244,
+              0.0
+            ],
+            [
+              -0.7674894312647244,
+              0.6410615983639562,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_minus_y_cabinet",
+          "position_m": [
+            0.0,
+            0.0,
+            -4.0
+          ],
+          "orientation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_plus_y_cabinet",
+          "position_m": [
+            0.0,
+            0.0,
+            -4.0
+          ],
+          "orientation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "shutter_right",
+          "position_m": [
+            0.9496582452267036,
+            -2.0984972364454166,
+            0.38
+          ],
+          "orientation": [
+            [
+              0.6410615983639562,
+              0.7674894312647244,
+              0.0
+            ],
+            [
+              -0.7674894312647244,
+              0.6410615983639562,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.045,
+            0.54,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "shutter_left",
+          "position_m": [
+            2.85215103792927,
+            -0.5094003435331009,
+            0.38
+          ],
+          "orientation": [
+            [
+              0.6410615983639562,
+              0.7674894312647244,
+              0.0
+            ],
+            [
+              -0.7674894312647244,
+              0.6410615983639562,
+              -0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.045,
+            0.54,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        }
+      ],
+      "outcomes": {
+        "reason": "success",
+        "success": true,
+        "stages_completed": 3,
+        "required_gates": 1,
+        "passed_gates": 1,
+        "passages": [
+          {
+            "gate_index": 0,
+            "side": 1,
+            "tick": 1230,
+            "native_time_s": 24.59872696525014,
+            "forward_m": 2.3395155089735566,
+            "left_m": 0.678382419888493,
+            "gap_edge_clearance_m": 0.45598983232663687,
+            "world_xy_m": [
+              2.1171460231375403,
+              -1.3057415890154753
+            ],
+            "shutter_crossing": {
+              "side": 1,
+              "native_time_s": 24.343576066577786,
+              "tick": 1218,
+              "forward_m": 2.1995155089735565,
+              "left_m": 0.7028360375270464,
+              "actual_slide_m": 1.0503011023889663,
+              "clear_lo_m": 0.22239258756185615,
+              "clear_hi_m": 1.1829947923397923,
+              "clear_width_m": 0.9606022047779361,
+              "gap_edge_clearance_m": 0.48015875481274595
+            }
+          }
+        ],
+        "first_obstacle_contact": null,
+        "fork_staging_entry_s": 13.574000000001202,
+        "fork_staging_slow_s": 8.84999999999725,
+        "phases_right_left_s": [
+          10.653362616750066,
+          1.916436802072658
+        ],
+        "service": "left",
+        "obstacle_contact": false,
+        "obstacle_contact_substeps": 0,
+        "course_boundary_violation": false,
+        "missed_passage": false,
+        "simulated_s": 42.92000000000649,
+        "applied_rows": 2146,
+        "scalar_codes": 137344,
+        "code_changes": 8036,
+        "eligible_code_pairs": 137280,
+        "code_change_fraction": 0.05853729603729604,
+        "joint_accel_square_sum": 1646744.8974421215,
+        "joint_accel_samples": 62118,
+        "joint_accel_rms_rad_s2": 5.148781133053917
+      },
+      "optical_exact": {
+        "rgb": 2146,
+        "depth": 2146,
+        "local_state": 2146,
+        "packet_id": 2146
+      },
+      "optical_exceptions": [],
+      "waiting": {
+        "gates": [
+          {
+            "gate_index": 0,
+            "tick_start": 661,
+            "tick_end": 1122,
+            "longest_consecutive_s": 9.24
+          }
+        ],
+        "peak_solved_open_width_m_right_left": [
+          0.07283211976313264,
+          0.9606022047779361
+        ],
+        "native_door_q_dq_ctrl_min_right_left": [
+          [
+            -1.4747993224504562e-05,
+            -0.16374629669462268,
+            0.0
+          ],
+          [
+            -0.00014729535575970875,
+            -1.645060665137764,
+            0.0
+          ]
+        ],
+        "native_door_q_dq_ctrl_max_right_left": [
+          [
+            0.10458221895897375,
+            0.16374629669480856,
+            0.10456747096574918
+          ],
+          [
+            1.0504483977447279,
+            1.6450606651370205,
+            1.0503011023889681
+          ]
+        ]
+      },
+      "native_states": 2147,
+      "public_rgbd_queries": 2146,
+      "readbacks": {
+        "body": 62234,
+        "fingers": 30044
+      }
+    },
+    {
+      "case": {
+        "robot_seed": 3950249629074938998,
+        "layout_seed": 1719419042,
+        "first_m": 6.3,
+        "turn_deg": -93,
+        "last_m": 1.8,
+        "case": "layout-3",
+        "phases": null,
+        "service": null,
+        "tail": null,
+        "geometry": {
+          "fork": {
+            "forward_m": 2.494958372587723,
+            "island_center_m": -0.014506509563288469,
+            "right_width_m": 0.9737103186643511,
+            "left_width_m": 0.9914701784791811,
+            "rgb": [
+              0.08477752273584832,
+              0.5149667769685332,
+              0.6249167521703848
+            ]
+          },
+          "tail": null,
+          "service": "left",
+          "phases": [
+            4.022378654197199,
+            2.281363387545411
+          ],
+          "short_stroke_m": 0.10854637651135413
+        }
+      },
+      "record_sha256": "9fcea072825c1b5210761c609c935d56bb277d156638b705f7b947ed1564b7e2",
+      "replay_sha256": "676e95e3ec62c863654876cc42a7ea576f485ffc847665e54f3e8901fd65d165",
+      "controls_sha256": "cb70096c9689f69a535c3c5d70e8f9fe48452c949d9f37ad0f6d6ef5346b8589",
+      "original_jsonl_gz_sha256": "3eda6fed28ac473bd2f1c6146dd3a9bf94e5d928e67ce49a100d5a5a6b5c6e90",
+      "native_streams": {
+        "qpos": "290ed33fff725900392b67b1d3917a8251afbf018345bbccc6c4be07f7f2f824",
+        "qvel": "ecdf07b5f530abce20fe45648e397f3f12e6fb22ad4c582c915ff15705e040c4",
+        "ctrl": "8314610a9ec678c8f8e437db959c37ddf8ba94ce0ec8f0f51ce04fe514b5cf19",
+        "decoded_targets": "5199626267c560ab24e8e6ac96b84df27163ec01394d1cc5c61b964bb5cb582e",
+        "finger_targets": "48496eeb64462af38eb4a1a380f451f03a84ded9358f7f109659c644f818e267",
+        "history": "4a8bd2c4c7e2d08c14fc16c8fb1b559b00b74a5f759b692c5cf3b40766b12721",
+        "world_geometry": "fce17a1c2703db11e3c68a8c2ece606e49b546f8fc1791a41ed6549980ae70fe",
+        "mocap": "b64ab6256c9f6d9cb41499129ea97d155bb8cd54e371dcf419e9144f9e2b9356",
+        "shutters": "1b3ed6a5b610450772e65c77cb2694899ae887c003a3b76417e266c87329bd11"
+      },
+      "native_obstacle_geometry": [
+        {
+          "name": "fork_island",
+          "position_m": [
+            -2.1850943184679283,
+            0.8836591958489085,
+            0.36
+          ],
+          "orientation": [
+            [
+              -0.9247711906469167,
+              -0.3805236457166414,
+              0.0
+            ],
+            [
+              0.3805236457166414,
+              -0.9247711906469167,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            0.22,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "fork_left_jamb",
+          "position_m": [
+            -3.102715742319786,
+            -1.3463989523128168,
+            0.36
+          ],
+          "orientation": [
+            [
+              -0.9247711906469167,
+              -0.3805236457166414,
+              0.0
+            ],
+            [
+              0.3805236457166414,
+              -0.9247711906469167,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "fork_right_jamb",
+          "position_m": [
+            -1.274230941220226,
+            3.0972935373039507,
+            0.36
+          ],
+          "orientation": [
+            [
+              -0.9247711906469167,
+              -0.3805236457166414,
+              0.0
+            ],
+            [
+              0.3805236457166414,
+              -0.9247711906469167,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_minus_y_cabinet",
+          "position_m": [
+            0.0,
+            0.0,
+            -4.0
+          ],
+          "orientation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_plus_y_cabinet",
+          "position_m": [
+            0.0,
+            0.0,
+            -4.0
+          ],
+          "orientation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "shutter_right",
+          "position_m": [
+            -1.7453467866352312,
+            1.5844457346059242,
+            0.38
+          ],
+          "orientation": [
+            [
+              -0.9247711906469167,
+              -0.3805236457166414,
+              0.0
+            ],
+            [
+              0.3805236457166414,
+              -0.9247711906469167,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.045,
+            0.54,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "shutter_left",
+          "position_m": [
+            -2.7335178788277337,
+            -0.8170664126055891,
+            0.38
+          ],
+          "orientation": [
+            [
+              -0.9247711906469167,
+              -0.3805236457166414,
+              0.0
+            ],
+            [
+              0.3805236457166414,
+              -0.9247711906469167,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.045,
+            0.54,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        }
+      ],
+      "outcomes": {
+        "reason": "success",
+        "success": true,
+        "stages_completed": 3,
+        "required_gates": 1,
+        "passed_gates": 1,
+        "passages": [
+          {
+            "gate_index": 0,
+            "side": 1,
+            "tick": 1215,
+            "native_time_s": 24.286179683257668,
+            "forward_m": 2.494958372587723,
+            "left_m": 0.7370561799560071,
+            "gap_edge_clearance_m": 0.45990748895988554,
+            "world_xy_m": [
+              -2.471081693068415,
+              0.18863567261635045
+            ],
+            "shutter_crossing": {
+              "side": 1,
+              "native_time_s": 24.03174962566243,
+              "tick": 1202,
+              "forward_m": 2.354958372587723,
+              "left_m": 0.7543025249971096,
+              "actual_slide_m": 1.0657350892395894,
+              "clear_lo_m": 0.20549349043671153,
+              "clear_hi_m": 1.1969636689158927,
+              "clear_width_m": 0.9914701784791812,
+              "gap_edge_clearance_m": 0.4426611439187831
+            }
+          }
+        ],
+        "first_obstacle_contact": null,
+        "fork_staging_entry_s": 12.94000000000099,
+        "fork_staging_slow_s": 9.171999999997634,
+        "phases_right_left_s": [
+          4.022378654197199,
+          2.281363387545411
+        ],
+        "service": "left",
+        "obstacle_contact": false,
+        "obstacle_contact_substeps": 0,
+        "course_boundary_violation": false,
+        "missed_passage": false,
+        "simulated_s": 44.480000000008395,
+        "applied_rows": 2224,
+        "scalar_codes": 142336,
+        "code_changes": 8974,
+        "eligible_code_pairs": 142272,
+        "code_change_fraction": 0.06307636077372919,
+        "joint_accel_square_sum": 1792102.3146049434,
+        "joint_accel_samples": 64380,
+        "joint_accel_rms_rad_s2": 5.276013695268269
+      },
+      "optical_exact": {
+        "rgb": 2224,
+        "depth": 2224,
+        "local_state": 2224,
+        "packet_id": 2224
+      },
+      "optical_exceptions": [],
+      "waiting": {
+        "gates": [
+          {
+            "gate_index": 0,
+            "tick_start": 621,
+            "tick_end": 1111,
+            "longest_consecutive_s": 9.82
+          }
+        ],
+        "peak_solved_open_width_m_right_left": [
+          0.05541609607540668,
+          0.9914701784791812
+        ],
+        "native_door_q_dq_ctrl_min_right_left": [
+          [
+            -1.456023187665071e-05,
+            -0.17005546555942297,
+            0.0
+          ],
+          [
+            -0.00014443846611636134,
+            -1.6696173116551611,
+            0.0
+          ]
+        ],
+        "native_door_q_dq_ctrl_max_right_left": [
+          [
+            0.10856093674323115,
+            0.17005546555941006,
+            0.10854637651135413
+          ],
+          [
+            1.0658795277057063,
+            1.6696173116549258,
+            1.0657350892395907
+          ]
+        ]
+      },
+      "native_states": 2225,
+      "public_rgbd_queries": 2224,
+      "readbacks": {
+        "body": 64496,
+        "fingers": 31136
+      }
+    },
+    {
+      "case": {
+        "robot_seed": 12563099563816291077,
+        "layout_seed": 760038816,
+        "first_m": 6.3,
+        "turn_deg": 93,
+        "last_m": 1.8,
+        "case": "layout-4",
+        "phases": null,
+        "service": null,
+        "tail": null,
+        "geometry": {
+          "fork": {
+            "forward_m": 2.3212831527138587,
+            "island_center_m": 0.015931729387060178,
+            "right_width_m": 0.9630184391229845,
+            "left_width_m": 1.0297457745546907,
+            "rgb": [
+              0.1006911807295054,
+              0.5311749617019934,
+              0.6763596974617887
+            ]
+          },
+          "tail": {
+            "forward_m": 4.51818917735005,
+            "left_m": 0.6301574233504924,
+            "gap_width_m": 1.000499540258579,
+            "rgb": [
+              0.10543249171285345,
+              0.5332417133425222,
+              0.6716072288146845
+            ]
+          },
+          "service": "both",
+          "phases": [
+            0.5408601906234911,
+            0.855975439738164
+          ],
+          "short_stroke_m": 0.11099669180215817
+        }
+      },
+      "record_sha256": "64cc86c3bd545286e05df43e9dd6eb36ba13783eabc9c67339d11e12f3748ce7",
+      "replay_sha256": "b66d3e267a42956f121a981a98c968bb5fb5d96668c222eb15a55599868f6b95",
+      "controls_sha256": "4b1ae99a83e10f0619d52c18c71f3cc955dee1c9f4012e3233d3f1561654f2c4",
+      "original_jsonl_gz_sha256": "4f19498f95eed1c6d5ae7f83ac23c344f4d64ebfc58206b0afe65325a31b3f71",
+      "native_streams": {
+        "qpos": "4230478ae649b7f94f99f19a8fd9689ca6b0fdef0ae14950d2fb58cd473e82c2",
+        "qvel": "f8c7c49a25269895f083d31f0e472513ef8175cacfeb28631389c890a65084ba",
+        "ctrl": "317662498c364f9f785aaf805bebb7aaff1c51f9976719236a63393d917bdd7c",
+        "decoded_targets": "9d88f8fd95f74692e49197eebd02dbc226b82e2dcec1f2b8c2e7963ff3540bfa",
+        "finger_targets": "a524c1141a115ab09b755824483f5faa9b673657ca86c2ed5630b54813b69666",
+        "history": "898a098b0b0f5762e8c5bae2968654342bc08d26c5c712e31b50d4505f42aa2a",
+        "world_geometry": "36edb1611c2ae5e054288a7d2ffefc7c633acbe17ab294f2f729fab3918fcb13",
+        "mocap": "7edef776f0940366a969d95debcdccedf552fda059dd970cc26a13e3422a4d28",
+        "shutters": "eb2f0ca7bece9496a68d5ca7caeca17856fb2d4e29929300b5baac3f51fcb5d5"
+      },
+      "native_obstacle_geometry": [
+        {
+          "name": "fork_island",
+          "position_m": [
+            -0.24691703761991982,
+            2.264911480979407,
+            0.36
+          ],
+          "orientation": [
+            [
+              -0.148490444373242,
+              -0.988913842521095,
+              0.0
+            ],
+            [
+              0.988913842521095,
+              -0.148490444373242,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            0.22,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "fork_left_jamb",
+          "position_m": [
+            -2.669504544734615,
+            1.901147642314309,
+            0.36
+          ],
+          "orientation": [
+            [
+              -0.148490444373242,
+              -0.988913842521095,
+              0.0
+            ],
+            [
+              0.988913842521095,
+              -0.148490444373242,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "fork_right_jamb",
+          "position_m": [
+            2.109682883811813,
+            2.6187669479544082,
+            0.36
+          ],
+          "orientation": [
+            [
+              -0.148490444373242,
+              -0.988913842521095,
+              0.0
+            ],
+            [
+              0.988913842521095,
+              -0.148490444373242,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_minus_y_cabinet",
+          "position_m": [
+            0.5008476527672001,
+            4.598726457130034,
+            0.36
+          ],
+          "orientation": [
+            [
+              -0.148490444373242,
+              -0.988913842521095,
+              0.0
+            ],
+            [
+              0.988913842521095,
+              -0.148490444373242,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "gate_1_plus_y_cabinet",
+          "position_m": [
+            -2.8619534140811282,
+            4.093784769306033,
+            0.36
+          ],
+          "orientation": [
+            [
+              -0.148490444373242,
+              -0.988913842521095,
+              0.0
+            ],
+            [
+              0.988913842521095,
+              -0.148490444373242,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.09,
+            1.2,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "shutter_right",
+          "position_m": [
+            1.0540875350422239,
+            2.3186944748453127,
+            0.38
+          ],
+          "orientation": [
+            [
+              -0.148490444373242,
+              -0.988913842521095,
+              0.0
+            ],
+            [
+              0.988913842521095,
+              -0.148490444373242,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.045,
+            0.54,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        },
+        {
+          "name": "shutter_left",
+          "position_m": [
+            -1.9717207408304724,
+            1.864353968975626,
+            0.38
+          ],
+          "orientation": [
+            [
+              -0.148490444373242,
+              -0.988913842521095,
+              0.0
+            ],
+            [
+              0.988913842521095,
+              -0.148490444373242,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "half_size_m": [
+            0.045,
+            0.54,
+            0.36
+          ],
+          "contact_type": 2,
+          "contact_affinity": 1
+        }
+      ],
+      "outcomes": {
+        "reason": "success",
+        "success": true,
+        "stages_completed": 3,
+        "required_gates": 2,
+        "passed_gates": 2,
+        "passages": [
+          {
+            "gate_index": 0,
+            "side": -1,
+            "tick": 702,
+            "native_time_s": 14.037286104988654,
+            "forward_m": 2.3212831527138587,
+            "left_m": -0.6980005204096097,
+            "gap_edge_clearance_m": 0.46908618932631463,
+            "world_xy_m": [
+              0.4591004468262353,
+              2.370923598004103
+            ],
+            "shutter_crossing": {
+              "side": -1,
+              "native_time_s": 13.782630605615395,
+              "tick": 690,
+              "forward_m": 2.1812831527138585,
+              "left_m": -0.7559643775670736,
+              "actual_slide_m": 1.051509219561491,
+              "clear_lo_m": -1.1670867097359243,
+              "clear_hi_m": -0.20406827061293983,
+              "clear_width_m": 0.9630184391229845,
+              "gap_edge_clearance_m": 0.41112233216885075
+            }
+          },
+          {
+            "gate_index": 1,
+            "side": 1,
+            "tick": 1002,
+            "native_time_s": 20.030920217992843,
+            "forward_m": 4.51818917735005,
+            "left_m": 0.5776515854710171,
+            "gap_edge_clearance_m": 0.44774393224981424,
+            "world_xy_m": [
+              -1.1286291307647827,
+              4.354052228416946
+            ]
+          }
+        ],
+        "first_obstacle_contact": null,
+        "fork_staging_entry_s": 4.747999999999699,
+        "fork_staging_slow_s": 7.140000000000939,
+        "phases_right_left_s": [
+          0.5408601906234911,
+          0.855975439738164
+        ],
+        "service": "both",
+        "obstacle_contact": false,
+        "obstacle_contact_substeps": 0,
+        "course_boundary_violation": false,
+        "missed_passage": false,
+        "simulated_s": 35.839999999997836,
+        "applied_rows": 1792,
+        "scalar_codes": 114688,
+        "code_changes": 9192,
+        "eligible_code_pairs": 114624,
+        "code_change_fraction": 0.08019262981574539,
+        "joint_accel_square_sum": 1785886.168899465,
+        "joint_accel_samples": 51852,
+        "joint_accel_rms_rad_s2": 5.8687300154729005
+      },
+      "optical_exact": {
+        "rgb": 1792,
+        "depth": 1792,
+        "local_state": 1792,
+        "packet_id": 1792
+      },
+      "optical_exceptions": [],
+      "waiting": {
+        "gates": [
+          {
+            "gate_index": 0,
+            "tick_start": 209,
+            "tick_end": 596,
+            "longest_consecutive_s": 7.76
+          },
+          {
+            "gate_index": 1,
+            "tick_start": null,
+            "tick_end": null,
+            "longest_consecutive_s": 0.0
+          }
+        ],
+        "peak_solved_open_width_m_right_left": [
+          0.9630184391229845,
+          1.0297457745546907
+        ],
+        "native_door_q_dq_ctrl_min_right_left": [
+          [
+            -0.00014318465933667662,
+            -1.6473100929609605,
+            0.0
+          ],
+          [
+            -0.00015240333090948995,
+            -1.6991522621584385,
+            0.0
+          ]
+        ],
+        "native_door_q_dq_ctrl_max_right_left": [
+          [
+            1.0516524042264725,
+            1.6473100929617321,
+            1.0515092195614923
+          ],
+          [
+            1.0850252906082534,
+            1.6991522621604151,
+            1.0848728872773454
+          ]
+        ]
+      },
+      "native_states": 1793,
+      "public_rgbd_queries": 1792,
+      "readbacks": {
+        "body": 51968,
+        "fingers": 25088
+      }
+    }
+  ],
+  "crosshost": {
+    "left-opens-first": {
+      "rows": [
+        1899,
+        1899
+      ],
+      "codes": {
+        "compared": 1899,
+        "exact": 1899,
+        "first_difference": null
+      },
+      "state": {
+        "compared": 1900,
+        "exact": 1900,
+        "first_difference": null
+      },
+      "base_qpos": {
+        "compared": 1900,
+        "exact": 1900,
+        "first_difference": null
+      },
+      "camera_ticks": {
+        "compared": 1899,
+        "exact": 1899,
+        "first_difference": null
+      },
+      "shutter_positions": {
+        "compared": 1900,
+        "exact": 1900,
+        "first_difference": null
+      },
+      "door_joint_q_dq_ctrl": {
+        "compared": 1900,
+        "exact": 1900,
+        "first_difference": null
+      },
+      "open_widths": {
+        "compared": 1900,
+        "exact": 1900,
+        "first_difference": null
+      },
+      "planar_speed": {
+        "compared": 1900,
+        "exact": 1900,
+        "first_difference": null
+      },
+      "sensor_packets": {
+        "observation": {
+          "exact": 1899,
+          "compared": 1899,
+          "first_difference": null
+        },
+        "decoder_history": {
+          "exact": 1899,
+          "compared": 1899,
+          "first_difference": null
+        },
+        "observation_id": {
+          "exact": 1899,
+          "compared": 1899,
+          "first_difference": null
+        },
+        "rgb_png": {
+          "exact": 1899,
+          "compared": 1899,
+          "first_difference": null
+        },
+        "depth_mm_png": {
+          "exact": 1899,
+          "compared": 1899,
+          "first_difference": null
+        }
+      },
+      "all_native_stream_hashes_equal": true,
+      "terminal_score_and_geometry_equal": true
+    },
+    "right-opens-first": {
+      "rows": [
+        1894,
+        1894
+      ],
+      "codes": {
+        "compared": 1894,
+        "exact": 1894,
+        "first_difference": null
+      },
+      "state": {
+        "compared": 1895,
+        "exact": 1895,
+        "first_difference": null
+      },
+      "base_qpos": {
+        "compared": 1895,
+        "exact": 1895,
+        "first_difference": null
+      },
+      "camera_ticks": {
+        "compared": 1894,
+        "exact": 1894,
+        "first_difference": null
+      },
+      "shutter_positions": {
+        "compared": 1895,
+        "exact": 1895,
+        "first_difference": null
+      },
+      "door_joint_q_dq_ctrl": {
+        "compared": 1895,
+        "exact": 1895,
+        "first_difference": null
+      },
+      "open_widths": {
+        "compared": 1895,
+        "exact": 1895,
+        "first_difference": null
+      },
+      "planar_speed": {
+        "compared": 1895,
+        "exact": 1895,
+        "first_difference": null
+      },
+      "sensor_packets": {
+        "observation": {
+          "exact": 1894,
+          "compared": 1894,
+          "first_difference": null
+        },
+        "decoder_history": {
+          "exact": 1894,
+          "compared": 1894,
+          "first_difference": null
+        },
+        "observation_id": {
+          "exact": 1894,
+          "compared": 1894,
+          "first_difference": null
+        },
+        "rgb_png": {
+          "exact": 1894,
+          "compared": 1894,
+          "first_difference": null
+        },
+        "depth_mm_png": {
+          "exact": 1894,
+          "compared": 1894,
+          "first_difference": null
+        }
+      },
+      "all_native_stream_hashes_equal": true,
+      "terminal_score_and_geometry_equal": true
+    }
+  },
+  "physical_phase_pair_at_same_reset": {
+    "rows": [
+      1899,
+      1894
+    ],
+    "codes": {
+      "compared": 1894,
+      "exact": 429,
+      "first_difference": 78
+    },
+    "state": {
+      "compared": 1895,
+      "exact": 61,
+      "first_difference": 61
+    },
+    "base_qpos": {
+      "compared": 1895,
+      "exact": 61,
+      "first_difference": 61
+    },
+    "camera_ticks": {
+      "compared": 1894,
+      "exact": 1894,
+      "first_difference": null
+    },
+    "shutter_positions": {
+      "compared": 1895,
+      "exact": 163,
+      "first_difference": 61
+    },
+    "door_joint_q_dq_ctrl": {
+      "compared": 1895,
+      "exact": 61,
+      "first_difference": 61
+    },
+    "open_widths": {
+      "compared": 1895,
+      "exact": 357,
+      "first_difference": 66
+    },
+    "planar_speed": {
+      "compared": 1895,
+      "exact": 61,
+      "first_difference": 61
+    },
+    "sensor_packets": {
+      "observation": {
+        "exact": 61,
+        "compared": 1894,
+        "first_difference": 61
+      },
+      "decoder_history": {
+        "exact": 79,
+        "compared": 1894,
+        "first_difference": 79
+      },
+      "observation_id": {
+        "exact": 61,
+        "compared": 1894,
+        "first_difference": 61
+      },
+      "rgb_png": {
+        "exact": 62,
+        "compared": 1894,
+        "first_difference": 62
+      },
+      "depth_mm_png": {
+        "exact": 61,
+        "compared": 1894,
+        "first_difference": 61
+      }
+    }
+  }
+}
