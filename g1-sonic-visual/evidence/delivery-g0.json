@@ -1,0 +1,45 @@
+{
+  "task": "grounded-intelligence-initiative/g1_sonic_visual_delivery",
+  "task_commit": "2bceae6f7aa6c343e01fe4ea75aed860f711a08a",
+  "ale_commit": "bfb75050aca2c54b45c5ab23bae6028a834a468a",
+  "run_id": "validate-6fe9908b",
+  "validation_sha256": "2fec5497ac6bbc70510e1a72b179d71166e733d9702c059a54a135a0370fb64e",
+  "passed": true,
+  "arms": {
+    "untouched": {
+      "score": {
+        "reward": 0.0
+      },
+      "metrics": {
+        "strict_layout_fraction": 0.0,
+        "episodes": 12.0,
+        "strict_deliveries": 0.0,
+        "all_signals_released": 0.0
+      },
+      "verification_sha256": "1b98af45ad0ce621782b32d18bd6433627fcb4ed746cd382825512b1493ca0e5"
+    },
+    "oracle": {
+      "score": {
+        "reward": 1.0
+      },
+      "metrics": {
+        "ratio": 1.0,
+        "strict_layout_fraction": 1.0,
+        "episodes": 12.0,
+        "strict_deliveries": 12.0,
+        "applied_rows": 8212.0,
+        "applied_codes": 525568.0,
+        "simulated_s": 164.24,
+        "joint_accel_rms_rad_s2": 3.0240271202021223,
+        "coordinate_change_fraction": 0.02881669207317073,
+        "all_signals_released": 4.0,
+        "wrong_pad": 0.0,
+        "fell": 0.0,
+        "lifted": 12.0,
+        "docked": 12.0,
+        "placed": 12.0
+      },
+      "verification_sha256": "94eae38a705cef5a534b3190166c64179ae12e82e55d9191ce5a6525a408ee6c"
+    }
+  }
+}

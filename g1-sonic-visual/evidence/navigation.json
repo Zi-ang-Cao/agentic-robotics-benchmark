@@ -1,0 +1,42 @@
+{
+  "task": "grounded-intelligence-initiative/g1_sonic_visual_navigation",
+  "task_commit": "005aa790388479639cb039266e7edd0d5dc26bb9",
+  "ale_commit": "bfb75050aca2c54b45c5ab23bae6028a834a468a",
+  "run_id": "validate-27fe61f2",
+  "validation_sha256": "6b505c6ae07169d9f937b3a0ee6603b37485f9ef0f6345bb9a82d15da6240701",
+  "passed": true,
+  "arms": {
+    "untouched": {
+      "score": {
+        "reward": 0.0
+      },
+      "metrics": {
+        "ratio": 0.0,
+        "strict_course_fraction": 0.0,
+        "successes": 0.0,
+        "episodes": 16.0
+      },
+      "verification_sha256": "e892ce36b079c617469be2c54f6fd2784f578e965727eae40c697f37716b43b8"
+    },
+    "oracle": {
+      "score": {
+        "reward": 1.0
+      },
+      "metrics": {
+        "ratio": 1.0,
+        "strict_course_fraction": 1.0,
+        "successes": 16.0,
+        "episodes": 16.0,
+        "joint_accel_rms_rad_s2": 6.108351393121054,
+        "coordinate_change_fraction": 0.09327768921950644,
+        "turn_semantic_changed": 16.0,
+        "turn_probe_count": 16.0,
+        "range_semantic_changed": 22.0,
+        "range_probe_count": 23.0,
+        "applied_native_rows": 16954.0,
+        "fsq_scalar_codes": 1085056.0
+      },
+      "verification_sha256": "25e13c9c246663f155578e35ec74aa92b770fd764554480bd13b24047f9b6dc1"
+    }
+  }
+}
